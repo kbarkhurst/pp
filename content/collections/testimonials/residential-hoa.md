@@ -1,0 +1,23 @@
+---
+id: 2815b1c7-c7f0-413b-9e9f-4541c37c21e8
+title: 'Residential HOA'
+author: 96f52da0-d586-4fec-8c3a-40aff65634a9
+template: testimonial
+updated_by: 96f52da0-d586-4fec-8c3a-40aff65634a9
+updated_at: 1623249152
+name: 'E. Peace'
+role: 'Homeowner''s Association (HOA) Member'
+quotation:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: "Very responsive and communicated well with myself and other members of my homeowner's association. Our neighborhood association is very pleased with Parrotta Paving's work.\_"
+      -
+        type: text
+        text: 'We were able to work well together to let other homeowners know ahead of time when their stretch of road would be paved. Parrotta Paving did a wonderful job reviewing the existing roads to identify areas that required base repairs prior to resurfacing. They also came back after a rainfall and made minor adjustments to ensure rainwater flowed properly.'
+---

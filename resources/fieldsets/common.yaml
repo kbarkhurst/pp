@@ -13,13 +13,24 @@ fields:
       listable: hidden
       display: Image
   -
-      handle: entry
-      field:
-        max_items: 1
-        mode: default
-        type: entries
-        listable: false
-        display: Entry
+    handle: images
+    field:
+      mode: grid
+      container: assets
+      restrict: false
+      allow_uploads: true
+      display: Images
+      type: assets
+      icon: assets
+      listable: hidden
+  -
+    handle: entry
+    field:
+      max_items: 1
+      mode: default
+      type: entries
+      listable: false
+      display: Entry
   -
     handle: text_rich
     field:

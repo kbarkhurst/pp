@@ -1,0 +1,30 @@
+title: 'Grid Banner'
+fields:
+  -
+    handle: areas_of_operation
+    field:
+      mode: table
+      reorderable: true
+      display: 'Areas of Operation'
+      type: grid
+      icon: grid
+      listable: hidden
+      fields:
+        -
+          handle: west_virginia
+          field:
+            input_type: text
+            antlers: false
+            display: 'West Virginia'
+            type: text
+            icon: text
+            listable: hidden
+        -
+          handle: pennsylvania
+          field:
+            input_type: text
+            antlers: false
+            display: Pennsylvania
+            type: text
+            icon: text
+            listable: hidden

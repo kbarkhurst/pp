@@ -10,6 +10,13 @@ sections:
           validate: required
           localizable: true
       -
+        handle: phone
+        field:
+          display: Phone
+          type: text
+          validate: required
+          localizable: true
+      -
         handle: email
         field:
           display: 'E-mail address'
@@ -17,33 +24,24 @@ sections:
           validate: required|email
           localizable: true
       -
-        handle: phone
+        handle: site_location
         field:
           input_type: text
           antlers: false
-          display: Phone
+          display: 'Site location'
           type: text
           icon: text
           listable: hidden
           validate:
             - required
       -
-        handle: project_address
+        handle: quantity
         field:
           input_type: text
           antlers: false
-          display: 'Project Address'
+          display: Quantity
           type: text
           icon: text
           listable: hidden
           validate:
             - required
-      -
-        handle: message_body
-        field:
-          display: 'Project Description'
-          type: textarea
-          validate: required
-          localizable: true
-          listable: hidden
-          antlers: false

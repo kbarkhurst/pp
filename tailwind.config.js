@@ -135,7 +135,7 @@ module.exports = {
         sans: [
           // Use a custom sans serif font for this site by changing 'Gaultier' to the 
           // font name you want and uncommenting the following line.
-          // 'Gaultier',
+          'Roboto',
           ...defaultTheme.fontFamily.sans,
         ],
         serif: [

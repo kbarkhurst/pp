@@ -8,6 +8,39 @@ sections:
           type: section
           listable: hidden
           display: 'General configuration'
+      -
+        handle: phone
+        field:
+          input_type: text
+          antlers: false
+          display: Phone
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: business_hours
+        field:
+          antlers: false
+          display: 'Business Hours'
+          type: textarea
+          icon: textarea
+          listable: hidden
+      -
+        handle: address
+        field:
+          antlers: false
+          display: Address
+          type: textarea
+          icon: textarea
+          listable: hidden
+      -
+        handle: employment_opportunities
+        field:
+          display: 'Employment Opportunities'
+          type: list
+          icon: list
+          instructions: 'List the positions you are currently hiring for'
+          listable: hidden
   error_messages:
     display: 'Error messages'
     fields:
@@ -15,7 +48,6 @@ sections:
         handle: 404_error
         field:
           type: section
-          localizable: false
           listable: hidden
           display: '404 error'
       -

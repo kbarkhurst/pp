@@ -51,3 +51,10 @@ fields:
           fields:
             -
               import: video
+        services:
+          display: Services
+          fields:
+            -
+              import: services
+      enable_input_rules: true
+      enable_paste_rules: true

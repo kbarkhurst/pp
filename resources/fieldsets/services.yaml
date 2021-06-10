@@ -1,0 +1,26 @@
+title: Services
+fields:
+  -
+    handle: service_title
+    field:
+      input_type: text
+      antlers: false
+      display: 'Service Title'
+      type: text
+      icon: text
+      listable: hidden
+  -
+    handle: service_description
+    field:
+      antlers: false
+      display: 'Service Description'
+      type: textarea
+      icon: textarea
+      listable: hidden
+  -
+    handle: list
+    field:
+      display: List
+      type: list
+      icon: list
+      listable: hidden

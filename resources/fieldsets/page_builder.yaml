@@ -4,11 +4,25 @@ fields:
     handle: page_builder
     field:
       type: replicator
-      localizable: false
       listable: false
       display: 'Page builder'
       instructions: 'Build your page by using various predefined content models.'
       sets:
+        image_gallery:
+          display: 'Image Gallery'
+          fields:
+            -
+              handle: image_gallery
+              field: common.images
+              config:
+                display: 'Image Gallery'
+                max_files: 3
+                instructions: '3 images shown for this page'
+        services:
+          display: Services
+          fields:
+            -
+              import: services
         article:
           display: Article
           instructions: 'Long form content, can be expaned with media like figures, video, quotes or tables.'
@@ -16,7 +30,7 @@ fields:
             -
               import: article
         call_to_action:
-          display: Call to action
+          display: 'Call to action'
           instructions: 'Show a call to action.'
           fields:
             -
@@ -34,8 +48,14 @@ fields:
             -
               import: form
         link_blocks:
-          display: Link blocks
+          display: 'Link blocks'
           instructions: 'Show link blocks.'
           fields:
             -
               import: link_blocks
+        service_header:
+          display: 'Service Header'
+          fields:
+            -
+              import: service_header
+      collapse: false

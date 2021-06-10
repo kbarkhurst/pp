@@ -1,1 +1,20 @@
 title: Configuration
+data:
+  phone: '(304) 292-0905'
+  business_hours: |-
+    Sunday: Closed<br/>
+    Monday: 8 am – 4:00 pm<br/>
+    Tuesday: 8 am – 4:00 pm<br/>
+    Wednesday: 8 am – 4:00 pm<br/>
+    Thursday: 8 am – 4:00 pm<br/>
+    Friday: 8 am – 4:00 pm<br/>
+    Saturday: Closed<br/>
+  address: |-
+    141 Brookhaven Road<br/>
+    Morgantown, WV 26508
+  employment_opportunities:
+    - 'Heavy Equipment Operators'
+    - 'CDL Truck Drivers'
+    - 'Paving Operators / Laborers'
+  404_title: '404 Error'
+  404_text: 'We''re sorry, this page doesn''t exist.'

@@ -1,0 +1,50 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name
+        field:
+          display: Name
+          type: text
+          validate: required
+          localizable: true
+      -
+        handle: phone
+        field:
+          display: Phone
+          type: text
+          validate: required
+          localizable: true
+      -
+        handle: email
+        field:
+          display: 'E-mail address'
+          type: text
+          validate: required|email
+          localizable: true
+      -
+        handle: interested_position
+        field:
+          options:
+            'Heavy Equipment Operators': 'Heavy Equipment Operators'
+            'CDL Truck Drivers': 'CDL Truck Drivers'
+            'Paving Operators / Laborers': 'Paving Operators / Laborers'
+          multiple: false
+          clearable: false
+          searchable: true
+          taggable: true
+          push_tags: false
+          cast_booleans: false
+          display: 'Interested Position'
+          type: select
+          icon: select
+          listable: hidden
+      -
+        handle: message_body
+        field:
+          display: 'Anything you''d like to share'
+          type: textarea
+          localizable: true
+          listable: hidden
+          antlers: false

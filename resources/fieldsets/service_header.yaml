@@ -1,0 +1,19 @@
+title: 'Service Header'
+fields:
+  -
+    handle: page_title
+    field: common.text_plain
+    config:
+      display: 'Page Title'
+  -
+    handle: page_description
+    field: common.text_basic
+    config:
+      buttons:
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - anchor
+      display: 'Page Description'
