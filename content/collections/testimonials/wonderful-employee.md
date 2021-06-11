@@ -1,0 +1,16 @@
+---
+id: a3fbcd63-4332-4c5f-bcb3-e76d6d63f0d0
+blueprint: testimonials
+title: 'Wonderful Employee'
+name: 'J Holter'
+role: 'Resident, Road Paving'
+quotation:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'I would like to tell you how wonderful one of your employees was today during the paving on Killarney Drive. He was stationed at Colonial and Killarney Drives to direct traffic. He made sure that for each of my trips home and out again that I could get to my apartment. I appreciated his willingness and friendliness to accommodate me. I just wanted to let you know that he is an outstanding employee.'
+updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
+updated_at: 1623370024
+---
