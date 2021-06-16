@@ -14,7 +14,8 @@
         x-data="{ mobileNavOpen: false }"
         :class="{ 'no-scroll': mobileNavOpen }"
     >
-        {{ yield:google_tag_manager }} {{ partial:layout/header }} {{ template_content }} {{ partial:layout/footer }}
+        {{ yield:google_tag_manager }} {{ partial:layout/header }} {{ template_content }} {{ partial:components/lightbox
+        }}{{ partial:components/locations }}{{ layout/footer }}
         <script src="{{ mix src='/js/site.js' }}"></script>
     </body>
 </html>
