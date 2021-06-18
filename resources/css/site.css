@@ -4,6 +4,20 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+/** Projects **/
+#projects .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: dense;
+    grid-auto-rows: minmax(5vw, auto);
+}
+
+#projects img {
+    max-height: 600px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-left: 10px;
+}
 
 #animated-background {
     animation: bgfade 2s infinite;

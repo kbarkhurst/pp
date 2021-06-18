@@ -1,99 +1,125 @@
-<div>
-    <a
-        data-fslightbox
-        data-type="image"
-        data-srcset="/assets/IMG_0594, /demo/img/IMG_0594.jpeg 1461w"
-        data-sizes="(max-width: 600px) 600px, 1461px"
-        href="/demo/img/IMG_0594.jpeg"
-    >
-        open lightbox
-    </a>
+<h2 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
+            {{ service_title }}
+       Residential Projects</h2>
+       <h3>A sampling of our work.</h3>
+<div id="projects" class="container mx-auto">
+    <div class="flex">
+    <div class="flex flex-col">
+      <img src="https://source.unsplash.com/random/?coffee" alt="" class="rounded shadow">
+      <img src="https://source.unsplash.com/random/?latte" alt="" class="">
+      <img src="https://source.unsplash.com/random/?cafe" alt="" class="">
+    </div>
+      <div class="flex flex-col">
+      <img src="https://source.unsplash.com/random/?latte,coffee" alt="" class="">
+      <img src="https://source.unsplash.com/random/?espresso,latte" alt="" class="">
+      <img src="https://source.unsplash.com/random/?cafe,coffee" alt="" class="">
+    </div>
+      <div class="flex flex-col">
+      <img src="https://source.unsplash.com/random/?latte,coffee,espress" alt="" class="">
+      <img src="https://source.unsplash.com/random/?espresso,latte,cafe" alt="" class="">
+      <img src="https://source.unsplash.com/random/?cafe,coffee,tea" alt="" class="">
+    </div>
+    </div>
+    </div>
+  </div>
 
-    <a data-fslightbox="gallery2" href="demo/img/brave.jpg">
-        gallery2
-    </a>
+    <div>
+        <a
+            data-fslightbox
+            data-type="image"
+            data-srcset="/assets/projects/after-residential-driveways-near-morgantown-wv.jpg, /assets/projects/before-residential-driveways-near-morgantown-wv.jpg"
+            data-sizes="(max-width: 600px) 600px, 1461px"
+            href="#"
+        >
+            open lightbox
+        </a>
 
-    <a data-fslightbox="gallery2" href="demo/img/5.jpg">
-        gallery2 two
-    </a>
+        <a data-fslightbox="gallery2" href="/assets/projects/after-residential-driveways-near-morgantown-wv.jpg">
+            <img src="/assets/projects/after-residential-driveways-near-morgantown-wv.jpg" />
+        </a>
 
-    <a
-        data-fslightbox="gallery"
-        data-alt="siema"
-        data-xd="elo"
-        data-turbocustom="turbocustom"
-        data-poster="https://i.imgur.com/fsyrScY.jpg"
-        data-class="siema"
-        href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-    >
-        <div class="embed-container">
-            video
-        </div>
-    </a>
+        <a data-fslightbox="gallery2" href="demo/img/5.jpg">
+            gallery2 two
+        </a>
 
-    <a
-        data-fslightbox="gallery"
-        data-alt="siema"
-        data-xd="elo"
-        data-turbocustom="turbocustom"
-        data-class="siema"
-        href="https://www.youtube.com/watch?v=xshEZzpS4CQ"
-    >
-        <div class="embed-container">
-            youtube
-        </div>
-    </a>
+        <a
+            data-fslightbox="gallery"
+            data-alt="siema"
+            data-xd="elo"
+            data-turbocustom="turbocustom"
+            data-poster="https://i.imgur.com/fsyrScY.jpg"
+            data-class="siema"
+            href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        >
+            <div class="embed-container">
+                video
+            </div>
+        </a>
 
-    <a
-        data-fslightbox="gallery"
-        data-alt="siema"
-        data-xd="elo"
-        data-turbocustom="turbocustom"
-        data-class="siema"
-        href="turboinvalid"
-    >
-        <div class="embed-container">
-            invalid
-        </div>
-    </a>
+        <a
+            data-fslightbox="gallery"
+            data-alt="siema"
+            data-xd="elo"
+            data-turbocustom="turbocustom"
+            data-class="siema"
+            href="https://www.youtube.com/watch?v=xshEZzpS4CQ"
+        >
+            <div class="embed-container">
+                youtube
+            </div>
+        </a>
 
-    <a
-        data-fslightbox="gallery"
-        href="#custom-source"
-        data-alt="test-alt"
-        data-turbocustom="example-turbocustom"
-        data-class="custom-in-lightbox"
-    >
-        custom
-    </a>
+        <a
+            data-fslightbox="gallery"
+            data-alt="siema"
+            data-xd="elo"
+            data-turbocustom="turbocustom"
+            data-class="siema"
+            href="turboinvalid"
+        >
+            <div class="embed-container">
+                invalid
+            </div>
+        </a>
 
-    <div id="output"></div>
+        <a
+            data-fslightbox="gallery"
+            href="#custom-source"
+            data-alt="test-alt"
+            data-turbocustom="example-turbocustom"
+            data-class="custom-in-lightbox"
+        >
+            custom
+        </a>
 
-    <iframe
-        id="custom-source"
-        frameborder="0"
-        width="720px"
-        height="520px"
-        allow="fullscreen"
-        class="base-class second-base-class"
-        src="https://www.youtube.com/embed/xshEZzpS4CQ"
-    ></iframe>
-</div>
+        <div id="output"></div>
 
-<style>
-    #custom-source {
-        display: none;
-        background: red;
-    }
+        <iframe
+            id="custom-source"
+            frameborder="0"
+            width="720px"
+            height="520px"
+            allow="fullscreen"
+            class="base-class second-base-class"
+            src="https://www.youtube.com/embed/xshEZzpS4CQ"
+        ></iframe>
+    </div>
 
-    .custom-in-lightbox {
-        display: block !important;
-    }
-</style>
+    <style>
+        #custom-source {
+            display: none;
+            background: red;
+        }
 
-<!-- <script>
+        .custom-in-lightbox {
+            display: block !important;
+        }
+    </style>
+
+    <!-- <script>
     setTimeout(() => {
         fsLightboxInstances["swipe-test"].props.loadOnlyCurrentSource = true;
         fsLightboxInstances["swipe-test"].props.disableLocalStorage = true;
     }, 200);
 </script> -->
+</div>
