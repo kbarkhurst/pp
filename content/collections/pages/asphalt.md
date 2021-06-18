@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1623345184
+updated_at: 1624040378
 page_builder:
   -
     page_title: Asphalt
@@ -52,4 +52,6 @@ page_builder:
       - 'French drains'
       - 'Sub-base failure repair'
       - 'Access roads'
+      - 'Roadway cracking repair (such as alligator cracking, block cracking and longitudinal cracking)'
+      - 'Repair of surface deformation (such as rutting, pushing, and shoving)'
 ---
