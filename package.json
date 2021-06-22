@@ -15,7 +15,8 @@
     "@tailwindcss/typography": "^0.2.0",
     "alpinejs": "^2.7.0",
     "fslightbox": "^3.2.3",
-    "tailwindcss": "^1.9.2"
+    "tailwindcss": "^1.9.2",
+    "watch": "^1.0.2"
   },
   "devDependencies": {
     "@types/tailwindcss": "^2.0.5",

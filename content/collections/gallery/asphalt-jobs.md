@@ -12,7 +12,10 @@ gallery:
   - morgantown-area-parking-lot-overlay.jpg
   - local-driveway-paving-residential.jpeg
   - local-home-improvement-residential-retaining-wall.jpg
+  - residential-porch-and-sidewalk-concrete.jpg
+  - concrete-wall-local-contractor.jpg
+  - concrete-and-retaining-walls-in-morgantown-west-virginia.JPG
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1624047848
+updated_at: 1624378382
 ---
 Select images from our asphalt projects.

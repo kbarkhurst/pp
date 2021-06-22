@@ -1,12 +1,21 @@
 {{ collection from="gallery" title:contains="{slug}" }}
 <section class="py-10">
-<h2 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
-           
-            {{ title }}
+    <h2 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">{{ title }}
        </h2>
        <h3 class="text-center">{{ content }}</h3>
        
-<div id="projects" class="container mx-auto">
+       <div class="masonry-wrapper">
+            <div class="masonry">
+                        {{ gallery }}
+                        <div class="masonry-item">
+                    <img src="{{ url }}" alt="" class="masonry-content rounded shadow">
+                    </div>
+                    {{ /gallery }}
+                    </div><script src="//unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+       </div>
+
+
+<!-- <div id="projects" class="container mx-auto">
     <div class="grid rid-flow-col-dense grid-cols-3 grid-rows-3 gap-4">
         {{ gallery }}
         <img src="{{ url }}" alt="" class="rounded shadow">
@@ -17,12 +26,11 @@
      
       
     </div>
-    </div>
-  </div>
-</div>
+</div> -->
+</section>
 {{ /collection }}
     
-        <a
+        <!-- <a
             data-fslightbox
             data-type="image"
             data-srcset="/assets/projects/after-residential-driveways-near-morgantown-wv.jpg, /assets/projects/before-residential-driveways-near-morgantown-wv.jpg"
@@ -103,7 +111,7 @@
         ></iframe>
     </div> -->
 
-    <style>
+    <!-- <style>
         #custom-source {
             display: none;
             background: red;
@@ -112,7 +120,7 @@
         .custom-in-lightbox {
             display: block !important;
         }
-    </style>
+    </style> --> 
 
     <!-- <script>
     setTimeout(() => {
