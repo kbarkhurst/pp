@@ -1,36 +1,27 @@
+{{ collection from="gallery" title:contains="{slug}" }}
+<section class="py-10">
 <h2 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
-            {{ service_title }}
-       Residential Projects</h2>
-       <h3>A sampling of our work.</h3>
-       {{ collection from="gallery" }}
+           
+            {{ title }}
+       </h2>
+       <h3 class="text-center">{{ content }}</h3>
+       
 <div id="projects" class="container mx-auto">
-    <div class="flex">
+    <div class="grid rid-flow-col-dense grid-cols-3 grid-rows-3 gap-4">
         {{ gallery }}
-        {{ if (index | mod:3) != 0 }}
-    <div class="flex flex-col">
-        {{ /if }}
+        <img src="{{ url }}" alt="" class="rounded shadow">
+         {{ /gallery }}
+      </div>
+
         
-      <img src="{{ url }}" alt="" class="rounded shadow">
-    {{ if (index | mod:3) != 0 }}
-    </div>
-    {{ /if }}
-     {{ /gallery }}
-      <!-- <div class="flex flex-col">
-      <img src="https://source.unsplash.com/random/?latte,coffee" alt="" class="">
-      <img src="https://source.unsplash.com/random/?espresso,latte" alt="" class="">
-      <img src="https://source.unsplash.com/random/?cafe,coffee" alt="" class="">
-    </div>
-      <div class="flex flex-col">
-      <img src="https://source.unsplash.com/random/?latte,coffee,espress" alt="" class="">
-      <img src="https://source.unsplash.com/random/?espresso,latte,cafe" alt="" class="">
-      <img src="https://source.unsplash.com/random/?cafe,coffee,tea" alt="" class="">
-    </div> -->
+     
+      
     </div>
     </div>
   </div>
 </div>
 {{ /collection }}
-    <div>
+    
         <a
             data-fslightbox
             data-type="image"
@@ -110,7 +101,7 @@
             class="base-class second-base-class"
             src="https://www.youtube.com/embed/xshEZzpS4CQ"
         ></iframe>
-    </div>
+    </div> -->
 
     <style>
         #custom-source {
@@ -130,3 +121,4 @@
     }, 200);
 </script> -->
 </div>
+</section>

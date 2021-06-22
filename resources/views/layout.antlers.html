@@ -15,8 +15,8 @@
         :class="{ 'no-scroll': mobileNavOpen }"
     >
         {{ yield:google_tag_manager }} {{ partial:layout/header }} {{ template_content }} {{
-        partial:components/locations }}{{ partial:components/card }} {{ if segment_2 == "asphalt" }} {{
-        partial:components/lightbox }} {{ /if }}{{ partial:layout/footer }}
+        partial:components/locations }}{{ partial:components/card }} {{ partial:components/lightbox }}{{
+        partial:layout/footer }}
         <script src="{{ mix src='/js/site.js' }}"></script>
     </body>
 </html>
