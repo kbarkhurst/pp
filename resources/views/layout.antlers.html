@@ -10,7 +10,7 @@
         {{ partial:snippets/favicon }}
     </head>
     <body
-        class="min-h-screen bg-white {{ environment == 'local' ? 'debug' : '' }}"
+        class="overflow-x-hidden min-h-screen bg-white {{ environment == 'local' ? 'debug' : '' }}"
         x-data="{ mobileNavOpen: false }"
         :class="{ 'no-scroll': mobileNavOpen }"
     >

@@ -1,7 +1,7 @@
 ---
 id: 3f85ca9c-68c0-4f91-b417-c59b0b6669d5
 blueprint: gallery
-title: 'Asphalt Jobs'
+title: 'Local Asphalt Contracting'
 gallery:
   - projects/after-residential-driveways-near-morgantown-wv.jpg
   - projects/before-residential-driveways-near-morgantown-wv.jpg
@@ -16,6 +16,6 @@ gallery:
   - concrete-wall-local-contractor.jpg
   - concrete-and-retaining-walls-in-morgantown-west-virginia.JPG
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1624378382
+updated_at: 1624470201
 ---
-Select images from our asphalt projects.
+Explore a sampling of Parrotta Paving's asphalt contracting projects.

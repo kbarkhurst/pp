@@ -5,6 +5,14 @@
 @import "tailwindcss/utilities";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
 
+/** Nav **/
+#phone {
+    background-image: url(/assets/phone_number.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
 /** Masonry Gallery **/
 .masonry-wrapper {
     padding: 1.5em;

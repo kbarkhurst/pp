@@ -55,9 +55,10 @@
         {{ /nav:main }}
         <li class="relative leading-none">
                                 <a
-                                    class="whitespace-no-wrap text-xs font-bold hover:text-primary-600"
-                                    href="tel:304-292-0905">
-                                    304-292-0905
+                                id="phone"
+                                class="whitespace-no-wrap text-xs font-bold hover:text-primary-600"
+                                href="tel:304-292-0905">
+                                <img src="/assets/phone_number.svg" width="200" />304-292-0905
                                 </a>
                             </li>
     </ul>
@@ -67,7 +68,7 @@
 <nav class="md:hidden">
     <button
         @click.prevent="mobileNavOpen = !mobileNavOpen"
-        class="fixed z-20 w-16 h-16 flex justify-center items-center right-0 bottom-0 mb-safe mr-8 bg-primary-500 text-white text-xs text-uppercase tracking-widest font-bold"
+        class="fixed z-20 w-16 h-16 flex justify-center items-center right-0 top-0 mt-safe mr-8 bg-black text-white text-xs text-uppercase tracking-widest font-bold"
         aria-label="Toggle menu"
         x-text="mobileNavOpen ? 'Close' : 'Menu'"
     ></button>
@@ -123,7 +124,6 @@
                     </ul>
                 {{ /if }}
             </li>
-            Hello
         {{ /nav:main }}
         
     </ul>

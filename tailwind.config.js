@@ -144,15 +144,15 @@ module.exports = {
         },
         // Client primary color, currently blue.
         primary: {
-          100: '#ebf8ff',
-          200: '#bee3f8',
-          300: '#90cdf4',
-          400: '#63b3ed',
-          500: '#4299e1',
-          600: '#3182ce',
-          700: '#2b6cb0',
-          800: '#2c5282',
-          900: '#2a4365',
+          100: '#FCE8E8',
+          200: '#FBD5D5',
+          300: '#F8B4B3',
+          400: '#F88080',
+          500: '#F05252',
+          600: '#E02423',
+          700: '#C81F1D',
+          800: '#9B1D1C',
+          900: '#771D1D',
         },
         // Error styling colors: red (TW Red)
         error: {

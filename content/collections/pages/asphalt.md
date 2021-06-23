@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1624040378
+updated_at: 1624470089
 page_builder:
   -
     page_title: Asphalt
@@ -32,7 +32,7 @@ page_builder:
     type: services
     enabled: true
     service_title: 'Asphalt Paving Services'
-    service_description: 'Asphalt paving services for residential, commercial, and industrial customers.'
+    service_description: 'Parrotta Paving provides the full spectrum of asphalt paving services for residential, commercial, and industrial customers.'
     list:
       - 'Asphalt milling'
       - 'Asphalt seal coating'
