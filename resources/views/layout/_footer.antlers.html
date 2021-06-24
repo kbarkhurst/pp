@@ -1,12 +1,12 @@
 {{# The sites footer rendered on each page. #}}
-<footer class="w-full bg-error-600  text-white">
+<footer class="bg-error-600  text-white">
     <div
-        class="w-full text-white bg-no-repeat"
+        class="text-white bg-no-repeat"
         style="background-image:url('/assets/website-footer.svg'); background-size:300px; background-position:left bottom;"
     >
-        <div class="xl:px-30 pb-12 lg:px-30 md:px-10 sm:px-5 px-10">
-            <div class="w-full pt-12 flex flex-col sm:flex-row space-y-10 justify-start ">
-                <div class="md:w-1/2 lg:w-2/5 pr-6 flex flex-col">
+        <div class="w-4/5 mx-auto xl:px-30 pb-12 lg:px-30 md:px-10 sm:px-5 px-10">
+            <div class="flex flex-wrap -mx-1 overflow-hidden pt-12 space-y-10 justify-start ">
+                <div class="md:w-1/2 lg:w-2/5 ">
                     <img src="/assets/parrotta-logo-full.svg" width="250" class="mb-3" />
                     <p class="mt-10">
                         <span class="uppercase font-bold text-xl">Parrotta Paving</span>
@@ -20,7 +20,7 @@
                         <p><a href="{{ configuration:directions_url }}" target="_blank" class="hover:underline">Get Directions</a></p>
                     </p>
                 </div>
-                <div class="md:w-1/2 lg:w-1/5 px-2 flex flex-col mb-20 sm:mb-0">
+                <div class="md:w-1/2 lg:w-1/5 mb-20 sm:mb-0">
                     <h2 class="uppercase font-bold text-xl">Why Choose Us?</h2>
                     <ul class="list-disc list-inside">
                         <li class="my-2">Licensed and Insured</li>
@@ -30,7 +30,7 @@
                         <li class="my-2">Experienced Employees</li>
                     </ul>
                 </div>
-                <div class="md:w-1/2 lg:w-1/5 flex flex-col px-2 mb-20">
+                <div class="md:w-1/2 lg:w-1/5 mb-20">
                     <h2 class="uppercase font-bold text-xl">Get in Touch</h2>
 
                     {{ configuration:fax }}
@@ -56,14 +56,14 @@
                           </svg>
                         Request Millings</a></p>
                 </div>
-                <div class="md:w-1/2 lg:w-1/5 flex flex-col px-2">
+                <div class="md:w-1/2 lg:w-1/5">
                     <h2 class="uppercase font-bold text-xl">Hours</h2>
                     <div class="my-2">{{ configuration:business_hours }}</div>
                 </div>
             </div>
-            <div class="opacity-60 pt-2 mt-10 mb-40 sm:mb-0">
+            <div class="opacity-60 pt-2 mt-10 mb-40 sm:mb-0 lg:text-right font-light">
                 <small>© {{ now | format:Y }} Parrotta Paving. All rights reserved.</small>
-                <small><a href="https://barkhurstcreative.com/" target="_blank">Web site designed with &#9829; in WV.</a></small>
+                <small><a class="underline" href="https://barkhurstcreative.com/" target="_blank">Web site designed with &#9829; in WV.</a></small>
             </div>
         </div>
     </div>
