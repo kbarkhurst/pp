@@ -16,6 +16,22 @@ sections:
             - required
       -
         import: page_builder
+      -
+        handle: show_service_area
+        field:
+          display: 'Show Service Area'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          width: 50
+      -
+        handle: show_project_gallery
+        field:
+          display: 'Show Project Gallery'
+          type: toggle
+          icon: toggle
+          width: 50
+          listable: true
   seo:
     display: SEO
     fields:

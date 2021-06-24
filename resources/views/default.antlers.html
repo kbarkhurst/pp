@@ -1,5 +1,18 @@
 {{# The outer wrapper grid as defined in tailwind.config.js. It makes sure all blocks on a page get evenly spaced
 without having to worry about margins or paddings. #}}
 <main class="outer-grid">
-    {{ page_builder scope="block" }} {{ partial src="page_builder/{type}" }} {{ /page_builder }}
+    
+    {{ page_builder scope="block" }} {{ partial src="page_builder/{type}" }} 
+    {{ /page_builder }}
+    
+    
+    {{ if show_project_gallery}} {{ partial:components/lightbox }}{{/if}}
+    
+    {{ partial:components/card }} 
+    {{ if show_service_area}} {{partial:components/locations }}{{/if}}
+    
+    
+    
+    
+    
 </main>
