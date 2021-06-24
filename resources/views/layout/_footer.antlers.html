@@ -1,14 +1,14 @@
 {{# The sites footer rendered on each page. #}}
-<footer class="bg-error-600  text-white">
+<footer class="bg-parrotta-red  text-white">
     <div
         class="text-white bg-no-repeat"
         style="background-image:url('/assets/website-footer.svg'); background-size:300px; background-position:left bottom;"
     >
-        <div class="w-4/5 mx-auto xl:px-30 pb-12 lg:px-30 md:px-10 sm:px-5 px-10">
-            <div class="flex flex-wrap -mx-1 overflow-hidden pt-12 space-y-10 justify-start ">
-                <div class="md:w-1/2 lg:w-2/5 ">
-                    <img src="/assets/parrotta-logo-full.svg" width="250" class="mb-3" />
-                    <p class="mt-10">
+        <div class="w-4/5 lg:w-11/12 mx-auto xl:px-30 pb-12 lg:px-30 md:px-10 sm:px-5 px-10">
+            <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 space-y-10 justify-start ">
+                <div class="sm:col-span-2 lg:col-span-4 xl:col-span-1 "><a href="/"><img src="/assets/parrotta-logo-full.svg" class="pr-4 mt-10 mx-auto" width="250"/></a></div>
+                <div class="">
+                    <p>
                         <span class="uppercase font-bold text-xl">Parrotta Paving</span>
                         <br />
                         <span class="italic">For over 60+ years</span>
@@ -20,7 +20,7 @@
                         <p><a href="{{ configuration:directions_url }}" target="_blank" class="hover:underline">Get Directions</a></p>
                     </p>
                 </div>
-                <div class="md:w-1/2 lg:w-1/5 mb-20 sm:mb-0">
+                <div class="mb-20 sm:mb-0">
                     <h2 class="uppercase font-bold text-xl">Why Choose Us?</h2>
                     <ul class="list-disc list-inside">
                         <li class="my-2">Licensed and Insured</li>
@@ -30,13 +30,13 @@
                         <li class="my-2">Experienced Employees</li>
                     </ul>
                 </div>
-                <div class="md:w-1/2 lg:w-1/5 mb-20">
+                <div class="mb-20">
                     <h2 class="uppercase font-bold text-xl">Get in Touch</h2>
 
                     {{ configuration:fax }}
                     <p class="my-2">
                         <a href="/employment">
-                            <svg class="h-6 w-6 flex-shrink-0 mr-2 float-left" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg class="h-6 w-6 flex-shrink-0 mr-3 float-left" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
                               </svg>
                             We're Hiring!
@@ -45,23 +45,23 @@
                         </a>
                     </p>
                     <p class="my-2"><a href="/contact">
-                        <svg class="h-6 w-6 flex-shrink-0 mr-2 float-left" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg class="h-6 w-6 flex-shrink-0 mr-3 float-left" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                           </svg>
                         Schedule an Appnt</a></p>
                     <p class="my-2"><a href="/millings-request">
-                        <svg class="h-6 w-6 flex-shrink-0 mr-2 float-left" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg class="h-6 w-6 flex-shrink-0 mr-3 float-left" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
                           </svg>
                         Request Millings</a></p>
                 </div>
-                <div class="md:w-1/2 lg:w-1/5">
+                <div class="">
                     <h2 class="uppercase font-bold text-xl">Hours</h2>
                     <div class="my-2">{{ configuration:business_hours }}</div>
                 </div>
             </div>
-            <div class="opacity-60 pt-2 mt-10 mb-40 sm:mb-0 lg:text-right font-light">
+            <div class="opacity-60 pt-2 mt-10 mb-40 lg:mb-0 lg:text-right font-light">
                 <small>© {{ now | format:Y }} Parrotta Paving. All rights reserved.</small>
                 <small><a class="underline" href="https://barkhurstcreative.com/" target="_blank">Web site designed with &#9829; in WV.</a></small>
             </div>
