@@ -5,6 +5,14 @@
 @import "tailwindcss/utilities";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
 
+.homecontent {
+    margin-top:-600px;
+}
+@media (min-width: 640px) { 
+.homecontent {
+    margin-top:-475px;
+}
+}
 .redbgswoop {
     background-image:url(/assets/bg-swoop-rectangle.svg);
     background-size:cover;
@@ -17,6 +25,10 @@
                  0px 18px 23px rgba(0,0,0,0.1);
 }
 /** Nav **/
+.logo {
+    width:200px;
+}
+
 #phone {
     background-image: url(/assets/phone_number.svg);
     background-repeat: no-repeat;

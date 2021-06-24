@@ -2,13 +2,8 @@ title: Configuration
 data:
   phone: '(304) 292-0905'
   business_hours: |-
-    Sunday: Closed<br/>
-    Monday: 8 am – 4:00 pm<br/>
-    Tuesday: 8 am – 4:00 pm<br/>
-    Wednesday: 8 am – 4:00 pm<br/>
-    Thursday: 8 am – 4:00 pm<br/>
-    Friday: 8 am – 4:00 pm<br/>
-    Saturday: Closed<br/>
+    Monday - Friday:<br/> 8 am – 4:00 pm<br/><br/>
+    Saturday and Sunday:<br/> Closed<br/>
   address: |-
     141 Brookhaven Road<br/>
     Morgantown, WV 26508
@@ -16,5 +11,6 @@ data:
     - 'Heavy Equipment Operators'
     - 'CDL Truck Drivers'
     - 'Paving Operators / Laborers'
+  directions_url: 'https://www.google.com/maps/dir/39.6155521,-79.9304626/parrotta+paving/@39.6178136,-79.9328575,15z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88357b87b40bfbcb:0x55a42f79d8221361!2m2!1d-79.9154438!2d39.6103298'
   404_title: '404 Error'
   404_text: 'We''re sorry, this page doesn''t exist.'

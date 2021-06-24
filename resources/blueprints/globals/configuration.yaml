@@ -41,6 +41,15 @@ sections:
           icon: list
           instructions: 'List the positions you are currently hiring for'
           listable: hidden
+      -
+        handle: directions_url
+        field:
+          input_type: text
+          antlers: false
+          display: 'Directions URL'
+          type: text
+          icon: text
+          listable: hidden
   error_messages:
     display: 'Error messages'
     fields:
