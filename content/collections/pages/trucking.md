@@ -5,7 +5,7 @@ title: Trucking
 page_builder:
   -
     service_title: 'Trucking Services'
-    service_description: 'We provide contract hauling services.'
+    service_description: 'Parrotta Paving provides contract hauling services. We also provide <a href="/millings-request" class="underline">Millings </a> via our request form.'
     list:
       - Dirt
       - Stone
@@ -22,6 +22,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1624474894
+updated_at: 1624633732
 show_service_area: true
+show_project_gallery: false
 ---

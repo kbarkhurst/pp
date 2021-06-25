@@ -2,7 +2,7 @@
 
 {{# The desktop navigation. Hidden on smaller screen. Shown from md and up. #}}
 
-<nav class="hidden md:block">
+<nav class="hidden lg:block">
     <ul class="flex space-x-8">
         {{ nav:main max_depth="2" include_home="true" }}
             <li
@@ -12,7 +12,9 @@
                 class="relative leading-none"
             >
                 <a
-                    class="flex items-center font-bold text-xs uppercase tracking-wide hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
+                    class="flex items-center font-bold align-bottom text-sm uppercase tracking-wide hover:text-primary-600 
+                    
+                    "
                     {{ if children }}
                         href="#"
                         @click.prevent="subnavOpen = true"
@@ -34,14 +36,14 @@
                 {{ if children }}
                     <ul
                         x-show="subnavOpen"
-                        class="absolute py-2 bg-white space-y-2"
+                        class="absolute mt-2 p-3 bg-white space-y-3"
                         :aria-expanded="subnavOpen"
                         x-cloak
                     >
                         {{ children }}
                             <li class="">
                                 <a
-                                    class="whitespace-no-wrap text-xs font-bold hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
+                                    class="whitespace-no-wrap text-md font-light hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
                                     href="{{ url }}"
                                 >
                                     {{ title }}
@@ -53,22 +55,22 @@
             </li>
             
         {{ /nav:main }}
-        <li class="relative leading-none">
+        <li class="relative leading-none -mt-1">
                                 <a
                                 id="phone"
-                                class="whitespace-no-wrap text-xs font-bold hover:text-primary-600"
+                                class=" whitespace-no-wrap text-md font-bold hover:text-primary-600"
                                 href="tel:{{ configuration:phone }}">
-                                <img src="/assets/phone_number.svg" width="200" />{{ configuration:phone }}
+                                <img src="/assets/phone_number.svg" width="200" /><span class="sr-only">{{ configuration:phone }}</span>
                                 </a>
                             </li>
     </ul>
 </nav>
 
 {{# The mobile navigation. Hidden from md and up #}}
-<nav class="md:hidden">
+<nav class="lg:hidden">
     <button
         @click.prevent="mobileNavOpen = !mobileNavOpen"
-        class="fixed z-20 w-16 h-16 flex justify-center items-center right-0 top-0 mt-safe mr-8 bg-black text-white text-xs text-uppercase tracking-widest font-bold"
+        class="fixed z-20 w-16 h-16 flex justify-center items-center right-0 top-0 mt-safe mr-8 bg-black text-white text-md text-uppercase tracking-widest font-bold"
         aria-label="Toggle menu"
         x-text="mobileNavOpen ? 'Close' : 'Menu'"
     ></button>

@@ -67,3 +67,12 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+      -
+        handle: redirect
+        field:
+          antlers: false
+          display: Redirect
+          type: textarea
+          icon: textarea
+          instructions: 'Enter the URL of the page you''d like to redirect to'
+          listable: hidden
