@@ -8,8 +8,26 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1624474877
+updated_at: 1624687885
 page_builder:
+  -
+    page_title: 'Concrete Contracting'
+    page_description:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Experienced commercial, industrial and residential concrete contractors for installation and maintenance.'
+    type: service_header
+    enabled: true
+  -
+    image_gallery:
+      - experienced-employees-at-parrotta.jpg
+      - concrete-wall-local-contractor.jpg
+      - concrete-and-retaining-walls-in-morgantown-west-virginia.JPG
+    type: image_gallery
+    enabled: true
   -
     service_title: 'Concrete Services'
     service_description: 'Concrete services for residential, commercial, and industrial customers.'
@@ -34,4 +52,7 @@ page_builder:
       - 'Inlet repair'
       - 'Approach slabs'
 show_service_area: true
+show_project_gallery: true
+call_to_action: true
+show_projects: true
 ---

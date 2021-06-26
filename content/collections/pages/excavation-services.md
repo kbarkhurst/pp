@@ -4,9 +4,27 @@ blueprint: page
 title: Excavation
 page_builder:
   -
+    page_title: Excavation
+    page_description:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Your local partner for excavating and full site development.'
+    type: service_header
+    enabled: true
+  -
+    image_gallery:
+      - site-development-clearing.jpg
+      - excavating-company-in-morgantown-wv.jpg
+      - excavation-services-in-morgantown.jpg
+    type: image_gallery
+    enabled: true
+  -
     service_title: 'Morgantown Area Excavation Services'
     list:
-      - 'Site development'
+      - 'Complete site development'
       - 'Clearing and grubbing'
       - 'Site utilities (storm, water, sewer)'
       - Grading
@@ -16,12 +34,16 @@ page_builder:
       - 'Storm detention system'
     type: services
     enabled: true
+    service_description: 'From clearing and grading to complete site development, we''ll exceed your expectations.'
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1624474888
+updated_at: 1624687964
 show_service_area: true
+show_project_gallery: false
+call_to_action: true
+show_projects: false
 ---

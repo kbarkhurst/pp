@@ -23,15 +23,31 @@ sections:
           type: toggle
           icon: toggle
           listable: hidden
-          width: 50
+          width: 25
       -
         handle: show_project_gallery
         field:
-          display: 'Show Project Gallery'
+          display: 'Show Galleries of Sample Work'
           type: toggle
           icon: toggle
-          width: 50
+          width: 25
           listable: true
+      -
+        handle: call_to_action
+        field:
+          display: 'Call to Action'
+          type: toggle
+          icon: toggle
+          width: 25
+          listable: hidden
+      -
+        handle: show_projects
+        field:
+          display: 'Show Highlighted Project Cards'
+          type: toggle
+          icon: toggle
+          width: 25
+          listable: hidden
   seo:
     display: SEO
     fields:

@@ -8,10 +8,10 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1624637130
+updated_at: 1624685412
 page_builder:
   -
-    page_title: Asphalt
+    page_title: 'Asphalt and Paving'
     page_description:
       -
         type: paragraph
@@ -25,14 +25,14 @@ page_builder:
     type: image_gallery
     enabled: true
     image_gallery:
-      - 1075-1200x800.jpg
+      - local-asphalt-company.jpg
+      - asphalt-contractor-local.jpg
       - 1076-1200x800.jpg
-      - 1077-1200x800.jpg
   -
     type: services
     enabled: true
     service_title: 'Asphalt Paving Services'
-    service_description: 'Parrotta Paving provides the full spectrum of asphalt paving services for residential, commercial, and industrial customers.'
+    service_description: 'Parrotta Paving provides the full spectrum of asphalt paving services for residential, commercial, and industrial customers. Whether a brand new project or resurfacing with our ‘scratch coating’ technique, you’ve got Morgantown''s expert pavers on the job!'
     list:
       - 'Asphalt milling'
       - 'Asphalt seal coating'
@@ -55,14 +55,20 @@ page_builder:
       - 'Roadway cracking repair (such as alligator cracking, block cracking and longitudinal cracking)'
       - 'Repair of surface deformation (such as rutting, pushing, and shoving)'
   -
-    title: 'There''s No Job too small, or too big!'
-    text: 'Get Started Today. Schedule an appointment.'
-    buttons:
+    bard:
       -
-        label: Button
-        link: 'entry::1dd6a7e3-775a-4118-996a-a93a3333aa94'
-    type: call_to_action
+        type: set
+        attrs:
+          values:
+            type: video
+            youtube_url: 'https://www.youtube.com/embed/videoseries?list=PLumyfDTOC-q6bPmsILW1qT82rM4e9L0GQ'
+            size: xl
+      -
+        type: paragraph
+    type: article
     enabled: true
 show_service_area: true
 show_project_gallery: true
+call_to_action: true
+show_projects: true
 ---

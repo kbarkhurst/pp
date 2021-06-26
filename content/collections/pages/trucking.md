@@ -4,6 +4,24 @@ blueprint: page
 title: Trucking
 page_builder:
   -
+    page_title: 'Contract Hauling'
+    page_description:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Reliable trucking for dirt, concrete, stone, millings, and more.'
+    type: service_header
+    enabled: true
+  -
+    image_gallery:
+      - trucking-stones-rocks-site-development.jpg
+      - trucking-hauling-by-parrotta-paving.jpg
+      - demolition-and-trucking-services.jpg
+    type: image_gallery
+    enabled: true
+  -
     service_title: 'Trucking Services'
     service_description: 'Parrotta Paving provides contract hauling services. We also provide <a href="/millings-request" class="underline">Millings </a> via our request form.'
     list:
@@ -22,7 +40,8 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1624633732
+updated_at: 1624660324
 show_service_area: true
 show_project_gallery: false
+call_to_action: true
 ---

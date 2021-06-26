@@ -8,6 +8,6 @@ gallery:
   - residential-porch-and-sidewalk-concrete.jpg
   - concrete-wall-local-contractor.jpg
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1624043865
+updated_at: 1624652556
 ---
-A sample of our work
+A sample of our concrete jobs in the Morgantown area.

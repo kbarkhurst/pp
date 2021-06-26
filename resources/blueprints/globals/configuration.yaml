@@ -50,6 +50,15 @@ sections:
           type: text
           icon: text
           listable: hidden
+      -
+        handle: review_url
+        field:
+          input_type: text
+          antlers: false
+          display: 'Request Reviews Link'
+          type: text
+          icon: text
+          listable: hidden
   error_messages:
     display: 'Error messages'
     fields:

@@ -39,6 +39,30 @@ sections:
                 type: text
                 icon: text
                 listable: hidden
+      -
+        handle: show_service_area
+        field:
+          display: 'Show Service Area'
+          type: toggle
+          icon: toggle
+          width: 33
+          listable: hidden
+      -
+        handle: show_project_gallery
+        field:
+          display: 'Show Project Gallery'
+          type: toggle
+          icon: toggle
+          width: 33
+          listable: true
+      -
+        handle: call_to_action
+        field:
+          display: 'Call to Action'
+          type: toggle
+          icon: toggle
+          width: 33
+          listable: hidden    
   sidebar:
     display: Sidebar
     fields:

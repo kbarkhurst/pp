@@ -11,5 +11,7 @@ data:
     - 'Heavy Equipment Operators'
     - 'CDL Truck Drivers'
     - 'Paving Operators / Laborers'
+  directions_url: 'https://www.google.com/maps/place/Parrotta+Paving+Company+Inc/@39.6102586,-79.9170157,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x55a42f79d8221361!8m2!3d39.6103298!4d-79.9154438?hl=en'
+  review_url: 'https://g.page/r/CWETIth5L6RVEAg/review'
   404_title: '404 Error'
   404_text: 'We''re sorry, this page doesn''t exist.'

@@ -1,9 +1,9 @@
-<div class="size-lg">
+<div class="mx-auto size-lg w-4/5 lg:w-11/12">
     <div class="text-center mb-10">
         <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
             {{ service_title }}
         </h1>
-        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+        <p class="text-base font-light leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
             {{ service_description }}
         </p>
     </div>
@@ -31,9 +31,15 @@
         {{ /list }}
     </div>
 
+    <h3 class="text-3xl text-center text-black font-regular mt-6 lg:mt-24 mb-0">
+        At Parrotta Paving, there's no job too BIG or too SMALL.
+    </h3>   
     <button
-        class="flex mx-auto mt-16 text-white bg-red-600 border-0 py-2 px-8 focus:outline-none hover:bg-gray-900 rounded text-lg"
+        class="flex mx-auto mt-5 text-white bg-red-600 border-0 py-2 px-8 focus:outline-none hover:bg-gray-900 rounded text-lg"
+        onClick="
+            parent.location='/contact'" 
+            value='Make appointment'
     >
-        Get Started: Make an Appointment
+        Get in Touch
     </button>
 </div>

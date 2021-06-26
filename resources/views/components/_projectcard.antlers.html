@@ -1,0 +1,24 @@
+{{ if show_projects }}
+<div class="size-lg mt-24 lg:mt-24 bg-parrotta-red relative">
+  <div class="overflow-x-hidden homeswoop">  </div>
+  
+  
+  <div class="mb-40 negpageswoop">
+  <h3 class="relative text-3xl text-white text-center text-black font-regular" >Highlighted Projects</h3>
+ 
+  {{ collection:projects taxonomy_terms:contains="{ last_segment }" }}
+<div class="relative max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-6">
+  <div class="md:flex">
+    <div class="md:flex-shrink-0">
+      <img class="h-48 w-full object-cover md:w-48" src="{{images:0}}" alt="{{ alt }}">
+    </div>
+    <div class="p-8">
+      <div class="uppercase tracking-wide text-sm text-red-600 font-semibold">{{ taxonomy_terms }}{{title}}{{ if count < total_results }}, {{/if}}{{ /taxonomy_terms }}</div>
+      <span class="block mt-1 text-lg leading-tight font-medium text-black ">{{ title }} </span>
+      <p class="mt-2 text-gray-600">{{ project_description }}</p>
+    </div>
+  </div>
+</div>{{ /collection:projects }}
+</div>
+</div>
+{{ /if }}

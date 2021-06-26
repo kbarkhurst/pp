@@ -3,7 +3,7 @@
 {{# The desktop navigation. Hidden on smaller screen. Shown from md and up. #}}
 
 <nav class="hidden lg:block">
-    <ul class="flex space-x-8">
+    <ul class="flex space-x-8 text-black">
         {{ nav:main max_depth="2" include_home="true" }}
             <li
                 {{ if children }}
@@ -12,7 +12,7 @@
                 class="relative leading-none"
             >
                 <a
-                    class="flex items-center font-bold align-bottom text-sm uppercase tracking-wide hover:text-primary-600 
+                    class="flex items-center font-bold align-bottom text-md uppercase tracking-wide hover:text-primary-600 
                     
                     "
                     {{ if children }}
@@ -36,7 +36,7 @@
                 {{ if children }}
                     <ul
                         x-show="subnavOpen"
-                        class="absolute mt-2 p-3 bg-white space-y-3"
+                        class="absolute mt-2 p-3 bg-gray-100 space-y-3"
                         :aria-expanded="subnavOpen"
                         x-cloak
                     >
@@ -57,7 +57,7 @@
         {{ /nav:main }}
         <li class="relative leading-none -mt-1">
                                 <a
-                                id="phone"
+                                id="myphone"
                                 class=" whitespace-no-wrap text-md font-bold hover:text-primary-600"
                                 href="tel:{{ configuration:phone }}">
                                 <img src="/assets/phone_number.svg" width="200" /><span class="sr-only">{{ configuration:phone }}</span>
@@ -66,7 +66,7 @@
     </ul>
 </nav>
 
-{{# The mobile navigation. Hidden from md and up #}}
+{{# The mobile navigation. Hidden from lg and up #}}
 <nav class="lg:hidden">
     <button
         @click.prevent="mobileNavOpen = !mobileNavOpen"
@@ -74,21 +74,23 @@
         aria-label="Toggle menu"
         x-text="mobileNavOpen ? 'Close' : 'Menu'"
     ></button>
-
+    
     <ul
-        class="fixed z-10 inset-0 flex flex-col justify-center items-center space-y-8 bg-white overflow-auto scrolling-touch"
+        class="fixed z-10 inset-0 flex flex-col justify-center items-center space-y-10 text-lg bg-parrotta-red overflow-auto scrolling-touch"
         x-show="mobileNavOpen"
         x-cloak
     >
+    <li><a href="tel:{{ configuration:phone }}">
+        <img src="/assets/parrotta-logo-full.svg" width="200" alt="{{alt}}" class="mb-3" /></a></li>
         {{ nav:main max_depth="2" include_home="true" }}
             <li
                 {{ if children }}
                     x-data="{ mobileNavSubnavOpen: false }"
                 {{ /if }}
-                class="leading-none"
+                class="leading-none transition ease-in-out"
             >
                 <a
-                    class="flex items-center font-bold uppercase tracking-wide hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
+                    class="flex text-center items-center font-bold uppercase tracking-wide hover:text-black text-white "
                     {{ if children }}
                         href="#"
                         @click.prevent="mobileNavSubnavOpen = true"
@@ -99,7 +101,7 @@
                 >
                    {{ title }}
                    {{ if children }}
-                        <svg class="ml-1 w-2 text-neutral-800 stroke-current overflow-visible transform"
+                        <svg class="ml-3 w-2 text-white hover:text-black stroke-current overflow-visible transform "
                             :class="{ 'rotate-180': mobileNavSubnavOpen }"
                             aria-hidden="true"
                             stroke-width="16"
@@ -110,14 +112,14 @@
                 {{ if children }}
                     <ul
                         x-show="mobileNavSubnavOpen"
-                        class="mt-4 space-y-4"
+                        class="mt-6 space-y-8 bg-red-600 py-10 px-20"
                         :aria-expanded="mobileNavSubnavOpen"
                         x-cloak
                     >
                         {{ children }}
                             <li>
                                 <a
-                                    class="whitespace-no-wrap font-bold hover:text-primary-600 {{ is_current || is_parent ? 'text-primary-600' : 'text-neutral-800' }}"
+                                    class="whitespace-no-wrap text-white hover:text-black {{ is_current ? 'font-bold underline' : 'font-light' }}"
                                     href="{{ url }}">
                                     {{ title }}
                                 </a>

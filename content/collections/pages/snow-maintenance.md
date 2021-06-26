@@ -4,6 +4,24 @@ blueprint: page
 title: 'Snow Maintenance'
 page_builder:
   -
+    page_title: 'Snow Clearing and Maintenance'
+    page_description:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Reliable snow maintenance, just when you need it.'
+    type: service_header
+    enabled: true
+  -
+    image_gallery:
+      - snow-removal-in-morgantown.jpg
+      - commercial-parking-lots-snow-removal.jpg
+      - snow-removal-parrotta-paving-morgantown.jpg
+    type: image_gallery
+    enabled: true
+  -
     service_title: 'Snow Maintenance'
     service_description: 'Commercial snow clearing for schools, commercial properties, and residential neighborhoods'
     list:
@@ -20,5 +38,8 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1624473822
+updated_at: 1624659961
+show_service_area: true
+show_project_gallery: true
+call_to_action: true
 ---

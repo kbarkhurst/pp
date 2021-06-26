@@ -11,8 +11,18 @@ sections:
           validate:
             - required
       -
+        handle: project_description
+        field:
+          antlers: false
+          display: 'Project Description'
+          type: textarea
+          icon: textarea
+          listable: hidden
+      -
         handle: images
         field: common.images
+        config:
+          folder: projects
   sidebar:
     display: Sidebar
     fields:
@@ -24,3 +34,13 @@ sections:
           localizable: true
           validate:
             - required
+      -
+        handle: taxonomy_terms
+        field:
+          mode: default
+          taxonomies:
+            - services
+          display: 'Taxonomy Terms'
+          type: terms
+          icon: taxonomy
+          listable: hidden

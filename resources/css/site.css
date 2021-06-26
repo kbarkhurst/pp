@@ -7,6 +7,9 @@
 .bg-parrotta-red {
     background-color:#CE2028;
 }
+.negpageswoop {
+    margin-top:-500px;
+}
 .homeswoop {
     margin-top:-390px; background-image:url(/assets/swoop-small.svg);background-size:cover;background-repeat:no-repeat; width:100%; min-height:1000px; background-position:45% 0px; position:relative;
 }
@@ -20,7 +23,7 @@
 }
 .redbgswoop {
     background-image:url(/assets/bg-swoop-rectangle.svg);
-    background-size:cover;
+    background-size:contain;
     background-repeat:no-repeat;
     background-position:bottom center;
 }
@@ -34,7 +37,7 @@
     width:200px;
 }
 
-#phone {
+#myphone {
     background-image: url(/assets/phone_number.svg);
     background-repeat: no-repeat;
     background-size: contain;

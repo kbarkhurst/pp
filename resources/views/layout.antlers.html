@@ -14,7 +14,17 @@
         x-data="{ mobileNavOpen: false }"
         :class="{ 'no-scroll': mobileNavOpen }"
     >
-        {{ yield:google_tag_manager }} {{ partial:layout/header }} {{ template_content }} {{partial:layout/footer }}
+        {{ yield:google_tag_manager }} 
+        <div class="lg:hidden bg-parrotta-red h-10 text-white text-center">
+            <span class="inline-block align-baseline pt-2 text-lg hover:underline "><a href="tel:{{ configuration:phone }}">
+                Call {{ configuration:phone }}</span></a></div>
+
+        {{ partial:layout/header }} 
+        
+        {{ template_content }} 
+        
+        
+        {{partial:layout/footer }}
         <script src="{{ mix src='/js/site.js' }}"></script>
     </body>
 </html>

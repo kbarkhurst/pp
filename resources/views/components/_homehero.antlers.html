@@ -1,6 +1,3 @@
-<div class="lg:hidden bg-parrotta-red h-10 text-white text-center">
-    <span class="inline-block align-baseline pt-2 text-lg">Call 304.444444</span></div>
-
 <header id="animated-background" class="bg-local bg-no-repeat bg-center bg-cover relative" style="height:98vh;">
     <div class="fluid-container flex justify-between items-center">
         
@@ -26,32 +23,34 @@
             </h2>
             <button class="h-12 my-6 px-6 m-2 text-lg bg-white text-black rounded-lg shadow-md hover:bg-gray-900 hover:text-white" onClick="
             parent.location='/contact'" 
-            value='Get Quote'>
-                Get Quote
+            value='Request a Quote'>
+                Request a Quote
             </button>
             <section class="size-md container mx-auto my-8 my-4 px-4">
                 <div class="flex flex-wrap -mx-4">
                  
                     <div class="w-1/2 px-2 pb-4 mb-0 relative"> <a href="/asphalt">
                     <img class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md" src="/assets/asphalt.jpg" alt="">
+                    
                     <div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center md:text-5xl  text-white font-semibold parrotta-shadow">Asphalt</div>
                 </a></div>
                 
                     
 
                   <div class="w-1/2 px-2 pb-4 mb-0 h-full relative">
+                    <a href="/concrete">
                     <img class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md" src="/assets/concrete-by-parrota-paving-in-morgantown.jpg" alt="">
-                    <div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center md:text-5xl  text-white font-semibold parrotta-shadow">Concrete</div>
+                    <div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center md:text-5xl  text-white font-semibold parrotta-shadow">Concrete</div></a>
                     </div>
                     
                 
-                  <div class="w-1/3 px-2 relative"><img class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md" src="https://source.unsplash.com/random/1280x720" alt="">
-                    <div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center lg:text-5xl md:text-3xl text-white font-semibold parrotta-shadow">Demolition</div>
+                  <div class="w-1/3 px-2 relative "><a href="/demolition"><img class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md" src="/assets/demolition-services-in-morgantown.jpg" alt="">
+                    <div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center xl:text-3xl md:text-2xl text-white font-semibold parrotta-shadow">Demolition</div></a>
                 </div>
-                <div class="w-1/3 px-2 relative"><img class="inset-0 z-0 rounded shadow-md" src="https://source.unsplash.com/random/1280x720" alt="">
-                    <div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center lg:text-5xl md:text-3xl text-white font-semibold parrotta-shadow">Excavation</div></div>
-                  <div class="w-1/3 px-2 relative"><img class="inset-0 z-0 rounded shadow-md" src="/assets/site-development-contractor-west-virginia.jpg" alt="">
-                    <div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center lg:text-5xl md:text-3xl text-white font-semibold parrotta-shadow">Site Development</div></div>
+                <div class="w-1/3 px-2 relative"><a href="/excavation"><img class="inset-0 z-0 rounded shadow-md" src="/assets/excavation-services-in-morgantown.jpg" alt="">
+                    <div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center xl:text-3xl md:text-2xl text-white font-semibold parrotta-shadow">Excavation</div></a></div>
+                  <div class="w-1/3 px-2 relative"><a href="/complete-site-development"><img class="inset-0 z-0 rounded shadow-md" src="/assets/site-development-contractor-west-virginia.jpg" alt="">
+                    <div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center xl:text-3xl md:text-2xl text-white font-semibold parrotta-shadow">Site<br/>Development</div></a></div>
                 </div>
               </section>
 
@@ -61,7 +60,7 @@
             </h2>
             <p class="text-white text-lg">For over 60 years, Parrotta Paving has provided reliable, competitively-priced services to Morgantown, WV and surrounding areas. Learn more about our contracting services. Have questions? Give us a call at  <a href="tel:{{ configuration:phone }}" class="hover:underline">{{ configuration:phone }}</a>.</p>
             
-            <div class="mt-6 flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 mx-2">{{ links_for_services }}
+            <div class="mt-6 flex flex-wrap lg:w-5/5 sm:mx-auto sm:mb-2 mx-2">{{ links_for_services }}
                 <div class="p-2 sm:w-1/3 w-full">
                     <a href="{{ url }}" title="Learn more about {{ service }}">
                     <div class="bg-gray-200 hover:bg-gray-900 hover:text-white rounded flex p-4 h-full items-center">
@@ -89,3 +88,4 @@
     
 
 </section>
+{{ partial:components/testimonial}}

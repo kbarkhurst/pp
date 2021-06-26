@@ -4,15 +4,21 @@ without having to worry about margins or paddings. #}}
     
     {{ page_builder scope="block" }} {{ partial src="page_builder/{type}" }} 
     {{ /page_builder }}
-    
+     
+    {{ partial:components/projectcard}}
     
     {{ if show_project_gallery}} {{ partial:components/lightbox }}{{/if}}
     
-    {{ partial:components/card }} 
-    {{ if show_service_area}} {{partial:components/locations }}{{/if}}
     
+
+    
+    
+
     
     
     
     
 </main>
+{{ if show_service_area}} {{partial:components/locations }}{{/if}}
+{{ if call_to_action }}{{partial:components/card }}{{/if}}
+
