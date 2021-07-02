@@ -70,24 +70,26 @@
 <nav class="lg:hidden">
     <button
         @click.prevent="mobileNavOpen = !mobileNavOpen"
-        class="fixed z-20 w-16 h-16 flex justify-center items-center right-0 top-0 mt-safe mr-8 bg-black text-white text-md text-uppercase tracking-widest font-bold"
+        class="fixed z-20 w-16 h-16 flex justify-center items-center right-0 top-0 mt-safe mr-4 bg-black text-white text-md text-uppercase tracking-widest font-bold"
         aria-label="Toggle menu"
         x-text="mobileNavOpen ? 'Close' : 'Menu'"
     ></button>
+    <div class="fixed inset-0 z-10 items-center  bg-parrotta-red justify-center overflow-auto scrolling-auto"
+    x-show="mobileNavOpen"
+    x-cloak>
     
-    <ul
-        class="fixed z-10 inset-0 flex flex-col justify-center items-center space-y-10 text-lg bg-parrotta-red overflow-y-scroll overflow-auto scrolling-auto"
-        x-show="mobileNavOpen"
-        x-cloak
+    
+    <ul class="static space-y-8 flex flex-col justify-center my-10 text-lg overflow-y-scroll"
+        
     >
     <li><a href="tel:{{ configuration:phone }}">
-        <img src="/assets/parrotta-logo-full.svg" width="200" alt="{{alt}}" class="mb-3" /></a></li>
+        <img src="/assets/parrotta-logo-full.svg" width="200" alt="{{alt}}" class="mb-3 ml-1" /></a></li>
         {{ nav:main max_depth="2" include_home="true" }}
             <li
                 {{ if children }}
                     x-data="{ mobileNavSubnavOpen: false }"
                 {{ /if }}
-                class="leading-none transition ease-in-out"
+                class="ml-8 leading-none transition ease-in-out"
             >
                 <a
                     class="flex text-center items-center font-bold uppercase tracking-wide hover:text-black text-white "
@@ -112,7 +114,7 @@
                 {{ if children }}
                     <ul
                         x-show="mobileNavSubnavOpen"
-                        class="mt-6 space-y-8 bg-red-600 py-10 px-20"
+                        class="w-11/12 mt-6 space-y-6 bg-red-600 py-10 px-10"
                         :aria-expanded="mobileNavSubnavOpen"
                         x-cloak
                     >
@@ -131,4 +133,5 @@
         {{ /nav:main }}
         
     </ul>
+</div>
 </nav>
