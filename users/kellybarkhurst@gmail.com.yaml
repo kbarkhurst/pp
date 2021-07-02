@@ -2,3 +2,11 @@ name: Kelly
 super: true
 id: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
 password_hash: $2y$10$7R7fHZXXVDTHRzzhanf2WekRUGQVWb8FK1FiGkvoLx7GAv1zgq4A.
+preferences:
+  collections:
+    testimonials:
+      columns:
+        - title
+        - name
+        - date
+        - services
