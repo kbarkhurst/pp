@@ -1,6 +1,7 @@
 {{ if show_projects }}
-<div class="size-lg" style="margin-top:-150px;">
-<h3 class="text-3xl text-center text-red-700 font-regular px-3  mb-6">
+<div class="size-lg" id="selected-projects">
+  
+<h3 class="text-3xl text-center text-red-700 font-regular px-3  mb-6"><img src="/assets/paver.svg" class="mb-3 mx-auto" alt="{{ alt }}" width="100" />
   Quality, Consistent Work for Over 60+ Years
 </h3>  </div> 
 <div class="size-lg mt-24 lg:mt-24 bg-parrotta-red relative">
@@ -11,18 +12,30 @@
   <h3 class="relative text-3xl text-white text-center text-black font-regular " >Highlighted Projects</h3>
  
   {{ collection:projects taxonomy_terms:contains="{ last_segment }" }}
-<div class="relative max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-6">
+  {{ images }}
+      <a data-fslightbox="gallery-{{slug}}" title="View gallery" href="{{ url }}">{{ /images}}
+<div class="relative max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-6 hover:text-red-600 transform transition duration-500 hover:scale-105">
   <div class="md:flex">
     <div class="md:flex-shrink-0">
-      <img class="h-48 w-full object-cover md:w-48" src="{{images:0}}" alt="{{ alt }}">
+      
+        <img class="h-full w-full object-cover md:w-48" src="{{images:0}}" alt="{{ alt }}">
     </div>
     <div class="p-8">
       <div class="uppercase tracking-wide text-sm text-red-600 font-semibold">{{ taxonomy_terms }}{{title}}{{ if count < total_results }}, {{/if}}{{ /taxonomy_terms }}</div>
       <span class="block mt-1 text-lg leading-tight font-medium text-black ">{{ title }} </span>
-      <p class="mt-2 text-gray-600">{{ project_description }}</p>
+      <p class="mt-2 text-gray-600 font-light">{{ project_description }}</p>
+      <p class="mt-2 text-gray-600 font-light hover:text-red-600"> <svg class="h-6 w-6 inline mr-2 align-top" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>View gallery</p>
+      <!-- {{ images }}
+      <a data-fslightbox="gallery-{{slug}}" title="View More" href="{{ url }}">{{ /images}}
+        View more photos {{ images }}</a>{{ /images}} -->
+      
+      
     </div>
   </div>
-</div>{{ /collection:projects }}
+</div>{{ images }}</a>{{ /images}}{{ /collection:projects }}
 </div>
 </div>
 {{ /if }}
