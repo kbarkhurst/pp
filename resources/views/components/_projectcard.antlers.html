@@ -10,32 +10,49 @@
   
   <div class="mb-24 negpageswoop px-5">
   <h3 class="relative text-3xl text-white text-center text-black font-regular " >Highlighted Projects</h3>
- 
-  {{ collection:projects taxonomy_terms:contains="{ last_segment }" }}
-  {{ images }}
-      <a data-fslightbox="gallery-{{slug}}" title="View gallery" href="{{ url }}">{{ /images}}
-<div class="relative max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-6 hover:text-red-600 transform transition duration-500 hover:scale-105">
-  <div class="md:flex">
-    <div class="md:flex-shrink-0">
-      
-        <img class="h-full w-full object-cover md:w-48" src="{{images:0}}" alt="{{ alt }}">
-    </div>
-    <div class="p-8">
-      <div class="uppercase tracking-wide text-sm text-red-600 font-semibold">{{ taxonomy_terms }}{{title}}{{ if count < total_results }}, {{/if}}{{ /taxonomy_terms }}</div>
-      <span class="block mt-1 text-lg leading-tight font-medium text-black ">{{ title }} </span>
-      <p class="mt-2 text-gray-600 font-light">{{ project_description }}</p>
-      <p class="mt-2 text-gray-600 font-light hover:text-red-600"> <svg class="h-6 w-6 inline mr-2 align-top" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-      </svg>View gallery</p>
-      <!-- {{ images }}
-      <a data-fslightbox="gallery-{{slug}}" title="View More" href="{{ url }}">{{ /images}}
-        View more photos {{ images }}</a>{{ /images}} -->
-      
-      
-    </div>
-  </div>
-</div>{{ images }}</a>{{ /images}}{{ /collection:projects }}
+
+  <div class="projects mt-3">
+    
+    
+            {{ collection:projects taxonomy_terms:contains="{ last_segment }" limit="3"}}
+            <div class="slide">
+              <div>
+            {{ images }}<a data-fslightbox="gallery-{{slug}}" title="View gallery" href="{{ url }}">{{ /images}}
+
+                <div class="relative max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-6 hover:text-red-600 transform transition duration-500 hover:scale-105">
+                  <div class="md:flex">
+                    <div class="md:flex-shrink-0">
+                      
+                        <img class="h-full w-full object-cover md:w-48" src="{{images:0}}" alt="{{ alt }}">
+                    </div>
+                    <div class="p-8">
+                      <div class="uppercase tracking-wide text-sm text-red-600 font-semibold">{{ taxonomy_terms }}{{title}}{{ if count < total_results }}, {{/if}}{{ /taxonomy_terms }}</div>
+                      <span class="block mt-1 text-lg leading-tight font-medium text-black ">{{ title }} </span>
+                      <p class="mt-2 text-gray-600 font-light">{{ project_description }}</p>
+                      <p class="mt-2 text-gray-600 font-light hover:text-red-600"> <svg class="h-6 w-6 inline mr-2 align-top" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>View gallery</p>
+                    </div>
+                  </div>
+                </div>{{ images }}</a>{{ /images}}
+          </div>
+          {{ /collection:projects }}
+          
+        
+        </div></div>
+          <div id="controls" class="text-center mt-5 mb-10">
+            <button class="previous font-light hover:text-red-600 mx-5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+                  </svg>
+                  Prev</button>
+            <button class="next font-light hover:text-red-600 mx-5"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>Next</button>
+          </div>
+</div>
+</div>
 </div>
 </div>
 {{ /if }}

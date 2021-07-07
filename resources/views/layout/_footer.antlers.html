@@ -1,7 +1,8 @@
 {{# The sites footer rendered on each page. #}}
-<div class="bg-black text-center text-white py-4 uppercase"><ul class="list-none">
+<div class="bg-black text-center text-white py-4 uppercase">
+  <ul class="list-none space-x-6 leading-10 ">
     {{ nav:footer_nav }}
-      <li class="inline-block mr-5">
+      <li class="inline-block ">
         <a href="{{ url }}"{{ if is_current || is_parent }} class="current"{{ /if }}>
           {{ title }}
         </a>
@@ -13,9 +14,9 @@
         class="text-white bg-no-repeat"
         style="background-image:url('/assets/website-footer.svg'); background-size:300px; background-position:left bottom;"
     >
-        <div class="w-4/5 lg:w-11/12 mx-auto xl:px-30 pb-12 lg:px-30 md:px-10 sm:px-5 px-10">
-            <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 space-y-10 justify-start ">
-                <div class="sm:col-span-2 lg:col-span-4 xl:col-span-1 "><a href="/"><img src="/assets/parrotta-logo-full.svg" class="pr-4 mt-10 mx-auto" width="250"/></a></div>
+        <div class="w-4/5 lg:w-11/12 mx-auto xl:px-30 pb-12 py-md-30 lg:px-30 md:px-10 sm:px-5 px-10">
+            <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 space-y-10 justify-start font-normal">
+                <div class="sm:col-span-2 lg:col-span-4 xl:col-span-1 "><a href="/"><img src="/assets/parrotta-logo-full.svg" alt="{{ alt }}" class="pr-4 mt-10 mx-auto" width="250"/></a></div>
                 <div class="">
                     <p>
                         <span class="uppercase font-bold text-xl">Parrotta Paving</span>
@@ -39,7 +40,7 @@
                 </div>
                 <div class="mb-20 sm:mb-0">
                     <h2 class="uppercase font-bold text-xl">Why Choose Us?</h2>
-                    <ul class="list-disc list-inside">
+                    <ul class="list-disc list-outside ml-4">
                         <li class="my-2">Licensed and Insured</li>
                         <li class="my-2">FREE Estimates</li>
                         <li class="my-2">Competitive Pricing</li>

@@ -22,7 +22,7 @@
         {{ yield:google_tag_manager }} 
         <div class="lg:hidden bg-parrotta-red h-10 text-white text-center">
             <span class="inline-block align-baseline pt-2 text-lg hover:underline "><a href="tel:{{ configuration:phone }}">
-                Call {{ configuration:phone }}</span></a></div>
+                Call {{ configuration:phone }}</a></span></div>
 
         {{ partial:layout/header }} 
         
@@ -40,5 +40,15 @@
             nav: false, 
             autoHeight: true
           });</script>{{ /if}}
+          {{ if segment_1 == "asphalt" }}<script>
+            let slider = tns({
+                container: '.projects',
+                controlsContainer: '#controls',
+                prevButton: '.previous',
+                nextButton: '.next',
+                nav: false,
+                axis: 'vertical',
+                autoHeight: true
+              });</script>{{ /if}}
     </body>
 </html>
