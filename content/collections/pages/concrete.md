@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1624687885
+updated_at: 1625672526
 page_builder:
   -
     page_title: 'Concrete Contracting'
@@ -30,7 +30,7 @@ page_builder:
     enabled: true
   -
     service_title: 'Concrete Services'
-    service_description: 'Concrete services for residential, commercial, and industrial customers.'
+    service_description: 'Meeting all your concrete needs -- from quick repairs to complex residential, commercial, and industrial concrete projects.'
     type: services
     enabled: true
     list:

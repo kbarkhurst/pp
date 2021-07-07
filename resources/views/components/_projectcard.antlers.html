@@ -1,14 +1,14 @@
 {{ if show_projects }}
 <div class="size-lg" id="selected-projects">
   
-<h3 class="text-3xl text-center text-red-700 font-regular px-3  mb-6"><img src="/assets/paver.svg" class="mb-3 mx-auto" alt="{{ alt }}" width="100" />
+<h3 class="text-3xl text-center text-red-700 font-regular px-3 mb-6"><img src="/assets/paver.svg" class="mb-3 mx-auto" alt="{{ alt }}" width="100" />
   Quality, Consistent Work for Over 60+ Years
 </h3>  </div> 
 <div class="size-lg mt-24 lg:mt-24 bg-parrotta-red relative">
   <div class="overflow-x-hidden homeswoop">  </div>
   
   
-  <div class="mb-40 negpageswoop px-5">
+  <div class="mb-24 negpageswoop px-5">
   <h3 class="relative text-3xl text-white text-center text-black font-regular " >Highlighted Projects</h3>
  
   {{ collection:projects taxonomy_terms:contains="{ last_segment }" }}

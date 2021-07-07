@@ -38,7 +38,7 @@
                 {{ /fields }}
 
                 {{# Pulse button and disable upon sending. #}}
-                <div class="md:col-span-12 flex justify-end">
+                <div class="md:col-span-12 flex justify-end mb-16">
                     {{ partial:components/button tag="button" label="{ trans:strings.form_send }" attribute='x-bind:disabled="sending" x-bind:class="&#123;&#39;opacity-25 cursor-default&#39;: sending&#125;"' }}
                 </div>
                 <template x-if="success">

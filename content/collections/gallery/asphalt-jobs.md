@@ -13,8 +13,8 @@ gallery:
   - local-driveway-paving-residential.jpeg
   - residential-neighborhood-paving.jpg
   - paving-for-neighborhoods-residential.jpg
-  - residential-paving-and-asphalt-1624678412.JPG
+  - residential-paving-and-asphalt.JPG
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1624682422
+updated_at: 1625540623
 ---
 Explore a sampling of Parrotta Paving's asphalt contracting projects.

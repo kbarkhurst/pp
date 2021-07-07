@@ -5,8 +5,8 @@ title: 'University Town Centre'
 taxonomy_terms:
   - asphalt
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1625529148
-project_description: 'Add a description of what you did for this project. It can be one or two sentences long. Use whatever keywords you think are relevant.'
+updated_at: 1625670273
+project_description: 'Contracted through the Town of Granville for removal and replacement of deteriorated asphalt roadway areas and for complete milling of roadway and overlay with new asphalt.'
 images:
   - projects/DJI_0378.JPG
   - projects/DJI_0402.JPG
