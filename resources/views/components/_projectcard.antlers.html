@@ -1,7 +1,7 @@
 {{ if show_projects }}
 <div class="size-lg" id="selected-projects">
   
-<h3 class="text-3xl text-center text-red-700 font-regular px-3 mb-6"><img src="/assets/paver.svg" class="mb-3 mx-auto" alt="{{ alt }}" width="100" loading="lazy" />
+<h3 class="text-3xl text-center text-red-700 font-regular -mt-5 px-3 mb-12"><img src="/assets/paver.svg" class="mb-3 mx-auto" alt="{{ alt }}" width="100" loading="lazy" />
   Quality, Consistent Work for Over 60+ Years
 </h3>  </div> 
 <div class="size-lg mt-24 lg:mt-24 bg-parrotta-red relative">
@@ -26,7 +26,7 @@
                         <img class="h-full w-full object-cover md:w-48" src="{{images:0}}" alt="{{ alt }}" loading="lazy">
                         
                     </div>
-                    <div class="p-8">
+                    <div class="content-center p-8">
                       <div class="uppercase tracking-wide text-sm text-red-600 font-semibold">{{ taxonomy_terms }}{{title}}{{ if count < total_results }}, {{/if}}{{ /taxonomy_terms }}</div>
                       <span class="block mt-1 text-lg leading-tight font-medium text-black ">{{ title }} </span>
                       <p class="mt-2 text-gray-600 font-light">{{ project_description }}</p>

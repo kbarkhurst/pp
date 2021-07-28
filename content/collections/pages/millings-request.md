@@ -5,7 +5,7 @@ title: 'Millings Request'
 page_builder:
   -
     title: 'Request Asphalt Millings, Top Soil or Fill Dirt'
-    text: 'Please call us or request millings, top soil, or fill dirt using the form below. We''ll make sure to follow up with a call.'
+    text: 'Request millings, top soil, or fill dirt using the form below. We''ll give you a call to follow up with you, or you can call us directly.'
     form: millings
     type: form
     enabled: true
@@ -15,7 +15,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627498944
+updated_at: 1627501806
 show_service_area: true
 show_project_gallery: false
 call_to_action: false

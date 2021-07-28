@@ -11,6 +11,11 @@
 #selected-projects {
     margin-top:-150px;
 }
+@media (min-width: 640px) { 
+    #selected-projects {
+        margin-top:-220px;
+    }
+}
 .tns-outer button {
     background-color:red !important;
 }
