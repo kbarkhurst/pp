@@ -21,6 +21,7 @@ page_builder:
       - snow-removal-parrotta-paving-morgantown.jpg
     type: image_gallery
     enabled: true
+    first_image: snow-removal-in-morgantown.jpg
   -
     service_title: 'Snow Maintenance'
     service_description: 'Commercial snow clearing for schools, commercial properties, and residential neighborhoods'
@@ -38,8 +39,9 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1624659961
+updated_at: 1627492569
 show_service_area: true
 show_project_gallery: true
 call_to_action: true
+show_projects: false
 ---

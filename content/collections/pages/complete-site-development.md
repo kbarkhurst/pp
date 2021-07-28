@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1625674501
+updated_at: 1627492498
 page_builder:
   -
     page_title: 'Complete Site Development'
@@ -28,6 +28,7 @@ page_builder:
       - morgantown-commercial-site-development.jpg
       - site-development-clearing.jpg
       - site-development-contractor-west-virginia.jpg
+    first_image: morgantown-commercial-site-development.jpg
   -
     service_title: 'Commercial Land Site Development'
     service_description: 'As a complete site development contracting company, we''re equipped for any earth-moving job in the Morgantown and tri-state area.'
