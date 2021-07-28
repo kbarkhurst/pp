@@ -20,8 +20,8 @@
         :class="{ 'no-scroll': mobileNavOpen }"
     >
         {{ yield:google_tag_manager }} 
-        <div class="lg:hidden bg-parrotta-red h-10 text-white text-center">
-            <span class="inline-block align-baseline pt-2 text-lg hover:underline "><a href="tel:{{ configuration:phone }}">
+        <div class="lg:hidden bg-parrotta-red h-12 text-white text-center">
+            <span class="inline-block align-baseline pt-3 text-lg hover:underline "><a href="tel:{{ configuration:phone }}" title="Call Parrotta">
                 Call {{ configuration:phone }}</a></span></div>
 
         {{ partial:layout/header }} 

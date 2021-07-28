@@ -1,4 +1,4 @@
-<header id="animated-background" class="bg-local bg-no-repeat bg-center bg-cover relative" style="height:98vh;">
+<header id="animated-background" class="bg-local bg-no-repeat bg-center bg-cover relative">
     <div class="fluid-container flex justify-between items-center">
         
         {{ partial:components/logo width="200" }} {{ partial:navigation/main }}
@@ -21,7 +21,7 @@
             <h2 class="text-xl font-semibold text-white">
                 Driveways • Parking Lots • Excavating • Demolition • Site Development • Concrete • Seal Coating
             </h2>
-            <button class="h-12 my-6 px-6 m-2 text-lg bg-white text-black rounded-lg shadow-md hover:bg-gray-900 hover:text-white" onClick="
+            <button class="h-12 w-9/12 my-6 px-6 m-2 text-lg bg-white text-black rounded-lg shadow-md hover:bg-gray-900 hover:text-white" onClick="
             parent.location='/contact'" 
             value='Request a Quote'>
                 Request a Quote
@@ -29,28 +29,30 @@
             <section class="size-md container mx-auto my-8 my-4 px-4">
                 <div class="flex flex-wrap -mx-4">
                  
-                    <div class="w-1/2 px-2 pb-4 mb-0 relative"> <a href="/asphalt">
-                    <img class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md" src="{{ glide src='/assets/asphalt.jpg' width="512" height="413" }}" alt="{{ alt }}" loading="lazy">
+                    <div class="transform transition hover:scale-105 duration-700 ease-in-out w-1/2 px-2 pb-4 mb-0 relative"> 
+                        <a href="/asphalt">
+                        <img class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md" src="{{ glide src='/assets/asphalt.jpg' width="512" height="413" }}" alt="{{ alt }}" loading="lazy">
                     
-                    <div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center md:text-5xl  text-white font-semibold parrotta-shadow">Asphalt</div>
-                </a></div>
+                        <div class="md:opacity-0 md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center md:text-5xl  text-white font-semibold parrotta-shadow">Asphalt</div>
+                        </a>
+                    </div>
                 
                     
 
-                  <div class="w-1/2 px-2 pb-4 mb-0 h-full relative">
+                  <div class="transform transition hover:scale-105 duration-700 ease-in-out w-1/2 px-2 pb-4 mb-0 h-full relative">
                     <a href="/concrete">
                     <img class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md" src="{{ glide src='/assets/concrete-by-parrota-paving-in-morgantown.jpg' width='512' height='413' }}" alt="{{ alt }}" loading="lazy">
-                    <div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center md:text-5xl  text-white font-semibold parrotta-shadow">Concrete</div></a>
+                    <div class="md:opacity-0 md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center md:text-5xl  text-white font-semibold parrotta-shadow">Concrete</div></a>
                     </div>
                     
                 
-                  <div class="w-1/3 px-2 relative "><a href="/demolition"><img class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md" src="{{ glide src='/assets/demolition-services-in-morgantown.jpg' width='342' height='259' }}" alt="{{ alt }}">
-                    <div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center xl:text-3xl md:text-2xl text-white font-semibold parrotta-shadow">Demolition</div></a>
+                  <div class="transform transition hover:scale-105 duration-700 ease-in-out w-1/3 px-2 relative "><a href="/demolition"><img class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md" src="{{ glide src='/assets/demolition-services-in-morgantown.jpg' width='342' height='259' }}" alt="{{ alt }}">
+                    <div class="md:opacity-0 md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center xl:text-3xl md:text-2xl text-white font-semibold parrotta-shadow">Demolition</div></a>
                 </div>
-                <div class="w-1/3 px-2 relative"><a href="/excavation"><img class="inset-0 z-0 rounded shadow-md" src="{{ glide src='/assets/excavation-services-in-morgantown.jpg' width='342' height='259' }}" alt="{{ alt }}" loading="lazy">
-                    <div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center xl:text-3xl md:text-2xl text-white font-semibold parrotta-shadow">Excavation</div></a></div>
-                  <div class="w-1/3 px-2 relative"><a href="/complete-site-development"><img class="inset-0 z-0 rounded shadow-md" src="{{ glide src='/assets/site-development-contractor-west-virginia.jpg' width='342' height='259' }}" alt="{{ alt }}" loading="lazy">
-                    <div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center xl:text-3xl md:text-2xl text-white font-semibold parrotta-shadow">Site<br/>Development</div></a></div>
+                <div class="transform transition hover:scale-105 duration-700 ease-in-out w-1/3 px-2 relative"><a href="/excavation"><img class="inset-0 z-0 rounded shadow-md" src="{{ glide src='/assets/excavation-services-in-morgantown.jpg' width='342' height='259' }}" alt="{{ alt }}" loading="lazy">
+                    <div class="transform md:opacity-0 md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center xl:text-3xl md:text-2xl text-white font-semibold parrotta-shadow">Excavation</div></a></div>
+                  <div class="transform transition hover:scale-105 duration-700 ease-in-out w-1/3 px-2 relative"><a href="/complete-site-development"><img class="inset-0 z-0 rounded shadow-md" src="{{ glide src='/assets/site-development-contractor-west-virginia.jpg' width='342' height='259' }}" alt="{{ alt }}" loading="lazy">
+                    <div class="md:opacity-0 md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center xl:text-3xl md:text-2xl text-white font-semibold parrotta-shadow">Site<br/>Development</div></a></div>
                 </div>
               </section>
 

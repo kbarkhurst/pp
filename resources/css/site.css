@@ -4,7 +4,10 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
-  
+ 
+#animated-background {
+    height:96vh !important;
+}
 #selected-projects {
     margin-top:-150px;
 }
@@ -23,16 +26,20 @@
 .homecontent {
     margin-top:-600px;
 }
+
 @media (min-width: 640px) { 
-.homecontent {
-    margin-top:-500px;
-}
-.redbgswoop {
-    background-image:url(/assets/bg-swoop-rectangle.svg);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:bottom center;
-}
+    #animated-background {
+        height:98vh !important;
+    }
+    .homecontent {
+        margin-top:-500px;
+    }
+    .redbgswoop {
+        background-image:url(/assets/bg-swoop-rectangle.svg);
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:bottom center;
+    }
 }
 
 .parrotta-shadow {
