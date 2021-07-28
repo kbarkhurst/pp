@@ -1,4 +1,6 @@
-data: {  }
+data:
+  alt: 'Excavation services and demolition'
+  focus: 67-25-1
 size: 714875
 last_modified: 1624643518
 width: 1000

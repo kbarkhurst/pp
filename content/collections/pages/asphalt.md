@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1624685412
+updated_at: 1627488504
 page_builder:
   -
     page_title: 'Asphalt and Paving'
@@ -28,6 +28,7 @@ page_builder:
       - local-asphalt-company.jpg
       - asphalt-contractor-local.jpg
       - 1076-1200x800.jpg
+    first_image: local-asphalt-company.jpg
   -
     type: services
     enabled: true

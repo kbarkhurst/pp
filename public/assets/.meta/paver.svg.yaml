@@ -1,4 +1,5 @@
-data: {  }
+data:
+  alt: 'Paving icon'
 size: 43731
 last_modified: 1625525196
 width: '201.37165'

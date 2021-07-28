@@ -1,6 +1,7 @@
-data: {  }
-size: 1080121
-last_modified: 1624668333
+data:
+  alt: 'Residential neighborhood paving'
+size: 273270
+last_modified: 1625556592
 width: 1000
 height: 750
 mime_type: image/jpeg

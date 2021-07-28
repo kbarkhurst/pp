@@ -1,6 +1,7 @@
-data: {  }
-size: 144096
-last_modified: 1624552673
+data:
+  alt: 'Texture of asphalt/pavement'
+size: 60606
+last_modified: 1625556592
 width: 300
 height: 200
 mime_type: image/jpeg

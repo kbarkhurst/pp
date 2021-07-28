@@ -1,4 +1,6 @@
-data: {  }
+data:
+  alt: 'Parrotta Paving services map'
+  focus: 50-45-1
 size: 28932
 last_modified: 1624386378
 width: 351

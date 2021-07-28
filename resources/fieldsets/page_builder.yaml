@@ -18,6 +18,17 @@ fields:
                 display: 'Image Gallery'
                 max_files: 3
                 instructions: '3 images shown for this page'
+            -
+              handle: first_image
+              field:
+                mode: grid
+                restrict: false
+                allow_uploads: true
+                display: 'First Image'
+                type: assets
+                icon: assets
+                listable: hidden
+                max_files: 1
         services:
           display: Services
           fields:
