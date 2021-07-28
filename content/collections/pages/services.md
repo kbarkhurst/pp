@@ -1,7 +1,7 @@
 ---
-id: e35a4002-107d-44be-8892-8be4621a919d
+id: e246dcdd-7476-48cd-a34b-f1a7815013f0
 blueprint: page
-title: 'Get in Touch'
+title: Services
 show_service_area: false
 show_project_gallery: false
 call_to_action: false
@@ -11,7 +11,7 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-redirect: /contact/appointment
+redirect: services/asphalt
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627505823
+updated_at: 1627505682
 ---

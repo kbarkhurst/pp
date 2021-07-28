@@ -12,7 +12,7 @@
                 class="relative leading-none"
             >
                 <a
-                    class="flex items-center font-bold align-bottom text-md uppercase tracking-wide hover:text-primary-600 
+                    class="flex items-center font-bold align-bottom text-md uppercase tracking-wide hover:text-primary-600 {{ is_parent ? 'text-primary-600' : 'text-neutral-800' }} 
                     "
                     {{ if children }}
                         href="#"
