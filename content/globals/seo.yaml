@@ -2,8 +2,11 @@ title: SEO
 data:
   title_separator: '|'
   site_name: 'Parrotta Paving'
-  json_ld_type: none
+  json_ld_type: organization
+  organization_name: 'Parrotta Paving'
+  organization_logo: parrotta-organizational-logo.jpg
   breadcrumbs: false
+  og_image: parrotta-social-og-image.jpg
   sitemap_collections:
     - pages
   use_google_site_verification: false

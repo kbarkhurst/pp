@@ -135,9 +135,11 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1625671852
+updated_at: 1627498808
 show_service_area: false
 show_project_gallery: false
 call_to_action: false
 show_projects: false
+seo_title: 'Parrotta Paving | Asphalt, Paving, Concrete Contractor'
+seo_description: 'For 60+ Years, Parrotta Paving has been making offers you can''t refuse. We''ve built our business on repeat residential, commercial, and industrial customers.'
 ---

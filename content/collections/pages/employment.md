@@ -20,9 +20,11 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1625533944
+updated_at: 1627498929
 show_service_area: false
 show_project_gallery: false
 call_to_action: false
 show_projects: false
+seo_title: 'Work at Parrotta Paving - We''re Hiring'
+seo_description: 'If you''re interested in a position at Parrotta, please give us a call 304-292-0905, or fill out our employment form, and we''ll call you to set up a meeting.'
 ---

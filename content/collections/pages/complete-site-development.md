@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627492498
+updated_at: 1627496622
 page_builder:
   -
     page_title: 'Complete Site Development'
@@ -59,4 +59,6 @@ show_service_area: true
 show_project_gallery: false
 call_to_action: true
 show_projects: true
+seo_title: 'Complete Site Development for Morgantown and Surrounding Areas'
+seo_description: 'Parrotta Paving is your local experienced partner for commercial complete site development projects. Call us today at 304-292-0905.'
 ---

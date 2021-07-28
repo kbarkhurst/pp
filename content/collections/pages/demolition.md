@@ -37,9 +37,11 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627492530
+updated_at: 1627496866
 show_service_area: true
 show_project_gallery: false
 call_to_action: true
 show_projects: false
+seo_title: 'Demolition Services: Interior, Exterior and Selective'
+seo_description: 'You can trust Parrotta Paving''s experience for all your demolition needs: interior demolition (gutting), structural demolition, and selective demolition.'
 ---

@@ -41,9 +41,11 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627492582
+updated_at: 1627498706
 show_service_area: true
 show_project_gallery: false
 call_to_action: true
 show_projects: false
+seo_title: 'Trucking - Dirt, Concrete, Stone, Millings'
+seo_description: 'Parrotta Paving offers reliable trucking for dirt, concrete, stone, millings, and more. Give us a call for estimates, 304-292-0905.'
 ---

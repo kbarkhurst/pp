@@ -55,9 +55,11 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627492548
+updated_at: 1627498595
 show_service_area: true
 show_project_gallery: false
 call_to_action: true
 show_projects: true
+seo_title: 'Complete site development | Excavating'
+seo_description: 'More than just paving, Parrotta is your local partner for excavating and full site development -- clearing/grubbing, grading, slip repair, and more!'
 ---

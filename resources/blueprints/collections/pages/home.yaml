@@ -62,7 +62,7 @@ sections:
           type: toggle
           icon: toggle
           width: 33
-          listable: hidden    
+          listable: hidden
   sidebar:
     display: Sidebar
     fields:
@@ -83,3 +83,8 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+  seo:
+    display: SEO
+    fields:
+      -
+        import: seo
