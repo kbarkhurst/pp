@@ -53,7 +53,9 @@ return [
     */
 
     'exclude' => [
-        //
+        '/contact/appointment',
+        '/contact/employment',
+        '/contact/millings-request',
     ],
 
     /*
