@@ -26,7 +26,7 @@
     margin-top:-500px;
 }
 .homeswoop {
-    margin-top:-390px; background-image:url(/assets/swoop-small.svg);background-size:cover;background-repeat:no-repeat; width:100%; min-height:1000px; background-position:45% 0px; position:relative;
+    margin-top:-420px; background-image:url(/assets/swoop-small.svg);background-size:cover;background-repeat:no-repeat; width:100%; min-height:1000px; background-position:45% 0px; position:relative;
 }
 .homecontent {
     margin-top:-600px;
@@ -35,6 +35,9 @@
 @media (min-width: 640px) { 
     #animated-background {
         height:98vh !important;
+    }
+    .homeswoop {
+        margin-top:-390px;
     }
     .homecontent {
         margin-top:-500px;

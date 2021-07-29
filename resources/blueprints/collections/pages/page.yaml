@@ -48,6 +48,18 @@ sections:
           icon: toggle
           width: 25
           listable: hidden
+      -
+        handle: banner_image
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Banner Image'
+          type: assets
+          icon: assets
+          listable: hidden
   seo:
     display: SEO
     fields:

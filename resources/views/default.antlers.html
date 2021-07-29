@@ -10,19 +10,12 @@ without having to worry about margins or paddings. #}}
     
     {{ if show_project_gallery}} {{ partial:components/lightbox }}{{/if}}
     
-    
-
-    
-    
-
-    
-    
-    
-    
 </main>{{/if}}
 
-{{ partial:snippets/background_image image="/assets/lineup.JPG" class="trucks" }}
-<div class="trucks w-full border-t-4 border-b-4 border-gray-800 bg-cover" style="height:300px;"></div>
+
+{{ partial:snippets/background_image image="{{banner_image}}" class="banner-{{slug}}" }}
+<div class="banner-{{slug}} shadow-inner w-full border-b-2 border-t-2 border-gray-300 bg-cover" style="height:300px;"></div>
+
 
 {{ if show_service_area}} {{partial:components/locations }}{{/if}}
 {{ if call_to_action }}{{partial:components/card }}{{/if}}

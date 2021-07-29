@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627496744
+updated_at: 1627511659
 page_builder:
   -
     page_title: 'Concrete Contracting'
@@ -58,4 +58,5 @@ call_to_action: true
 show_projects: true
 seo_title: 'Local Concrete Contracting | Morgantown, WV |'
 seo_description: 'Parrotta Paving''s experienced commercial, industrial and residential concrete contracting is for installation and maintenance. Give us a call or schedule a quote online today.'
+banner_image: banners/concrete-contractor-in-morgantown.jpg
 ---

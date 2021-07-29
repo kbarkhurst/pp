@@ -63,6 +63,17 @@ sections:
           icon: toggle
           width: 33
           listable: hidden
+      -
+        handle: banner_image
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Banner Image'
+          type: assets
+          icon: assets
+          listable: hidden
   sidebar:
     display: Sidebar
     fields:

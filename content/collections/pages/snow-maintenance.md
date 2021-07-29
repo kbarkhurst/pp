@@ -39,11 +39,12 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627498656
+updated_at: 1627510657
 show_service_area: true
 show_project_gallery: true
 call_to_action: true
 show_projects: false
 seo_title: 'Snow Maintenance and Plowing | Commercial and Residential'
 seo_description: 'Parrotta provides reliable snow maintenance, just when you need it. Give us a call for estimates, 304-292-0905.'
+banner_image: banners/snow-removal-maintenance.jpg
 ---

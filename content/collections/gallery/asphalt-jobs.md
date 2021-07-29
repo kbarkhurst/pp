@@ -5,7 +5,6 @@ title: 'Local Asphalt Contracting'
 gallery:
   - projects/after-residential-driveways-near-morgantown-wv.jpg
   - projects/before-residential-driveways-near-morgantown-wv.jpg
-  - local-driveway-paving-residential-1624036938.jpeg
   - asphalt-base-repair-asphalt-patching.jpg
   - city-street-paving.jpg
   - wvu-football-asphalt-tunnel.jpg
@@ -14,7 +13,12 @@ gallery:
   - residential-neighborhood-paving.jpg
   - paving-for-neighborhoods-residential.jpg
   - residential-paving-and-asphalt.JPG
+  - residential-driveway-paving.jpg
+  - driveway-paving.jpg
+  - parking-lot-paving.jpg
+  - asphalt-golf-paths.jpg
+  - driveway-paving-for-residents.jpg
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1625540623
+updated_at: 1627515774
 ---
 Explore a sampling of Parrotta Paving's asphalt contracting projects.

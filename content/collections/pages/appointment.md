@@ -15,11 +15,12 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627505379
+updated_at: 1627510087
 show_service_area: false
 show_project_gallery: false
 call_to_action: false
 show_projects: false
 seo_title: 'Residential, Commercial, and Industrial'
 seo_description: 'At Parrotta, there''s no job too small, or too large! Get in touch with us to get your FREE estimate. Use our online form or call us at 304-292-0905.'
+banner_image: banners/asphalt-banner.jpg
 ---
