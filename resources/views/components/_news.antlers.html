@@ -1,0 +1,28 @@
+
+<section class="mt-3 w-full bg-gradient-to-b from-gray-200 to-transparent py-10 grid grid-cols-12 gap-y-4">
+  <div class="size-lg">
+    <span class="prose"><h2 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-0 text-center mb-3">Parrotta Paving In the News
+       </h2></span>
+      
+       <!-- <div class="masonry-wrapper">
+        <div class="masonry">
+            
+          {{ collection from="news" }}
+                    <div class="masonry-item">
+                      <img src="{{ glide:image }}" alt="{{alt}}">
+          <small class="text-center">{{ content }}</small>
+                    </div>{{ /collection }}
+                  </div>
+                </div> -->
+       
+       
+       <div class="p-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+        {{ collection from="news" }}
+        <a href="{{link}}" target="_blank"><div class="flex-initial">
+          <img src="{{ glide:image }}" alt="{{alt}}">
+          <small class="text-center my-3">{{ content }}</small>
+        </div></a>{{ /collection }}
+    </div>
+  </div>
+      </section>
+      

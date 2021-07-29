@@ -1,11 +1,11 @@
-title: Reviews
+title: News
 template: default
 layout: layout
 revisions: false
+date: true
 sort_dir: asc
 date_behavior:
   past: public
   future: private
 structure:
   root: false
-  max_depth: 1
