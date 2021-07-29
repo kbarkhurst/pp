@@ -40,15 +40,17 @@
             nav: false, 
             autoHeight: true
           });</script>{{ /if}}
-          {{ if segment_1 == "asphalt" }}<script>
+          <script>
             let slider = tns({
                 container: '.projects',
-                controlsContainer: '#controls',
-                prevButton: '.previous',
-                nextButton: '.next',
-                nav: false,
+                controlsPosition: 'bottom',
+                controls: true,
+                // controlsContainer: '#controls',
+                // prevButton: '.previous',
+                // nextButton: '.next',
+                nav: true,
                 axis: 'vertical',
-                autoHeight: true
-              });</script>{{ /if}}
+                autoHeight: false
+              });</script>
     </body>
 </html>

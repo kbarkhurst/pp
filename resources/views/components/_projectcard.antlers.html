@@ -1,9 +1,6 @@
 {{ if show_projects }}
 <div class="size-lg" id="selected-projects">
-  
-<h3 class="text-3xl text-center text-red-700 font-regular -mt-5 px-3 mb-12"><img src="/assets/paver.svg" class="mb-3 mx-auto" alt="{{ alt }}" width="100" loading="lazy" />
-  Quality, Consistent Work for Over 60+ Years
-</h3>  </div> 
+</div>  
 <div class="size-lg mt-24 lg:mt-24 bg-parrotta-red relative">
   <div class="overflow-x-hidden homeswoop">  </div>
   
@@ -11,13 +8,12 @@
   <div class="mb-24 negpageswoop px-5">
   <h3 class="relative text-3xl text-white text-center text-black font-regular " >Highlighted Projects</h3>
 
-  <div class="projects mt-3">
-    
-    
-            {{ collection:projects taxonomy_terms:contains="{ last_segment }" limit="3"}}
+  <div class="projects mt-3 pb-12">
+            {{ collection:projects taxonomy_terms:contains="{ last_segment }" limit="2"}}
             <div class="slide">
               <div>
-            {{ images }}<a data-fslightbox="gallery-{{slug}}" title="View gallery" href="{{ url }}">{{ /images}}
+                <a data-fslightbox="gallery-{{slug}}" title="View gallery" href="#see">
+            {{ images }}<img src="{{url}}" id="see">{{ /images}}
 
                 <div class="relative max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-6 hover:text-red-600 transform transition duration-500 hover:scale-105">
                   <div class="md:flex">
@@ -36,12 +32,12 @@
                       </svg>View gallery</p>
                     </div>
                   </div>
-                </div>{{ images }}</a>{{ /images}}
+                </div></a>
           </div>
           {{ /collection:projects }}
           
         
-        </div></div>
+        </div>
           <div id="controls" class="text-center mt-5 mb-10">
             <button class="previous font-light hover:text-red-600 mx-5">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -57,3 +53,12 @@
 </div>
 </div>
 {{ /if }}
+<!-- <script>
+  const lightbox = new FsLightbox();
+
+// set up props, like sources, types, events etc.
+lightbox.props.sources = ['/assets/projects/DJI_0012.JPG', '/assets/projects/menards-parking-lot-commercial-paving.jpg'];
+lightbox.props.onInit = () => console.log('Lightbox initialized!');
+
+lightbox.open();
+</script> -->

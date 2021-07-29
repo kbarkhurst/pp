@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627564489
+updated_at: 1627572338
 page_builder:
   -
     page_title: 'Complete Site Development'
@@ -48,7 +48,7 @@ page_builder:
           values:
             type: video
             youtube_url: 'https://www.youtube.com/embed/videoseries?list=PLumyfDTOC-q5yziybqSGd6caVLe0UssMR'
-            size: md
+            size: xl
       -
         type: paragraph
     type: article

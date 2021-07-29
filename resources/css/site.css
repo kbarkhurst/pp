@@ -519,11 +519,12 @@
     will-change: transform;
 }
 
-/*tns slider*/
+/*tns slider: http://ganlanyuan.github.io/tiny-slider/*/
 
 .tns-nav {
     text-align: center;
     margin: 10px 0;
+    
   }
   .tns-nav > [aria-controls] {
     width: 9px;

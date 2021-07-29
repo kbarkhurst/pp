@@ -6,7 +6,8 @@ without having to worry about margins or paddings. #}}
     {{ page_builder scope="block" }} {{ partial src="page_builder/{type}" }} 
     {{ /page_builder }}
      
-    {{ partial:components/projectcard}}
+    {{ partial:components/cta_button }}
+    {{ partial:components/projectcard }}
     
     {{ if show_project_gallery}} {{ partial:components/lightbox }}{{/if}}
     

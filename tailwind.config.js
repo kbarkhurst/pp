@@ -441,7 +441,7 @@ module.exports = {
         '.outer-grid': {
           width: '100%',
           display: 'grid',
-          rowGap: theme('spacing.10'),
+          rowGap: theme('spacing.6'),
           paddingTop: theme('spacing.10'),
           paddingBottom: theme('spacing.0'),
           // If the last child of the outer grid is full width (e.g. when it has a full width 
