@@ -24,7 +24,7 @@ page_builder:
     first_image: trucking-stones-rocks-site-development.jpg
   -
     service_title: 'Trucking Services'
-    service_description: 'Parrotta Paving''s fleet of trucks ranges from single axle dumps to tri-axle dump trucks and can provide contract hauling services for any size job. We also haul <a href="/millings-request" class="underline">Millings, Top Soil and Fill Dirt</a> via our request form.'
+    service_description: 'Parrotta Paving''s fleet of trucks ranges from single axle dumps to tri-axle dump trucks and can provide contract hauling services for any size job. We also haul <a href="/contact/millings-request" class="underline">Millings, Top Soil and Fill Dirt</a> via our request form.'
     list:
       - Dirt
       - Stone

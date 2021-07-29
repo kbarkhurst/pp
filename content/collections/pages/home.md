@@ -14,25 +14,25 @@ show_project_gallery: false
 links_for_services:
   -
     service: Asphalt
-    url: /asphalt
+    url: /services/asphalt
   -
     service: Concrete
-    url: /concrete
+    url: /services/concrete
   -
     service: 'Site Development'
-    url: /complete-site-development
+    url: /services/complete-site-development
   -
     service: Demolition
-    url: /demolition
+    url: /services/demolition
   -
     service: Excavation
-    url: /excavation
+    url: /services/excavation
   -
     service: 'Snow Maintenance'
-    url: /snow-maintenance
+    url: /services/snow-maintenance
   -
     service: Trucking
-    url: /trucking
+    url: /services/trucking
 call_to_action: true
 seo_title: 'Paving, Concrete, Full Site Development | Morgantown Contractor'
 seo_description: 'For over 60 years, Morgantown has trusted Parrotta Paving for professional residential, commercial and industrial contracting. Give us a call 304-292-0905.'
