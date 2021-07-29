@@ -18,7 +18,9 @@ gallery:
   - parking-lot-paving.jpg
   - asphalt-golf-paths.jpg
   - driveway-paving-for-residents.jpg
+  - industrial-commercial-asphalt.jpg
+  - paving-by-the-powerplant.jpg
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627515774
+updated_at: 1627519357
 ---
 Explore a sampling of Parrotta Paving's asphalt contracting projects.
