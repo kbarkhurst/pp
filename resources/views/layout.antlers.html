@@ -21,7 +21,7 @@
     >
         {{ yield:google_tag_manager }} 
         <div class="lg:hidden bg-parrotta-red h-12 text-white text-center">
-            <span class="inline-block align-baseline pt-3 text-lg hover:underline "><a href="tel:{{ configuration:phone }}" title="Call Parrotta">
+            <span class="inline-block align-baseline pt-3 text-xl hover:underline "><a href="tel:{{ configuration:phone }}" title="Call Parrotta">
                 Call {{ configuration:phone }}</a></span></div>
 
         {{ partial:layout/header }} 
@@ -40,10 +40,10 @@
             nav: false, 
             autoHeight: true
           });</script>{{ /if}}
-          <script>
+          <!-- <script>
             let slider = tns({
                 container: '.projects',
-                controlsPosition: 'bottom',
+                controlsPosition: 'top',
                 controls: true,
                 // controlsContainer: '#controls',
                 // prevButton: '.previous',
@@ -51,6 +51,6 @@
                 nav: true,
                 axis: 'vertical',
                 autoHeight: false
-              });</script>
+              });</script> -->
     </body>
 </html>

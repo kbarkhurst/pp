@@ -11,6 +11,9 @@
 #selected-projects {
     margin-top:-150px;
 }
+/* .projects {
+    max-height:1000px;
+} */
 @media (min-width: 640px) { 
     #selected-projects {
         margin-top:-220px;
