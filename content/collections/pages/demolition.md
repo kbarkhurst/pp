@@ -15,13 +15,11 @@ page_builder:
     type: service_header
     enabled: true
   -
-    image_gallery:
-      - demolition-company.jpg
-      - demolition-services-in-morgantown.jpg
-      - demolition-structural-gutting.jpg
     type: image_gallery
     enabled: true
-    first_image: demolition-company.jpg
+    first_image: demolition-and-trucking-services.jpg
+    second_image: demolition-services-in-morgantown.jpg
+    third_image: demolition-structural-gutting.jpg
   -
     service_title: 'Demolition Services'
     service_description: 'Morgantown area residential, commercial, and industrial demo services.'
@@ -37,11 +35,12 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627496866
+updated_at: 1627564875
 show_service_area: true
 show_project_gallery: false
 call_to_action: true
 show_projects: false
 seo_title: 'Demolition Services: Interior, Exterior and Selective'
 seo_description: 'You can trust Parrotta Paving''s experience for all your demolition needs: interior demolition (gutting), structural demolition, and selective demolition.'
+banner_image: banners/demolition-banner.jpg
 ---

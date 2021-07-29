@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627514448
+updated_at: 1627564489
 page_builder:
   -
     page_title: 'Complete Site Development'
@@ -24,11 +24,9 @@ page_builder:
   -
     type: image_gallery
     enabled: true
-    image_gallery:
-      - morgantown-commercial-site-development.jpg
-      - site-development-clearing.jpg
-      - site-development-contractor-west-virginia.jpg
-    first_image: morgantown-commercial-site-development.jpg
+    first_image: contracting-for-site-development.jpg
+    second_image: site-development-clearing.jpg
+    third_image: site-development-contractor-west-virginia.jpg
   -
     service_title: 'Commercial Land Site Development'
     service_description: 'As a complete site development contracting company, we''re equipped for any earth-moving job in the Morgantown and tri-state area.'
@@ -61,4 +59,5 @@ call_to_action: true
 show_projects: true
 seo_title: 'Complete Site Development for Morgantown and Surrounding Areas'
 seo_description: 'Parrotta Paving is your local experienced partner for commercial complete site development projects. Call us today at 304-292-0905.'
+banner_image: banners/site-development-banner.jpg
 ---

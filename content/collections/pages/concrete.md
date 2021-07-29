@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627511659
+updated_at: 1627565314
 page_builder:
   -
     page_title: 'Concrete Contracting'
@@ -22,13 +22,11 @@ page_builder:
     type: service_header
     enabled: true
   -
-    image_gallery:
-      - experienced-employees-at-parrotta.jpg
-      - concrete-wall-local-contractor.jpg
-      - concrete-and-retaining-walls-in-morgantown-west-virginia.JPG
     type: image_gallery
     enabled: true
-    first_image: experienced-employees-at-parrotta.jpg
+    first_image: concrete-sidewalk-local-contracting.jpg
+    second_image: concrete-wall-local-contractor.jpg
+    third_image: concrete-and-retaining-walls-in-morgantown-west-virginia.JPG
   -
     service_title: 'Concrete Services'
     service_description: 'Meeting all your concrete needs -- from quick repairs to complex residential, commercial, and industrial concrete projects.'
@@ -58,5 +56,5 @@ call_to_action: true
 show_projects: true
 seo_title: 'Local Concrete Contracting | Morgantown, WV |'
 seo_description: 'Parrotta Paving''s experienced commercial, industrial and residential concrete contracting is for installation and maintenance. Give us a call or schedule a quote online today.'
-banner_image: banners/concrete-contractor-in-morgantown.jpg
+banner_image: banners/concrete-banner.jpg
 ---

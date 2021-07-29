@@ -15,13 +15,11 @@ page_builder:
     type: service_header
     enabled: true
   -
-    image_gallery:
-      - trucking-stones-rocks-site-development.jpg
-      - trucking-hauling-by-parrotta-paving.jpg
-      - demolition-and-trucking-services.jpg
     type: image_gallery
     enabled: true
-    first_image: trucking-stones-rocks-site-development.jpg
+    first_image: hauling-trucking-millings-parrotta.jpg
+    second_image: trucking-stones-rocks-site-development.jpg
+    third_image: contract-trucking-in-morgantown.jpg
   -
     service_title: 'Trucking Services'
     service_description: 'Parrotta Paving''s fleet of trucks ranges from single axle dumps to tri-axle dump trucks and can provide contract hauling services for any size job. We also haul <a href="/contact/millings-request" class="underline">Millings, Top Soil and Fill Dirt</a> via our request form.'
@@ -41,11 +39,12 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627498706
+updated_at: 1627563722
 show_service_area: true
 show_project_gallery: false
 call_to_action: true
 show_projects: false
 seo_title: 'Trucking - Dirt, Concrete, Stone, Millings'
 seo_description: 'Parrotta Paving offers reliable trucking for dirt, concrete, stone, millings, and more. Give us a call for estimates, 304-292-0905.'
+banner_image: banners/trucking-banner.jpg
 ---

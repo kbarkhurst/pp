@@ -29,6 +29,31 @@ fields:
                 icon: assets
                 listable: hidden
                 max_files: 1
+                width: 33
+            -
+              handle: second_image
+              field:
+                mode: grid
+                restrict: false
+                allow_uploads: true
+                max_files: 1
+                display: 'Second Image'
+                type: assets
+                icon: assets
+                width: 33
+                listable: hidden
+            -
+              handle: third_image
+              field:
+                mode: grid
+                restrict: false
+                allow_uploads: true
+                display: 'Third Image'
+                type: assets
+                icon: assets
+                width: 33
+                listable: hidden
+                max_files: 1
         services:
           display: Services
           fields:
