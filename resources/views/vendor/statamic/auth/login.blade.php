@@ -3,9 +3,9 @@
 @section('title', __('Log in'))
 
 @section('content')
-<!-- <div class="logo pt-7">
-    @svg('statamic-wordmark')
-</div> -->
+<div class="logo pt-7">
+    <!-- @svg('statamic-wordmark') -->
+</div>
 
 <div class="card auth-card mx-auto">
     <login inline-template :show-email-login="!{{ $str::bool($oauth) }}" :has-error="{{ $str::bool(count($errors) > 0) }}">
