@@ -1,15 +1,13 @@
 title: Employment
 honeypot: fax
 email:
-  - to: info@site.com
-    from: info@site.com
-    reply_to: "{{ email }}"
-    subject: "Contact form received"
+  -
+    to: domp@parrottapaving.com
+    subject: 'Employment form received'
     html: email/form_owner
     text: email/form_owner_text
-  - to: "{{ email }}"
-    from: info@site.com
-    reply_to: info@site.com
-    subject: "Contact form sent"
+  -
+    to: '{{ email }}'
+    subject: 'Employment form sent'
     html: email/form_sender
     text: email/form_sender_text
