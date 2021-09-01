@@ -1,6 +1,8 @@
 {{# The contact form content block. #}}
 <section class="size-lg fluid-container grid md:grid-cols-12 gap-y-8 md:gap-8">
+    
     <div class="md:col-start-3 md:col-span-8">
+        
         {{ partial:typography/h2 class="mb-4" :content="block:title" }}
         {{ partial:typography/paragraph :content="block:text" }}
 
@@ -12,7 +14,14 @@
             x-data="sending()" 
             @submit.prevent="sendForm()" 
         }}
+
+        <template x-if="success">
+            {{ partial src="components/notification" type="success" class="md:col-span-12" content="{trans:strings.form_success}" }}
+        </template>
+        
             <div class="w-full grid md:grid-cols-12 gap-y-6 md:gap-x-6">
+                
+
                 {{# Honeypot spam protection. #}}
                 <div class="hidden">
                     <label class="font-bold" for="fax">{{ trans:strings.form_honeypot }} <sup class="text-notice-400">*</sup></label>
@@ -41,9 +50,7 @@
                 <div class="md:col-span-12 flex justify-end mb-16">
                     {{ partial:components/button tag="button" label="{ trans:strings.form_send }" attribute='x-bind:disabled="sending" x-bind:class="&#123;&#39;opacity-25 cursor-default&#39;: sending&#125;"' }}
                 </div>
-                <template x-if="success">
-                    {{ partial src="components/notification" type="success" class="md:col-span-12" content="{trans:strings.form_success}" }}
-                </template>
+                
             </div>
         {{ /form:create }}
 
