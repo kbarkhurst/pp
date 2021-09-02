@@ -2,7 +2,7 @@ title: Contact
 honeypot: fax
 email:
   -
-    to: kellybarkhurst@gmail.com
+    to: domp@parrottapaving.com
     from: domp@parrottapaving.com
     reply_to: '{{ email }}'
     subject: 'Contact form received'
