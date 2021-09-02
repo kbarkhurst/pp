@@ -1,15 +1,17 @@
 title: Millings
 honeypot: fax
 email:
-  - to: info@site.com
-    from: info@site.com
-    reply_to: "{{ email }}"
-    subject: "Millings Request form received"
+  -
+    to: kellybarkhurst@gmail.com
+    from: domp@parrottapaving.com
+    reply_to: '{{ email }}'
+    subject: 'Millings Request form received'
     html: email/form_owner
     text: email/form_owner_text
-  - to: "{{ email }}"
-    from: info@site.com
-    reply_to: info@site.com
-    subject: "Millings Request form sent"
+  -
+    to: '{{ email }}'
+    from: domp@parrottapaving.com
+    reply_to: domp@parrottapaving.com
+    subject: 'Millings Request form sent'
     html: email/form_sender
     text: email/form_sender_text
