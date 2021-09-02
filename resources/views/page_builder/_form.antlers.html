@@ -14,11 +14,12 @@
             x-data="sending()" 
             @submit.prevent="sendForm()" 
         }}
-        {{ if success }}
+        
         <template x-if="success">
             {{ partial src="components/notification" type="success" class="md:col-span-12" content="{trans:strings.form_success}" }}
         </template>
-        {{ else }}
+        
+        <template x-if="!success">
             <div class="w-full grid md:grid-cols-12 gap-y-6 md:gap-x-6">
                 
 
@@ -52,7 +53,7 @@
                 </div>
                 
             </div>
-            {{ /if }}
+        </template>
         {{ /form:create }}
 
         {{# Load dynamic token JS to dynamically fetch and refresh a CSRF token. #}}
