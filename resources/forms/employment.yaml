@@ -2,7 +2,7 @@ title: Employment
 honeypot: fax
 email:
   -
-    to: kellybarkhurst@gmail.com
+    to: domp@parrottapaving.com
     subject: 'Employment form received'
     html: email/form_owner
     text: email/form_owner_text
