@@ -40,7 +40,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Over a quarter-century later, Joe''s son Randy contracted with Westover''s Shop n'' Save and that was the beginning of the company''s growth from 7 to 50 employees and expanded services from not only residential customers but commercial and industrial clients, also.'
+            text: 'Over a quarter-century later, Joe''s son Randy contracted with Westover''s Shop n'' Save. That was the beginning of the company''s growth from 7 to 50 employees and expanded services from not only residential customers but commercial and industrial clients also.'
       -
         type: paragraph
         content:
@@ -184,7 +184,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'We never compromise on quality to be the lowest bidder; instead, we provide the same quality and professionalism on each and every job, and our reputation proves it.'
+            text: 'We never compromise on quality to be the lowest bidder; instead, we provide the same quality and professionalism on every job, and our reputation proves it.'
       -
         type: heading
         attrs:
@@ -198,7 +198,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'We''ve built our business on repeat residential customers. You can trust that our team of paving experts do your job right the first time.'
+            text: 'We''ve built our business on repeat residential customers. You can trust that our team of paving experts does your job right the first time.'
       -
         type: heading
         attrs:
@@ -226,7 +226,7 @@ page_builder:
             text: 'asphalt paving technique'
           -
             type: text
-            text: ' called ''scratch coating''. This involves placing a level coat prior to the overlay when we resurface a customers’ asphalt driveway. By running over an existing mat, and filling in the voids and dips, the new surface adheres better to the old one, which provides a longer life on your repave.'
+            text: ' called ''scratch coating.'' This involves placing a level coat prior to the overlay when we resurface a customers’ asphalt driveway. By running over an existing mat and filling in the voids and dips, the new surface adheres better to the old one, which provides a longer life on your repave.'
     type: article
     enabled: true
 seo_noindex: false
@@ -235,7 +235,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627527999
+updated_at: 1630609057
 show_service_area: false
 show_project_gallery: false
 call_to_action: false
