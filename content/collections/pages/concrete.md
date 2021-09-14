@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627565314
+updated_at: 1631645353
 page_builder:
   -
     page_title: 'Concrete Contracting'
@@ -47,9 +47,10 @@ page_builder:
       - Footings
       - Bollards
       - 'Dumpster pads'
-      - 'ADA ramps'
       - 'Inlet repair'
       - 'Approach slabs'
+      - 'ADA ramps'
+      - 'ADA parking'
 show_service_area: true
 show_project_gallery: true
 call_to_action: true
