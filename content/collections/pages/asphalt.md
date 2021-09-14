@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1627565368
+updated_at: 1631645304
 page_builder:
   -
     page_title: 'Asphalt and Paving'
@@ -35,7 +35,7 @@ page_builder:
     list:
       - 'Asphalt milling'
       - 'Asphalt seal coating'
-      - 'Asphalt curbing edge'
+      - 'Asphalt curbing'
       - 'Asphalt maintenance and repair'
       - 'Drainage issues'
       - 'Driveway construction, maintenance, and repair'
