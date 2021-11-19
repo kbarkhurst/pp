@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
         {{# Replace the following line with the SEO Pro or Aardvark SEO tag if you want to use an addon for SEO. Also
         remove the seo section in you page blueprint.#}} {{ partial:snippets/seo }}
-        <link rel="stylesheet" href="{{ mix src='/css/site.css' }}" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+        <link rel="preload" as="style" href="{{ mix src='/css/site.css' }}" />
+        <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js" defer></script>
 
         
         {{ partial:snippets/favicon }}
