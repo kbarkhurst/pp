@@ -81,8 +81,8 @@
     <ul class="static space-y-8 flex flex-col justify-center my-10 text-lg overflow-y-scroll"
         
     >
-    <li><a href="tel:{{ configuration:phone }}">
-        <img src="/assets/parrotta-logo-full.svg" width="200" alt="{{alt}}" class="mb-3 ml-1" /></a></li>
+    <li><a href="tel:{{ configuration:phone }}" title="call">
+        <img src="/assets/parrotta-logo-full.svg" width="200" height="82" alt="{{ alt }}" class="mb-3 ml-1" /></a></li>
         {{ nav:main max_depth="2" include_home="true" }}
             <li
                 {{ if children }}
