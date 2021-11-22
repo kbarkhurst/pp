@@ -12,7 +12,7 @@ return [
     |
     */
 
-    'strategy' => env('CACHING_STRATEGY', null),
+    'strategy' => env('APP_CACHE_STRATEGY', null),
 
     /*
     |--------------------------------------------------------------------------
