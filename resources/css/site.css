@@ -148,6 +148,27 @@
 }
 @keyframes bgfade {
     0% {
+        background-image: url("/assets/1076-476x700.jpg");
+    }
+    20% {
+        background-image: url("/assets/1074-1200x800.jpg");
+    }
+    40% {
+        background-image: url("/assets/1077-1200x800.jpg");
+    }
+    60% {
+        background-image: url("/assets/1078-1200x800.jpg");
+    }
+    80% {
+        background-image: url("/assets/1075-1200x800.jpg");
+    }
+    100% {
+        background-image: url("/assets/1076-476x700.jpg");
+    }
+} 
+@media (min-width: 476px) {
+@keyframes bgfade {
+    0% {
         background-image: url("/assets/1076-1200x800.jpg");
     }
     20% {
@@ -165,7 +186,9 @@
     100% {
         background-image: url("/assets/1076-1200x800.jpg");
     }
-} /****** add a background overlay 
+} 
+}
+/****** add a background overlay 
 #animated-background:hover:before {
     content: "";
     position: absolute;
