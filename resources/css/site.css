@@ -147,7 +147,7 @@
     position: relative;
 }
 
-#animated-background {
+.no-webp #animated-background {
     animation: bgfade 2s infinite;
     animation-duration: 15s;
     background-size: cover;
@@ -213,6 +213,26 @@
     }
     100% {
         background-image: url("/assets/1076-1200x800.jpg");
+    }
+} 
+@keyframes bgfadewp {
+    0% {
+        background-image: url("/assets/1076-1200x800.webp");
+    }
+    20% {
+        background-image: url("/assets/1074-1200x800.webp");
+    }
+    40% {
+        background-image: url("/assets/1077-1200x800.webp");
+    }
+    60% {
+        background-image: url("/assets/1078-1200x800.webp");
+    }
+    80% {
+        background-image: url("/assets/1075-1200x800.webp");
+    }
+    100% {
+        background-image: url("/assets/1076-1200x800.webp");
     }
 } 
 }
