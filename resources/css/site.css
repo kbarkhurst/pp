@@ -139,6 +139,14 @@
     margin-left: 10px;
 }
 
+.webp #animated-background {
+    animation: bgfadewebp 2s infinite;
+    animation-duration: 15s;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
 #animated-background {
     animation: bgfade 2s infinite;
     animation-duration: 15s;
@@ -164,6 +172,26 @@
     }
     100% {
         background-image: url("/assets/1076-476x700.jpg");
+    }
+} 
+@keyframes bgfadewp {
+    0% {
+        background-image: url("/assets/1076-476x700.webp");
+    }
+    20% {
+        background-image: url("/assets/1074-476x700.webp");
+    }
+    40% {
+        background-image: url("/assets/1077-476x700.webp");
+    }
+    60% {
+        background-image: url("/assets/1078-476x700.webp");
+    }
+    80% {
+        background-image: url("/assets/1075-476x700.webp");
+    }
+    100% {
+        background-image: url("/assets/1076-476x700.webp");
     }
 } 
 @media (min-width: 476px) {
