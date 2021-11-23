@@ -10,7 +10,8 @@ data:
   sitemap_collections:
     - pages
   use_google_site_verification: false
-  use_google_analytics: false
-  anonymize_ip: false
+  use_google_analytics: true
+  google_analytics: G-D2PGS9TPWB
+  anonymize_ip: true
   use_google_tag_manager: false
   use_fathom: false
