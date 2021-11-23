@@ -10,10 +10,6 @@ without having to worry about margins or paddings. #}}
     {{ partial:components/projectcard }}
     
     {{ if show_project_gallery}} {{ partial:components/lightbox }}{{/if}}
-    
-    
-    
-
 </main>{{/if}}
 
 {{ if segment_1 == "about"}}
@@ -25,7 +21,7 @@ without having to worry about margins or paddings. #}}
 {{/if}}
 
 {{ partial:snippets/background_image image="{{banner_image}}" class="banner-{{slug}}" }}
-<div class="banner-{{slug}} shadow-inner w-full border-b-2 border-t-2 border-gray-300 bg-cover" style="height:300px;"></div>
+<div class="webp banner-{{slug}} shadow-inner w-full border-b-2 border-t-2 border-gray-300 bg-cover" style="height:300px;"></div>
 
 
 {{ if show_service_area}} {{partial:components/locations }}{{/if}}
