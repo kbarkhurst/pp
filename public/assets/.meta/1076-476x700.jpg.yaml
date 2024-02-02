@@ -1,6 +1,10 @@
 data: {  }
 size: 91507
+<<<<<<< HEAD
 last_modified: 1637638391
+=======
+last_modified: 1637638288
+>>>>>>> 412dc2a (Adds BBB logo to the footer.)
 width: 476
 height: 700
 mime_type: image/jpeg
