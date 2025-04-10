@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1744298239
+updated_at: 1744298782
 show_service_area: true
 show_project_gallery: false
 links_for_services:
@@ -34,7 +34,7 @@ links_for_services:
     service: Trucking
     url: /services/trucking
 call_to_action: true
-seo_title: 'Paving, Concrete, Full Site Development | Morgantown Contractor'
+seo_title: 'Paving, Concrete, Asphalt, Site Development | Morgantown Contractor'
 seo_description: 'For over 60 years, Morgantown has trusted Parrotta Paving for professional residential, commercial and industrial contracting. Give us a call 304-292-0905.'
 banner_image: lineup.JPG
 schema_jsonld: |-
@@ -42,9 +42,30 @@ schema_jsonld: |-
     "@context": "https://schema.org",
     "@graph": [
       {
-  "@type": "LocalBusiness",
+        "@type":"WebPage",
+        "headline":"Paving, Concrete, Asphalt, Site Development | Morgantown Contractor",
+        "url":"https://parrottapaving.com/",
+        "@id":"https://parrottapaving.com/#webpage",
+          "about":{"@id":"https://parrottapaving.com/#organization"
+          },
+        "isPartOf":{
+          "@type":"Website",
+          "name":"Paving Company in Morgantown WV - Parrotta Paving",
+          "url":"https://parrottapaving.com/",
+          "@id":"https://parrottapaving.com/#website",
+          "publisher": {
+            "@type": ["Organization", "LocalBusiness"],
+            "name":"Parrotta Paving",
+            "url":"https://parrottapaving.com/",
+            "@id":"https://parrottapaving.com/#organization"
+          }
+        }
+  },
+      {
+  "@type": ["Organization", "LocalBusiness"],
   "additionalType": "https://schema.org/ProfessionalService",
   "name": "Parrotta Paving",
+  "@id":"https://parrottapaving.com/#organization",
   "url": "https://parrottapaving.com",
   "image": "https://parrottapaving.com/assets/parrotta-paving-business-logo.png",
   "description": "Parrotta Paving proudly serves Morgantown, WV, and surrounding areas with top-quality residential, commercial, and industrial contracting services. With expertise across a wide range of projects, we specialize in driveways, parking lots, excavating, demolition, site development, concrete work, and seal coating. Whether you're preparing a new construction site or refreshing an existing property, we bring the equipment, experience, and dedication to get the job done right.",
