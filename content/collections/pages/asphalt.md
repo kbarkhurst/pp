@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1744311273
+updated_at: 1744311423
 page_builder:
   -
     page_title: 'Asphalt and Paving'
@@ -70,7 +70,7 @@ show_service_area: true
 show_project_gallery: true
 call_to_action: true
 show_projects: true
-seo_title: 'Local Asphalt and Paving Contractor | 60 + Years |'
+seo_title: 'Expert asphalt paving, repair, and seal coating in Morgantown, WV'
 seo_description: 'With Parrotta, you’ve got Morgantown''s expert pavers on the job. Asphalt paving services for residential, commercial, and industrial customers.'
 banner_image: banners/paving-banner.jpg
 schema_jsonld: |-
