@@ -12,4 +12,4 @@ preferences:
         - services
   assets:
     assets:
-      mode: table
+      mode: grid
