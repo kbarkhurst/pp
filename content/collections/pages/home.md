@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1744313597
+updated_at: 1744313958
 show_service_area: true
 show_project_gallery: false
 links_for_services:
@@ -49,7 +49,7 @@ schema_jsonld: |-
           "about":{"@id":"https://parrottapaving.com/#organization"
           },
         "isPartOf":{
-          "@type":"Website",
+          "@type":"WebSite",
           "name":"Paving Company in Morgantown WV - Parrotta Paving",
           "url":"https://parrottapaving.com/",
           "@id":"https://parrottapaving.com/#website",
@@ -68,7 +68,7 @@ schema_jsonld: |-
   "alternateName": "Parrotta Paving Co., Inc.",
   "@id":"https://parrottapaving.com/#organization",
   "url": "https://parrottapaving.com",
-  "image": "https://parrottapaving.com/assets/parrotta-paving-business-logo.png",
+  "image": "https://parrottapaving.com/assets/parrotta-organizational-logo.jpg",
   "description": "Parrotta Paving proudly serves Morgantown, WV, and surrounding areas with top-quality residential, commercial, and industrial contracting services. With expertise across a wide range of projects, we specialize in driveways, parking lots, excavating, demolition, site development, concrete work, and seal coating. Whether you're preparing a new construction site or refreshing an existing property, we bring the equipment, experience, and dedication to get the job done right.",
   "slogan": "No job too BIG or too SMALL, Parrotta Paving will tackle them all.",
   "email": "dom@parrottapaving.com",
