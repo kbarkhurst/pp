@@ -4,7 +4,7 @@ blueprint: page
 title: Contact
 page_builder:
   -
-    title: 'Yes, We''re Open! (April 2025) and Ready to Serve All Your Paving Needs!<br/>Schedule an Appointment'
+    title: 'Yes, We''re Open! (April 2025)<br/>and Ready to Serve All Your Paving Needs!<br/>Schedule an Appointment'
     text: 'Please provide the following information about your residential, commercial, or industrial job. We''ll give you a call to set up a time for a site visit and to provide you a FREE estimate. At Parrotta, there''s no job too small, or too large!'
     form: contact
     type: form
@@ -15,7 +15,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1744638880
+updated_at: 1744638906
 show_service_area: false
 show_project_gallery: false
 call_to_action: false
