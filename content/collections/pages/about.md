@@ -52,7 +52,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Contractor services now include '
+            text: 'The local office is located in Brookhaven and contractor services now include '
           -
             type: text
             marks:
@@ -166,6 +166,16 @@ page_builder:
             type: text
             text: .
       -
+        type: set
+        attrs:
+          values:
+            type: figure
+            image: brookhaven-office-shop-and-receiving.jpg
+            size: md
+            caption: 'Office, Shop and Receiving - 141 Brookhaven Road, Morgantown WV 26508'
+      -
+        type: paragraph
+      -
         type: heading
         attrs:
           level: 2
@@ -235,7 +245,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1630609057
+updated_at: 1744640545
 show_service_area: false
 show_project_gallery: false
 call_to_action: false
