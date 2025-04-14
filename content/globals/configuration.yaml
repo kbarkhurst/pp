@@ -5,9 +5,12 @@ data:
     Monday - Friday:<br/> 8 am – 4:00 pm<br/><br/>
     Saturday and Sunday:<br/> Closed<br/>
   address: |-
-    LOCAL OFFICE<br/>
+    <strong>LOCAL OFFICE</strong><br/>
     141 Brookhaven Road<br/>
-    Morgantown, WV 26508
+    Morgantown, WV 26508<br/><br/>
+    <strong>MAILING ADDRESS</strong><br/>
+    PO BOX 1259
+    Dellslow, WV 26531
   employment_opportunities:
     - 'Heavy Equipment Operators'
     - 'CDL Truck Drivers'
