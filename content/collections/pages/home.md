@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1744634678
+updated_at: 1744638124
 show_service_area: true
 show_project_gallery: false
 links_for_services:
@@ -65,7 +65,7 @@ schema_jsonld: |-
   "@type": ["Organization", "LocalBusiness"],
   "additionalType": "https://schema.org/ProfessionalService",
   "name": "Parrotta Paving",
-  "alternateName": "Parrotta Paving Co., Inc.",
+  "alternateName": ["Parrotta Paving Co., Inc.", "Parrotta Paving Co Inc"], 
   "@id":"https://parrottapaving.com/#organization",
   "url": "https://parrottapaving.com",
   "image": "https://parrottapaving.com/assets/parrotta-organizational-logo.jpg",
@@ -77,6 +77,7 @@ schema_jsonld: |-
   "paymentAccepted":"Cash, Credit Card",
   "telephone": "304-292-0905",
   "duns": "049672684",
+  "naics": "2373",
   "sameAs": [ "https://www.facebook.com/parrottapaving",
   "https://www.linkedin.com/company/parrotta-paving-co-inc",
     "https://www.bbb.org/us/wv/morgantown/profile/paving-contractors/parrotta-paving-0282-18002480",
@@ -87,6 +88,8 @@ schema_jsonld: |-
   ],
   "address": [{
      "@type": "PostalAddress",
+  "@id": "https://parrottapaving.com/#localaddress",
+  "description": "Local Address",
      "streetAddress": "141 Brookhaven Road", 
      "addressLocality": "Morgantown",
      "addressRegion": "WV",
@@ -96,7 +99,8 @@ schema_jsonld: |-
   "contactPoint" : [{
               "@type" : "ContactPoint",
               "telephone" : "304-292-0905",
-              "contactType" : "Customer Service"
+              "contactType" : "Customer Service",
+  "email": "domp@parrottapaving.com"
   }], 
   "geo": {
       "@type": "GeoCoordinates",
@@ -130,16 +134,42 @@ schema_jsonld: |-
       "opens": "08:00",
       "closes": "16:00"
   }],
-  "founder": {
+  "founder": [{
       "@type": "Person",
       "@id":"https://parrottapaving.com/about#person-randy-parrotta",
-      "name": "Randall Joe Parrotta",
+      "name": "Randall J. Parrotta",
+  "jobTitle":"President",
       "worksFor": 
       {
         "@type": "Organization",
         "@id":"https://parrottapaving.com/#organization",
-        "name": "Parrotta Paving"
-  }},
+        "name": "Parrotta Paving",
+  "alternateName": "Parrotta Paving Co Inc"
+  },
+  "workLocation":[{
+     "@type": "PostalAddress",
+  "@id": "https://parrottapaving.com/#localaddress",
+  "description": "Local Address",
+     "streetAddress": "141 Brookhaven Road", 
+     "addressLocality": "Morgantown",
+     "addressRegion": "WV",
+     "postalCode": "26508",
+     "addressCountry": "USA"
+  }]
+   },
+  {
+      "@type": "Person",
+      "@id":"https://parrottapaving.com/about#person-sue-parrotta",
+      "name": "Sue Jo Parrotta",
+  "jobTitle":"Incorporator",
+      "worksFor": 
+      {
+        "@type": "Organization",
+        "@id":"https://parrottapaving.com/#organization",
+        "name": "Parrotta Paving",
+  "alternateName": "Parrotta Paving Co Inc"
+  }}
+  ],
     "makesOffer": [
       {
         "@type": "Offer",
