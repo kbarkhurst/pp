@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1744638714
+updated_at: 1744644852
 show_service_area: true
 show_project_gallery: false
 links_for_services:
@@ -82,6 +82,7 @@ schema_jsonld: |-
   "https://www.linkedin.com/company/parrotta-paving-co-inc",
     "https://www.bbb.org/us/wv/morgantown/profile/paving-contractors/parrotta-paving-0282-18002480",
     "https://www.yelp.com/biz/parrotta-paving-morgantown",
+  "https://www.youtube.com/@parrottapaving",
     "https://www.mapquest.com/us/west-virginia/parrotta-paving-42697895",
     "https://www.dnb.com/business-directory/company-profiles.parrotta_paving_co_inc.498a9c53bcfc6c7242a8f065a058fe7f.html",
   "https://apps.sos.wv.gov/business/corporations/organization.aspx?org=93624"
