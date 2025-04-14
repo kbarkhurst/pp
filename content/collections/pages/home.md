@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1744638124
+updated_at: 1744638714
 show_service_area: true
 show_project_gallery: false
 links_for_services:
@@ -89,13 +89,24 @@ schema_jsonld: |-
   "address": [{
      "@type": "PostalAddress",
   "@id": "https://parrottapaving.com/#localaddress",
-  "description": "Local Address",
+  "description": "Local Office",
      "streetAddress": "141 Brookhaven Road", 
      "addressLocality": "Morgantown",
      "addressRegion": "WV",
      "postalCode": "26508",
      "addressCountry": "USA"
-  }],
+  },
+  {
+     "@type": "PostalAddress",
+  "@id": "https://parrottapaving.com/#mailingaddress",
+  "description": "Mailing Address - PO BOX",
+     "postOfficeBoxNumber": "1259", 
+     "addressLocality": "Dellslow",
+     "addressRegion": "WV",
+     "postalCode": "26531",
+     "addressCountry": "USA"
+  }
+  ],
   "contactPoint" : [{
               "@type" : "ContactPoint",
               "telephone" : "304-292-0905",
@@ -149,7 +160,7 @@ schema_jsonld: |-
   "workLocation":[{
      "@type": "PostalAddress",
   "@id": "https://parrottapaving.com/#localaddress",
-  "description": "Local Address",
+  "description": "Local Office",
      "streetAddress": "141 Brookhaven Road", 
      "addressLocality": "Morgantown",
      "addressRegion": "WV",
@@ -181,7 +192,7 @@ schema_jsonld: |-
         "sameAs": [
           "https://en.wikipedia.org/wiki/Asphalt_concrete"
         ],
-        "alternateName": "Asphalt Milling, Asphalt Seal Coating, Asphalt Maintenance",
+        "alternateName": ["Asphalt Milling", "Asphalt Seal Coating", "Asphalt Maintenance"],
         "eligibleRegion": {
           "@type": "GeoCircle",
           "@id": "https://parrottapaving.com/#geocircle",
@@ -217,7 +228,7 @@ schema_jsonld: |-
         "sameAs": [
           "https://en.wikipedia.org/wiki/Land_development"
         ],
-        "alternateName": "Land Development, Site Preparation, Residential and Commercial Development",
+        "alternateName": ["Land Development", "Site Preparation", "Residential and Commercial Development"],
         "eligibleRegion": {
           "@type": "GeoCircle",
           "@id": "https://parrottapaving.com/#geocircle",
@@ -235,7 +246,7 @@ schema_jsonld: |-
         "sameAs": [
           "https://en.wikipedia.org/wiki/Demolition"
         ],
-        "alternateName": "Building Demolition, Commercial Demolition, Residential Demolition",
+        "alternateName": ["Building Demolition", "Commercial Demolition", "Residential Demolition"],
         "eligibleRegion": {
           "@type": "GeoCircle",
           "@id": "https://parrottapaving.com/#geocircle",
@@ -253,7 +264,7 @@ schema_jsonld: |-
         "sameAs": [
           "https://en.wikipedia.org/wiki/General_contractor"
         ],
-        "alternateName": "Excavation, Site Excavation, Earth Moving",
+        "alternateName": ["Excavation", "Site Excavation", "Earth Moving"],
         "eligibleRegion": {
           "@type": "GeoCircle",
           "@id": "https://parrottapaving.com/#geocircle",
@@ -271,7 +282,7 @@ schema_jsonld: |-
         "sameAs": [
           "https://en.wikipedia.org/wiki/Snow_removal"
         ],
-        "alternateName": "Snow Removal, Snow Plowing, Winter Maintenance",
+        "alternateName": ["Snow Removal", "Snow Plowing", "Winter Maintenance"],
         "eligibleRegion": {
           "@type": "GeoCircle",
           "@id": "https://parrottapaving.com/#geocircle",
@@ -289,7 +300,7 @@ schema_jsonld: |-
         "sameAs": [
           "https://en.wikipedia.org/wiki/Trucking_industry_in_the_United_States"
         ],
-        "alternateName": "Material Transport, Hauling, Freight Transportation",
+        "alternateName": ["Material Transport", "Hauling", "Freight Transportation"],
         "eligibleRegion": {
           "@type": "GeoCircle",
           "@id": "https://parrottapaving.com/#geocircle",
