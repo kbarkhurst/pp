@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1745596430
+updated_at: 1745596619
 show_service_area: true
 show_project_gallery: false
 links_for_services:
@@ -309,6 +309,7 @@ schema_jsonld: |-
         },
         "availability": "https://schema.org/InStock"
       }
+     ]
     }
   ]
   }
