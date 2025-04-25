@@ -13,5 +13,6 @@ data:
   use_google_analytics: true
   google_analytics: G-D2PGS9TPWB
   anonymize_ip: true
-  use_google_tag_manager: false
+  use_google_tag_manager: true
+  google_tag_manager: AW-17034092970
   use_fathom: false
