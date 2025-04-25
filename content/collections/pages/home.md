@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1745596619
+updated_at: 1745600518
 show_service_area: true
 show_project_gallery: false
 links_for_services:
@@ -309,7 +309,85 @@ schema_jsonld: |-
         },
         "availability": "https://schema.org/InStock"
       }
-     ]
+     ],
+     "aggregateRating": {
+      "@type": "AggregateRating",
+      "@id":"https://parrottapaving.com/#aggregate-rating",
+      "ratingValue": "5",
+      "reviewCount": "3",
+      "bestRating": "5",
+      "worstRating": "1",
+      "itemReviewed": {
+          "name": "Parrotta Paving",
+      "@id": "https://parrottapaving.com/#organization"
+        }
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "@id":"https://parrottapaving.com/#review1",
+        "itemReviewed": {
+          "name": "Parrotta Paving",
+      "@id": "https://parrottapaving.com/#organization"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "C. Hilling",
+          "address": "West Virginia",
+          "additionalType": "https://schema.org/Person"
+        },
+        "name": "Reasonable Pricing",
+        "reviewBody": "Parrotta is very professional, friendly - with reasonable pricing. I recommend them without reservation!",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5
+        }
+      },
+       {
+        "@type": "Review",
+        "@id":"https://parrottapaving.com/#review2",
+        "itemReviewed": {
+          "name": "Parrotta Paving",
+      "@id": "https://parrottapaving.com/#organization"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "R. McMillen",
+          "address": "West Virginia",
+          "additionalType": "https://schema.org/Person"
+        },
+        "name": "Work is Top-Notch",
+        "reviewBody": "I recently worked with the Parrotta crew. The work is top-notch. Locals guys doing the small projects like mine and the big projects all over town, I appreciate the pride in their work",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5
+        }
+      },
+       {
+        "@type": "Review",
+        "@id":"https://parrottapaving.com/#review3",
+        "itemReviewed": {
+          "name": "Parrotta Paving",
+      "@id": "https://parrottapaving.com/#organization"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "The Calverts",
+          "address": "Masontown, West Virginia",
+          "additionalType": "https://schema.org/Person"
+        },
+        "reviewBody": "Twenty-eight years ago, our 300+ foot driveway was paved by Parrotta Paving and only showed wear in the last year or so. We were so pleased with the first paving job, we had Parrotta Paving do an overlay of the original.
+
+  We couldn't be more pleased. Within a week of calling and requesting an estimate for the job, Anthony met with us and explained exactly what they could do for us. He was right on time, very professional and the cost corresponded exactly to the estimate. The pavers were friendly and Parrotta went above and beyond what we expected. We highly recommend Anthony DeBardi, Randy Parrotta, and Parrotta Paving.
+
+  We may not be around till the next 28 years, but our driveway will.",
+        "name": "Above and Beyond what we Expected",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 5
+        }
+      }
+    ]  
     }
   ]
   }
