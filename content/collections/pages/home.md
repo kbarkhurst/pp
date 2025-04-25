@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1745601257
+updated_at: 1745608700
 show_service_area: true
 show_project_gallery: false
 links_for_services:
@@ -38,8 +38,7 @@ seo_title: '2025 Yes, We''re Open | Asphalt, Concrete, Site Dev'
 seo_description: 'For over 60 years, Morgantown has trusted Parrotta Paving Co Inc for professional residential, commercial and industrial contracting. Call 304-292-0905.'
 banner_image: lineup.JPG
 schema_jsonld: |-
-  {
-    "@context": "https://schema.org",
+  "@context": "https://schema.org",
     "@graph": [
       {
         "@type":"WebPage",
@@ -119,21 +118,221 @@ schema_jsonld: |-
       "latitude": "39.609364",
       "longitude": "-79.9134156"
   },
-  "areaServed": {
+  "areaServed": [
+    {
       "@type": "GeoCircle",
-      "@id":"https://parrottapaving.com/#geocircle",
+      "@id": "https://parrottapaving.com/#geocircle",
       "name": "Local Service Area",
       "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "postalCode": "26508",
-           "latitude": "39.609364",
-      "longitude": "-79.9134156",
-          "description": "Parrotta Paving offers contracting services within a 90-minute radius of Morgantown, West Virginia, including Monongalia, Preston, Doddridge, and Marion counties, as well as surrounding areas in Maryland and Pennsylvania. The company serves key locations in West Virginia such as Bridgeport, Clarksburg, Fairmont, Granville, Lost Creek, Nutter Fort, Stonewood, Weston, Westover, and Wheeling. In Maryland, Parrotta Paving operates in Accident, McHenry, and Oakland, while in Pennsylvania, the service area includes Hopwood, Little Washington, Mount Morris, Uniontown, and Waynesburg.",
-          "name": "90-minutes of Morgantown",
-          "sameAs": "https://en.wikipedia.org/wiki/Monongalia_County,_West_Virginia"
+        "@type": "GeoCoordinates",
+        "postalCode": "26508",
+        "latitude": "39.609364",
+        "longitude": "-79.9134156",
+        "description": "Parrotta Paving offers contracting services within a 90-minute radius of Morgantown, West Virginia, including Monongalia, Preston, Doddridge, and Marion counties, as well as surrounding areas in Maryland and Pennsylvania. The company serves key locations in West Virginia such as Bridgeport, Clarksburg, Fairmont, Granville, Lost Creek, Nutter Fort, Stonewood, Weston, Westover, and Wheeling. In Maryland, Parrotta Paving operates in Accident, McHenry, and Oakland, while in Pennsylvania, the service area includes Hopwood, Little Washington, Mount Morris, Uniontown, and Waynesburg.",
+        "name": "90-minutes of Morgantown",
+        "sameAs": "https://en.wikipedia.org/wiki/Monongalia_County,_West_Virginia"
       },
       "geoRadius": "144841"
-      },
+    },
+    {
+      "@type": "Place",
+      "name": "Bridgeport",
+      "sameAs": "https://en.wikipedia.org/wiki/Bridgeport,_West_Virginia",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bridgeport",
+        "addressRegion": "WV",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Clarksburg",
+      "sameAs": "https://en.wikipedia.org/wiki/Clarksburg,_West_Virginia",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Clarksburg",
+        "addressRegion": "WV",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Fairmont",
+      "sameAs": "https://en.wikipedia.org/wiki/Fairmont,_West_Virginia",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fairmont",
+        "addressRegion": "WV",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Granville",
+      "sameAs": "https://en.wikipedia.org/wiki/Granville,_West_Virginia",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Granville",
+        "addressRegion": "WV",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Lost Creek",
+      "sameAs": "https://en.wikipedia.org/wiki/Lost_Creek,_West_Virginia",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lost Creek",
+        "addressRegion": "WV",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Nutter Fort",
+      "sameAs": "https://en.wikipedia.org/wiki/Nutter_Fort,_West_Virginia",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nutter Fort",
+        "addressRegion": "WV",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Stonewood",
+      "sameAs": "https://en.wikipedia.org/wiki/Stonewood,_West_Virginia",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Stonewood",
+        "addressRegion": "WV",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Weston",
+      "sameAs": "https://en.wikipedia.org/wiki/Weston,_West_Virginia",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Weston",
+        "addressRegion": "WV",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Westover",
+      "sameAs": "https://en.wikipedia.org/wiki/Westover,_West_Virginia",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Westover",
+        "addressRegion": "WV",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Wheeling",
+      "sameAs": "https://en.wikipedia.org/wiki/Wheeling,_West_Virginia",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Wheeling",
+        "addressRegion": "WV",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Accident",
+      "sameAs": "https://en.wikipedia.org/wiki/Accident,_Maryland",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Accident",
+        "addressRegion": "MD",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "McHenry",
+      "sameAs": "https://en.wikipedia.org/wiki/McHenry,_Maryland",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "McHenry",
+        "addressRegion": "MD",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Oakland",
+      "sameAs": "https://en.wikipedia.org/wiki/Oakland,_Maryland",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Oakland",
+        "addressRegion": "MD",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Hopwood",
+      "sameAs": "https://en.wikipedia.org/wiki/Hopwood,_Pennsylvania",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hopwood",
+        "addressRegion": "PA",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Washington",
+      "sameAs": "https://en.wikipedia.org/wiki/Washington,_Pennsylvania",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Washington",
+        "addressRegion": "PA",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Mount Morris",
+      "sameAs": "https://en.wikipedia.org/wiki/Mount_Morris,_Pennsylvania",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mount Morris",
+        "addressRegion": "PA",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Uniontown",
+      "sameAs": "https://en.wikipedia.org/wiki/Uniontown,_Pennsylvania",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Uniontown",
+        "addressRegion": "PA",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Waynesburg",
+      "sameAs": "https://en.wikipedia.org/wiki/Waynesburg,_Pennsylvania",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Waynesburg",
+        "addressRegion": "PA",
+        "addressCountry": "US"
+      }
+    }
+  ],    
   "openingHoursSpecification": [{
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": [
@@ -377,9 +576,7 @@ schema_jsonld: |-
           "additionalType": "https://schema.org/Person"
         },
         "reviewBody": "Twenty-eight years ago, our 300+ foot driveway was paved by Parrotta Paving and only showed wear in the last year or so. We were so pleased with the first paving job, we had Parrotta Paving do an overlay of the original.
-
   We couldn't be more pleased. Within a week of calling and requesting an estimate for the job, Anthony met with us and explained exactly what they could do for us. He was right on time, very professional and the cost corresponded exactly to the estimate. The pavers were friendly and Parrotta went above and beyond what we expected. We highly recommend Anthony DeBardi, Randy Parrotta, and Parrotta Paving.
-
   We may not be around till the next 28 years, but our driveway will.",
         "name": "Above and Beyond what we Expected",
         "reviewRating": {
