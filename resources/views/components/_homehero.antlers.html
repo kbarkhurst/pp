@@ -1,4 +1,5 @@
-<header id="animated-background" class="bg-local bg-no-repeat bg-center bg-cover relative">
+<header id="animated-background"
+    class="bg-local bg-no-repeat bg-center bg-cover relative">
     <div class="fluid-container flex justify-between items-center">
         {{ partial:components/logo width="200" }} {{ partial:navigation/main }}
     </div>
@@ -8,53 +9,54 @@
     <div class="pb-md-20 bg-parrotta-red">
         <div class="overflow-x-hidden homeswoop"></div>
         <div class="xl:w-3/5 mx-auto py-8 px-3 homecontent relative">
-            <h1 class="font-black uppercase text-3xl text-md-5xl leading-tight text-white mb-4 parrotta-shadow">
+            <h1
+                class="font-black uppercase text-3xl text-md-5xl leading-tight text-white mb-4 parrotta-shadow">
                 Residential, Commercial
                 <br class="md-display" />
                 AND Industrial Contracting
             </h1>
             <h2 class="text-xl font-semibold text-white">
-                Driveways • Parking Lots • Excavating • Demolition • Site Development • Concrete • Seal Coating
+                Driveways • Parking Lots • Excavating • Demolition • Site
+                Development • Concrete • Seal Coating
             </h2>
             <button
                 class="h-12 w-9/12 my-6 px-6 m-2 text-lg bg-white text-black rounded-lg shadow-md hover:bg-gray-900 hover:text-white"
                 onClick="
             parent.location='/contact/appointment'"
-                value="Request a Quote"
-            >
+                value="Request a Quote">
                 Request a Quote
             </button>
             <section class="size-md container mx-auto my-8 my-4 px-4">
                 <div class="flex flex-wrap -mx-4">
                     <div
-                        class="transform transition hover:scale-105 duration-700 ease-in-out w-1/2 px-2 pb-4 mb-0 relative"
-                    >
+                        class="transform transition hover:scale-105 duration-700 ease-in-out w-1/2 px-2 pb-4 mb-0 relative">
                         <a href="/services/asphalt" title="asphalt">
                             <picture>
                                 <source
-                                    srcset="{{glide src='/assets/asphalt.jpg' width="512" height="413" format='webp'}}"
+                                    srcset="{{glide src='/assets/asphalt.jpg' width="512"
+                                    height="413" format='webp'}}"
                                     width="512"
                                     height="413"
                                     alt="texture
                                     of asphalt/pavement"
                                     class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md"
-                                    type="image/webp"
-                                />
-                            <img class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md" src="{{ glide
-                            src='/assets/asphalt.jpg' width="512" height="413" }}" width="512" height="413" alt="Texture
+                                    type="image/webp" />
+                                <img
+                                    class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md"
+                                    src="{{ glide
+                            src='/assets/asphalt.jpg' width="512" height="413"
+                                    }}" width="512" height="413" alt="Texture
                             of asphalt/pavement" loading="lazy">
                             </picture>
                             <div
-                                class="md:opacity-0 md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center md:text-5xl  text-white font-semibold parrotta-shadow"
-                            >
+                                class="md:opacity-0 md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center md:text-5xl  text-white font-semibold parrotta-shadow">
                                 Asphalt
                             </div>
                         </a>
                     </div>
 
                     <div
-                        class="transform transition hover:scale-105 duration-700 ease-in-out w-1/2 px-2 pb-4 mb-0 h-full relative"
-                    >
+                        class="transform transition hover:scale-105 duration-700 ease-in-out w-1/2 px-2 pb-4 mb-0 h-full relative">
                         <a href="/services/concrete" title="concrete">
                             <picture>
                                 <source
@@ -63,26 +65,24 @@
                                     height="413"
                                     alt="close up texture of concrete"
                                     class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md"
-                                    type="image/webp"
-                                />
-                            <img
-                                class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md"
-                                src="{{ glide src='/assets/concrete-by-parrota-paving-in-morgantown.jpg' width='512' height='413' }}"
-                                alt="close up texture of concrete"
-                                width="512"
-                                height="413"
-                                loading="lazy"
-                            />
+                                    type="image/webp" />
+                                <img
+                                    class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md"
+                                    src="{{ glide src='/assets/concrete-by-parrota-paving-in-morgantown.jpg' width='512' height='413' }}"
+                                    alt="close up texture of concrete"
+                                    width="512"
+                                    height="413"
+                                    loading="lazy" />
                             </picture>
                             <div
-                                class="md:opacity-0 md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center md:text-5xl  text-white font-semibold parrotta-shadow"
-                            >
+                                class="md:opacity-0 md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center md:text-5xl  text-white font-semibold parrotta-shadow">
                                 Concrete
                             </div>
                         </a>
                     </div>
 
-                    <div class="transform transition hover:scale-105 duration-700 ease-in-out w-1/3 px-2 relative ">
+                    <div
+                        class="transform transition hover:scale-105 duration-700 ease-in-out w-1/3 px-2 relative ">
                         <a href="/services/demolition" title="services">
                             <picture>
                                 <source
@@ -91,24 +91,22 @@
                                     height="259"
                                     alt="Close up of demolition bucket"
                                     class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md"
-                                    type="image/webp"
-                                />
-                            <img
-                                class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md"
-                                src="{{ glide src='/assets/demolition-services-in-morgantown.jpg' width='342' height='259' }}"
-                                width="342"
-                                height="259"
-                                alt="Close up of demolition bucket"
-                            />
+                                    type="image/webp" />
+                                <img
+                                    class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md"
+                                    src="{{ glide src='/assets/demolition-services-in-morgantown.jpg' width='342' height='259' }}"
+                                    width="342"
+                                    height="259"
+                                    alt="Close up of demolition bucket" />
                             </picture>
                             <div
-                                class="md:opacity-0 md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center xl:text-3xl md:text-2xl text-white font-semibold parrotta-shadow"
-                            >
+                                class="md:opacity-0 md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center xl:text-3xl md:text-2xl text-white font-semibold parrotta-shadow">
                                 Demolition
                             </div>
                         </a>
                     </div>
-                    <div class="transform transition hover:scale-105 duration-700 ease-in-out w-1/3 px-2 relative">
+                    <div
+                        class="transform transition hover:scale-105 duration-700 ease-in-out w-1/3 px-2 relative">
                         <a href="/services/excavation" title="excavation">
                             <picture>
                                 <source
@@ -116,49 +114,45 @@
                                     width="342"
                                     height="259"
                                     alt="Excavation services and demolition"
-                                    class="inset-0 z-0 rounded shadow-md"
-                                    type="image/webp"
-                                />
-                            <img
-                                class="inset-0 z-0 rounded shadow-md"
-                                src="{{ glide src='/assets/excavation-services-in-morgantown.jpg' width='342' height='259' }}"
-                                width="342"
-                                height="259"
-                                alt="Excavation services and demolition"
-                                loading="lazy"
-                            />
+                                    class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md"
+                                    type="image/webp" />
+                                <img
+                                    class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md"
+                                    src="{{ glide src='/assets/excavation-services-in-morgantown.jpg' width='342' height='259' }}"
+                                    width="342"
+                                    height="259"
+                                    alt="Excavation services and demolition"
+                                    loading="lazy" />
                             </picture>
                             <div
-                                class="transform md:opacity-0 md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center xl:text-3xl md:text-2xl text-white font-semibold parrotta-shadow"
-                            >
+                                class="transform md:opacity-0 md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center xl:text-3xl md:text-2xl text-white font-semibold parrotta-shadow">
                                 Excavation
                             </div>
                         </a>
                     </div>
 
-                    <div class="transform transition hover:scale-105 duration-700 ease-in-out w-1/3 px-2 relative">
-                        <a href="/services/complete-site-development" title="complete site development">
+                    <div
+                        class="transform transition hover:scale-105 duration-700 ease-in-out w-1/3 px-2 relative">
+                        <a href="/services/complete-site-development"
+                            title="complete site development">
                             <picture>
                                 <source
                                     srcset="{{glide src='/assets/site-development-contractor-west-virginia.jpg' width='342' height='259' format='webp'}}"
                                     width="342"
                                     height="259"
                                     alt="Contracting example of site development in WV"
-                                    class="inset-0 z-0 rounded shadow-md"
-                                    type="image/webp"
-                                />
+                                    class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md"
+                                    type="image/webp" />
                                 <img
-                                    class="inset-0 z-0 rounded shadow-md"
+                                    class="inset-0 z-0 h-full w-full bg-cover rounded shadow-md"
                                     src="{{ glide src='/assets/site-development-contractor-west-virginia.jpg' width='342' height='259' }}"
                                     width="342"
                                     height="259"
                                     alt="Contracting example of site development in WV"
-                                    loading="lazy"
-                                />
+                                    loading="lazy" />
                             </picture>
                             <div
-                                class="md:opacity-0 md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center xl:text-3xl md:text-2xl text-white font-semibold parrotta-shadow"
-                            >
+                                class="md:opacity-0 md:hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center xl:text-3xl md:text-2xl text-white font-semibold parrotta-shadow">
                                 Site
                                 <br />
                                 Development
@@ -168,13 +162,18 @@
                 </div>
             </section>
 
-            <h2 class="text-3xl font-regular text-white mt-10 mb-5 parrotta-shadow">
-                No job too BIG or too SMALL, Parrotta Paving will tackle them all.
+            <h2
+                class="text-3xl font-regular text-white mt-10 mb-5 parrotta-shadow">
+                No job too BIG or too SMALL, Parrotta Paving will tackle them
+                all.
             </h2>
             <p class="text-white text-lg">
-                For over 60 years, Parrotta Paving has provided reliable, competitively-priced services to Morgantown,
-                WV and surrounding areas. Learn more about our contracting services. Have questions? Give us a call at
-                <a href="tel:{{ configuration:phone }}" class="hover:underline" title="Call">
+                For over 60 years, Parrotta Paving has provided reliable,
+                competitively-priced services to Morgantown,
+                WV and surrounding areas. Learn more about our contracting
+                services. Have questions? Give us a call at
+                <a href="tel:{{ configuration:phone }}" class="hover:underline"
+                    title="Call">
                     {{ configuration:phone }}
                 </a>
                 .
@@ -185,8 +184,7 @@
                 <div class="p-2 sm:w-1/3 w-full">
                     <a href="{{ url }}" title="Learn more about {{ service }}">
                         <div
-                            class="bg-gray-200 hover:bg-gray-900 hover:text-white rounded flex p-4 h-full items-center"
-                        >
+                            class="bg-gray-200 hover:bg-gray-900 hover:text-white rounded flex p-4 h-full items-center">
                             <svg
                                 fill="none"
                                 stroke="currentColor"
@@ -194,15 +192,14 @@
                                 stroke-linejoin="round"
                                 stroke-width="2"
                                 class="text-red-600 w-8 h-8 flex-shrink-0 mr-4"
-                                viewBox="0 0 24 24"
-                            >
+                                viewBox="0 0 24 24">
                                 <path
                                     clip-rule="evenodd"
                                     fill-rule="evenodd"
-                                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                                ></path>
+                                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
-                            <span class="title-font text-lg	 font-medium">{{ service }}</span>
+                            <span class="title-font text-lg	 font-medium">{{
+                                service }}</span>
                         </div>
                     </a>
                 </div>
