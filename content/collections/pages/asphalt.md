@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1745602229
+updated_at: 1745606692
 page_builder:
   -
     page_title: 'Asphalt and Paving'
@@ -77,7 +77,7 @@ schema_jsonld: |-
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "headline": "Parrotta Paving's Asphalt and Paving Services", 
+    "headline": "Parrotta Paving's Asphalt and Paving Services",
     "url": "https://parrottapaving.com/services/asphalt-paving",
     "@id": "https://parrottapaving.com/services/asphalt-paving/#webpage",
     "about": {
@@ -96,231 +96,235 @@ schema_jsonld: |-
           "name": "90-minutes from Morgantown, West Virginia"
         }
       },
-     "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Asphalt Milling",
-            "description": "We provide asphalt milling services to remove worn-out pavement, preparing surfaces for resurfacing."
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Asphalt and Paving Services Offered",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Asphalt Milling",
+              "description": "We provide asphalt milling services to remove worn-out pavement, preparing surfaces for resurfacing."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Asphalt Seal Coating",
-            "description": "Extend the life of your asphalt with our high-quality seal coating services that protect and preserve your pavement."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Asphalt Seal Coating",
+              "description": "Extend the life of your asphalt with our high-quality seal coating services that protect and preserve your pavement."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Asphalt Curbing",
-            "description": "Our asphalt curbing service is perfect for creating durable and attractive borders for parking lots, driveways, and roadways."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Asphalt Curbing",
+              "description": "Our asphalt curbing service is perfect for creating durable and attractive borders for parking lots, driveways, and roadways."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Asphalt Maintenance and Repair",
-            "description": "We provide asphalt maintenance and repair services to ensure your paved surfaces are in top condition, including crack sealing and patch repairs."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Asphalt Maintenance and Repair",
+              "description": "We provide asphalt maintenance and repair services to ensure your paved surfaces are in top condition, including crack sealing and patch repairs."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Drainage Issues",
-            "description": "Our team resolves drainage issues related to asphalt surfaces to prevent long-term damage and ensure proper water flow."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Drainage Issues",
+              "description": "Our team resolves drainage issues related to asphalt surfaces to prevent long-term damage and ensure proper water flow."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Driveway Construction, Maintenance, and Repair",
-            "description": "We specialize in constructing, maintaining, and repairing driveways with durable asphalt solutions."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Driveway Construction, Maintenance, and Repair",
+              "description": "We specialize in constructing, maintaining, and repairing driveways with durable asphalt solutions."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Roadway Construction",
-            "description": "Complete roadway construction services, including grading, paving, and final surfacing for new roads."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Roadway Construction",
+              "description": "Complete roadway construction services, including grading, paving, and final surfacing for new roads."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Utility Patchwork",
-            "description": "We perform utility patchwork to repair sections of pavement disrupted by utility installation or maintenance."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Utility Patchwork",
+              "description": "We perform utility patchwork to repair sections of pavement disrupted by utility installation or maintenance."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Basketball Courts",
-            "description": "Durable asphalt basketball courts for residential or recreational use."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Basketball Courts",
+              "description": "Durable asphalt basketball courts for residential or recreational use."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Recreational Walking Trails",
-            "description": "We provide paved recreational walking trails designed for durability and safety in parks or private areas."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Recreational Walking Trails",
+              "description": "We provide paved recreational walking trails designed for durability and safety in parks or private areas."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Cart Paths",
-            "description": "Durable cart paths for golf courses and recreational areas, made with high-quality asphalt."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cart Paths",
+              "description": "Durable cart paths for golf courses and recreational areas, made with high-quality asphalt."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Patch/Pothole Repair",
-            "description": "Quick and effective patch and pothole repairs to restore the smooth surface of your asphalt."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Patch/Pothole Repair",
+              "description": "Quick and effective patch and pothole repairs to restore the smooth surface of your asphalt."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Wedge Curb",
-            "description": "Wedge curb installation to help direct water flow and provide structural support along paved surfaces."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wedge Curb",
+              "description": "Wedge curb installation to help direct water flow and provide structural support along paved surfaces."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Line Striping",
-            "description": "We provide professional line striping services for parking lots, roads, and other paved surfaces."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Line Striping",
+              "description": "We provide professional line striping services for parking lots, roads, and other paved surfaces."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Roadway Surfacing / Mill and Overlay",
-            "description": "Our mill and overlay services help restore and resurface roadways to improve durability and safety."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Roadway Surfacing / Mill and Overlay",
+              "description": "Our mill and overlay services help restore and resurface roadways to improve durability and safety."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "French Drains",
-            "description": "Installation of French drains to address drainage problems and protect paved surfaces from water damage."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "French Drains",
+              "description": "Installation of French drains to address drainage problems and protect paved surfaces from water damage."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Sub-base Failure Repair",
-            "description": "We repair sub-base failures by replacing damaged layers and ensuring a stable foundation for new asphalt."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sub-base Failure Repair",
+              "description": "We repair sub-base failures by replacing damaged layers and ensuring a stable foundation for new asphalt."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Access Roads",
-            "description": "We specialize in constructing durable access roads for construction sites, private properties, and industrial areas."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Access Roads",
+              "description": "We specialize in constructing durable access roads for construction sites, private properties, and industrial areas."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Roadway Cracking Repair",
-            "description": "We repair all types of roadway cracks, such as alligator, block, and longitudinal cracking, to ensure safety and longevity."
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Roadway Cracking Repair",
+              "description": "We repair all types of roadway cracks, such as alligator, block, and longitudinal cracking, to ensure safety and longevity."
+            },
+            "priceCurrency": "USD"
           },
-          "priceCurrency": "USD"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Repair of Surface Deformation",
-            "description": "We repair surface deformations like rutting, pushing, and shoving that can lead to unsafe driving conditions."
-          },
-          "priceCurrency": "USD"
-        }
-      ]
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Repair of Surface Deformation",
+              "description": "We repair surface deformations like rutting, pushing, and shoving that can lead to unsafe driving conditions."
+            },
+            "priceCurrency": "USD"
+          }
+        ]
+      }
+    },
+    "subjectOf": [
+      {
+        "@type": "CreativeWork",
+        "name": "Greentree: Tyrone Avery Residential Paving",
+        "description": "One of our projects we completed 20+ years ago and were called back to put a new fresh coat of asphalt on the development roads.",
+        "url": "https://parrottapaving.com/img/containers/assets/projects/DJI_0063.JPG/336230533fd0ebd9c024426079f47dd3.JPG",
+        "datePublished": "2023-08-15",
+        "image": "https://parrottapaving.com/img/containers/assets/projects/DJI_0063.JPG/336230533fd0ebd9c024426079f47dd3.JPG"
       },
-      "subjectOf": [
-        {
-          "@type": "CreativeWork",
-          "name": "Greentree: Tyrone Avery Residential Paving",
-          "description": "One of our projects we completed 20+ years ago and were called back to put a new fresh coat of asphalt on the development roads, for another 20+ years of quality.",
-          "url": "https://parrottapaving.com/img/containers/assets/projects/DJI_0063.JPG/336230533fd0ebd9c024426079f47dd3.JPG",
-          "datePublished": "2023-08-15",
-          "image": "https://parrottapaving.com/img/containers/assets/projects/DJI_0063.JPG/336230533fd0ebd9c024426079f47dd3.JPG"
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "Menards Asphalt",
-          "description": "A complete 2-acre installation of stone base and asphalt on the entire parking lot and roadway areas for one of Morgantown's newest businesses.",
-          "url": "https://parrottapaving.com/img/containers/assets/projects/DJI_0012.JPG/d6cf75b9cb0f58db0296343d139abc47.JPG",
-          "datePublished": "2024-04-10",
-          "image": "https://parrottapaving.com/img/containers/assets/projects/DJI_0012.JPG/d6cf75b9cb0f58db0296343d139abc47.JPG"
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "Morgantown Middle School",
-          "description": "One of many Board of Education site improvement and asphalt installation projects we've completed during our many years in business.",
-          "url": "https://parrottapaving.com/img/containers/assets/projects/middle-school-sidewalk-and-step-replacement.jpg/a56648efb080ded4886cdf5071418968.jpg",
-          "datePublished": "2023-06-01",
-          "image": "https://parrottapaving.com/img/containers/assets/projects/middle-school-sidewalk-and-step-replacement.jpg/a56648efb080ded4886cdf5071418968.jpg"
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "University Town Centre",
-          "description": "Contracted through the Town of Granville for removal and replacement of deteriorated asphalt roadway areas and for complete milling of roadway and overlay with new asphalt.",
-          "url": "https://parrottapaving.com/img/containers/assets/projects/university-town-center-pavement-overlay.jpg/04c5aa30b9a325092970b7c1f8d376c8.jpg",
-          "datePublished": "2024-03-20",
-          "image": "https://parrottapaving.com/img/containers/assets/projects/university-town-center-pavement-overlay.jpg/04c5aa30b9a325092970b7c1f8d376c8.jpg"
-        },
-        {
-          "@type": "CreativeWork",
-          "name": "WVU Silver Lot",
-          "description": "Mill and resurface the existing stadium silver lot.",
-          "url": "https://parrottapaving.com/img/containers/assets/wvu-silver-lot-asphalt-paving.jpg/16eb6424b1d49d483f79b4251532d93c.jpg",
-          "datePublished": "2023-09-15",
-          "image": "https://parrottapaving.com/img/containers/assets/wvu-silver-lot-asphalt-paving.jpg/16eb6424b1d49d483f79b4251532d93c.jpg"
-        }
-      ],
+      {
+        "@type": "CreativeWork",
+        "name": "Menards Asphalt",
+        "description": "A complete 2-acre installation of stone base and asphalt on the entire parking lot and roadway areas.",
+        "url": "https://parrottapaving.com/img/containers/assets/projects/DJI_0012.JPG/d6cf75b9cb0f58db0296343d139abc47.JPG",
+        "datePublished": "2024-04-10",
+        "image": "https://parrottapaving.com/img/containers/assets/projects/DJI_0012.JPG/d6cf75b9cb0f58db0296343d139abc47.JPG"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Morgantown Middle School",
+        "description": "Board of Education site improvement and asphalt installation projects we've completed.",
+        "url": "https://parrottapaving.com/img/containers/assets/projects/middle-school-sidewalk-and-step-replacement.jpg/a56648efb080ded4886cdf5071418968.jpg",
+        "datePublished": "2023-06-01",
+        "image": "https://parrottapaving.com/img/containers/assets/projects/middle-school-sidewalk-and-step-replacement.jpg/a56648efb080ded4886cdf5071418968.jpg"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "University Town Centre",
+        "description": "Removal and replacement of deteriorated asphalt and full roadway milling and overlay.",
+        "url": "https://parrottapaving.com/img/containers/assets/projects/university-town-center-pavement-overlay.jpg/04c5aa30b9a325092970b7c1f8d376c8.jpg",
+        "datePublished": "2024-03-20",
+        "image": "https://parrottapaving.com/img/containers/assets/projects/university-town-center-pavement-overlay.jpg/04c5aa30b9a325092970b7c1f8d376c8.jpg"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "WVU Silver Lot",
+        "description": "Mill and resurface the existing stadium silver lot.",
+        "url": "https://parrottapaving.com/img/containers/assets/wvu-silver-lot-asphalt-paving.jpg/16eb6424b1d49d483f79b4251532d93c.jpg",
+        "datePublished": "2023-09-15",
+        "image": "https://parrottapaving.com/img/containers/assets/wvu-silver-lot-asphalt-paving.jpg/16eb6424b1d49d483f79b4251532d93c.jpg"
+      }
+    ],
     "isPartOf": {
       "@type": "Website",
       "name": "Paving Company in Morgantown WV - Parrotta Paving",
