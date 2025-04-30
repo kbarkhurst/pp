@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1746015622
+updated_at: 1746021329
 show_service_area: true
 show_project_gallery: false
 links_for_services:
@@ -45,6 +45,16 @@ schema_jsonld: |-
         "@type":"WebPage",
         "headline":"Paving, Concrete, Asphalt, Site Development | Morgantown Contractor",
         "url":"https://parrottapaving.com/",
+  "potentialAction": {
+    "@type": "ContactAction",
+    "name": "Call Parrotta Paving",
+    "target": "tel:+13042920905",
+    "description": "Call Parrotta Paving to request a quote or ask about our services.",
+    "recipient": {
+      "@type": "Organization",
+      "name": "Parrotta Paving"
+    }
+  },
         "@id":"https://parrottapaving.com/#webpage",
           "about":{"@id":"https://parrottapaving.com/#organization"
           },
