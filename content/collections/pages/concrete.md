@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1746015676
+updated_at: 1746021544
 page_builder:
   -
     page_title: 'Concrete Contracting'
@@ -65,6 +65,36 @@ schema_jsonld: |-
     "headline": "Parrotta Paving's Concrete Contracting Services",
     "url": "https://parrottapaving.com/services/concrete",
     "@id": "https://parrottapaving.com/services/concrete/#webpage",
+  "potentialAction": [
+    {
+      "@type": "CommunicateAction",
+      "name": "Call Parrotta Paving",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+13042920905",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "recipient": {
+        "@type": "Organization",
+        "name": "Parrotta Paving"
+      }
+    },
+    {
+      "@type": "InteractAction",
+      "name": "Get In Touch with Parrotta Paving",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://parrottapaving.com/contact",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ],
     "about": {
       "@type": "Service",
       "name": "Concrete Contracting Services",
