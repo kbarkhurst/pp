@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1746019837
+updated_at: 1746019879
 page_builder:
   -
     page_title: 'Complete Site Development'
@@ -96,7 +96,7 @@ schema_jsonld: |-
       "datePublished": "2024-06-01",
       "image": "https://parrottapaving.com/img/containers/assets/projects/DJI_0015-crop.jpg/6e6b99805a786c5a88039111ed1697a5.jpg"
     }
-  ]
+  ],
     "about": {
       "@type": "Service",
       "@id": "https://parrottapaving.com/services/complete-site-development#service",
