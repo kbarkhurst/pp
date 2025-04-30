@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1746013792
+updated_at: 1746013932
 page_builder:
   -
     page_title: 'Asphalt and Paving'
@@ -119,7 +119,8 @@ schema_jsonld: |-
      "postalCode": "26531",
      "addressCountry": "USA"
   }
-  ],
+  ]
+  },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Asphalt and Paving Services Offered",
