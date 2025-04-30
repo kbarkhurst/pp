@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1746015651
+updated_at: 1746015936
 page_builder:
   -
     page_title: 'Asphalt and Paving'
@@ -80,25 +80,25 @@ schema_jsonld: |-
     "headline": "Parrotta Paving's Asphalt and Paving Services",
     "url": "https://parrottapaving.com/services/asphalt-paving",
     "@id": "https://parrottapaving.com/services/asphalt-paving/#webpage",
-    "hasPart": {
-    "@type": "VideoObject",
-    "name": "VIDEO: Parrotta Paving: Making a Wedge Curb",
-    "description": "Parrotta Paving provides the full spectrum of asphalt paving services for residential, commercial, and industrial customers.",
-    "thumbnailUrl": "https://i.ytimg.com/vi/vCL3wcXQjqc/maxresdefault.jpg",
-    "uploadDate": "2021-08-01",
-    "duration": "PT2M30S",
-    "embedUrl": "https://www.youtube.com/embed/vCL3wcXQjqc",
-    "contentUrl": "https://www.youtube.com/watch?v=vCL3wcXQjqc",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Parrotta Paving",
-      "@id": "https://parrottapaving.com/#organization",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://parrottapaving.com/assets/parrotta-organizational-logo.jpg"
+     "hasPart": {
+      "@type": "VideoObject",
+      "name": "VIDEO: Parrotta Paving: Making a Wedge Curb",
+      "description": "Parrotta Paving provides the full spectrum of asphalt paving services for residential, commercial, and industrial customers.",
+      "thumbnailUrl": "https://img.youtube.com/vi/vCL3wcXQjqc/hqdefault.jpg",
+      "uploadDate": "2021-08-01T12:00:00+00:00",
+      "duration": "PT2M30S",
+      "embedUrl": "https://www.youtube.com/embed/vCL3wcXQjqc",
+      "contentUrl": "https://www.youtube.com/watch?v=vCL3wcXQjqc",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Parrotta Paving",
+        "@id": "https://parrottapaving.com/#organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://parrottapaving.com/assets/parrotta-organizational-logo.jpg"
+        }
       }
-    }
-  },
+    },
     "about": {
       "@type": "Service",
       "name": "Asphalt and Paving Services",
