@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1746019050
+updated_at: 1746019110
 page_builder:
   -
     page_title: 'Complete Site Development'
@@ -115,6 +115,7 @@ schema_jsonld: |-
             "@type": "PostalAddress",
             "@id": "https://parrottapaving.com/#mailingaddress",
             "description": "Mailing Address - PO BOX",
+   "streetAddress": "PO Box 1259",
             "postOfficeBoxNumber": "1259",
             "addressLocality": "Dellslow",
             "addressRegion": "WV",
