@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1745608871
+updated_at: 1746013391
 show_service_area: true
 show_project_gallery: false
 links_for_services:
@@ -65,7 +65,7 @@ schema_jsonld: |-
   "@type": ["Organization", "LocalBusiness"],
   "additionalType": "https://schema.org/ProfessionalService",
   "name": "Parrotta Paving",
-  "alternateName": ["Parrotta Paving Co., Inc.", "Parrotta Paving Co Inc"], 
+  "alternateName": ["Parrotta Paving Co., Inc.", "Parrotta Paving Co Inc", "Parrotta Paving Company, Inc"], 
   "@id":"https://parrottapaving.com/#organization",
   "url": "https://parrottapaving.com",
   "image": "https://parrottapaving.com/assets/parrotta-organizational-logo.jpg",
