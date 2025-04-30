@@ -37,7 +37,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1746021030
+updated_at: 1746021625
 show_service_area: true
 show_project_gallery: true
 call_to_action: true
@@ -52,6 +52,36 @@ schema_jsonld: |-
     "headline": "Snow Maintenance Services - Parrotta Paving",
     "url": "https://parrottapaving.com/services/snow-maintenance",
     "@id": "https://parrottapaving.com/services/snow-maintenance/#webpage",
+  "potentialAction": [
+    {
+      "@type": "CommunicateAction",
+      "name": "Call Parrotta Paving",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+13042920905",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "recipient": {
+        "@type": "Organization",
+        "name": "Parrotta Paving"
+      }
+    },
+    {
+      "@type": "InteractAction",
+      "name": "Get In Touch with Parrotta Paving",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://parrottapaving.com/contact",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ],
     "about": {
       "@type": "Service",
       "name": "Snow Maintenance Services",
