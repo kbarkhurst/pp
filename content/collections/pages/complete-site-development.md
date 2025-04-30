@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1746019110
+updated_at: 1746019600
 page_builder:
   -
     page_title: 'Complete Site Development'
@@ -130,56 +130,74 @@ schema_jsonld: |-
         }
       },
       "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Site Development Services Catalog",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "name": "Excavation",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Excavation",
-              "description": "Land clearing and earthmoving services for commercial and residential projects."
-            }
-          },
-          {
-            "@type": "Offer",
-            "name": "Grading",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Grading",
-              "description": "Precision grading to prepare sites for paving, drainage, and structures."
-            }
-          },
-          {
-            "@type": "Offer",
-            "name": "Stormwater Management",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Stormwater Management",
-              "description": "Installation of retention ponds, drainage systems, and erosion control."
-            }
-          },
-          {
-            "@type": "Offer",
-            "name": "Utility Installation",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Utility Installation",
-              "description": "Underground utility trenching and installation including water, sewer, and electric."
-            }
-          },
-          {
-            "@type": "Offer",
-            "name": "Final Paving",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Final Paving",
-              "description": "Asphalt paving to complete the development process."
-            }
-          }
-        ]
+    "@type": "OfferCatalog",
+    "name": "Site Development Services Catalog",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Grading",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Grading",
+          "description": "Precision land grading to ensure proper drainage and foundation preparation."
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Excavation",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Excavation",
+          "description": "Earthmoving and soil removal to prepare construction-ready sites."
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Embankment",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Embankment",
+          "description": "Construction of embankments for roadways and terrain elevation control."
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Clearing",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Clearing",
+          "description": "Vegetation and debris removal to ready land for development."
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Grubbing",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Grubbing",
+          "description": "Removal of roots, stumps, and organic matter post-clearing."
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Land Balancing",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Land Balancing",
+          "description": "Adjusting elevations and redistributing earth for a level, usable site."
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Site Utilities",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Site Utilities (storm, water, sewer)",
+          "description": "Installation of essential infrastructure: storm drains, water lines, and sewer systems."
+        }
       }
+    ]
+  }
     }
   }
 ---
