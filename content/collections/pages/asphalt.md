@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1745606692
+updated_at: 1746013657
 page_builder:
   -
     page_title: 'Asphalt and Paving'
@@ -94,7 +94,32 @@ schema_jsonld: |-
           "@type": "GeoCircle",
           "@id": "https://parrottapaving.com/#geocircle",
           "name": "90-minutes from Morgantown, West Virginia"
-        }
+        },
+  "image": "https://parrottapaving.com/assets/parrotta-organizational-logo.jpg",
+  "priceRange": "$$-$$$",
+  "currenciesAccepted": "USD",
+  "telephone": "304-292-0905",
+  "address": [{
+     "@type": "PostalAddress",
+  "@id": "https://parrottapaving.com/#localaddress",
+  "description": "Local Office",
+     "streetAddress": "141 Brookhaven Road", 
+     "addressLocality": "Morgantown",
+     "addressRegion": "WV",
+     "postalCode": "26508",
+     "addressCountry": "USA"
+  },
+  {
+     "@type": "PostalAddress",
+  "@id": "https://parrottapaving.com/#mailingaddress",
+  "description": "Mailing Address - PO BOX",
+     "postOfficeBoxNumber": "1259", 
+     "addressLocality": "Dellslow",
+     "addressRegion": "WV",
+     "postalCode": "26531",
+     "addressCountry": "USA"
+  }
+  ],
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
