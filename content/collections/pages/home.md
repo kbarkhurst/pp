@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1746021396
+updated_at: 1746119239
 show_service_area: true
 show_project_gallery: false
 links_for_services:
@@ -400,6 +400,30 @@ schema_jsonld: |-
   }}
   ],
     "makesOffer": [
+  {
+    "@type": "Offer",
+    "name": "Asphalt Millings, Topsoil, and Fill Dirt Delivery",
+    "url": "https://parrottapaving.com/contact/millings-request",
+    "@id": "https://parrottapaving.com/contact/millings-request#offer",
+    "description": "Request delivery of asphalt millings, topsoil, or fill dirt directly from Parrotta Paving.",
+    "priceCurrency": "USD",
+    "sameAs": [
+      "https://en.wikipedia.org/wiki/Topsoil",
+      "https://en.wikipedia.org/wiki/Fill_dirt"
+    ],
+    "alternateName": [
+      "Millings Delivery",
+      "Topsoil Delivery",
+      "Fill Dirt Delivery",
+      "Material Hauling"
+    ],
+    "eligibleRegion": {
+      "@type": "GeoCircle",
+      "@id": "https://parrottapaving.com/#geocircle",
+      "name": "90-minutes from Morgantown, West Virginia"
+    },
+    "availability": "https://schema.org/InStock"
+  },
       {
         "@type": "Offer",
         "name": "Asphalt Services",
