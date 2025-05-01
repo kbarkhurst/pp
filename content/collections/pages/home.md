@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1746119603
+updated_at: 1746119810
 show_service_area: true
 show_project_gallery: false
 links_for_services:
@@ -45,22 +45,75 @@ schema_jsonld: |-
         "@type":"WebPage",
         "headline":"Paving, Concrete, Asphalt, Site Development | Morgantown Contractor",
         "url":"https://parrottapaving.com/",
-  "potentialAction": {
-    "@type": "CommunicateAction",
-    "name": "Call Parrotta Paving",
+  "specialty": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Asphalt",
+      "description": "Services related to asphalt paving, resurfacing, and maintenance."
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Concrete",
+      "description": "Concrete flatwork, sidewalks, driveways, and foundations."
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Site Development",
+      "description": "Full-service site preparation including grading and utilities."
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Demolition",
+      "description": "Safe and efficient demolition services for residential and commercial properties."
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Excavation",
+      "description": "Excavating for foundations, drainage, and infrastructure projects."
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Snow Maintenance",
+      "description": "Snow plowing, removal, and winter maintenance for roads and lots."
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Trucking",
+      "description": "Material hauling and heavy-duty trucking services."
+    }
+  ],
+  "potentialAction": [
+    {
+      "@type": "CommunicateAction",
+      "name": "Call Parrotta Paving",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+13042920905",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "recipient": {
+        "@type": "Organization",
+        "@id": "https://parrottapaving.com/#organization",
+        "name": "Parrotta Paving"
+      }
+    },
+    {
+    "@type": "Action",
+    "name": "Submit Appointment Request",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "tel:+13042920905",
+      "urlTemplate": "https://parrottapaving.com/contact/appointment",
       "actionPlatform": [
         "http://schema.org/DesktopWebPlatform",
         "http://schema.org/MobileWebPlatform"
-      ]
-    },
-    "recipient": {
-      "@type": "Organization",
-      "name": "Parrotta Paving"
+      ],
+      "inLanguage": "en"
     }
-  },
+  }
+  ],
         "@id":"https://parrottapaving.com/#webpage",
           "about":{"@id":"https://parrottapaving.com/#organization"
           },
