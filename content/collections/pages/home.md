@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1746119239
+updated_at: 1746119603
 show_service_area: true
 show_project_gallery: false
 links_for_services:
@@ -72,7 +72,6 @@ schema_jsonld: |-
           "publisher": {
             "@type": ["Organization", "LocalBusiness"],
             "name":"Parrotta Paving",
-            "url":"https://parrottapaving.com/",
             "@id":"https://parrottapaving.com/#organization"
           }
         }
@@ -383,7 +382,7 @@ schema_jsonld: |-
      "addressLocality": "Morgantown",
      "addressRegion": "WV",
      "postalCode": "26508",
-     "addressCountry": "USA"
+     "addressCountry": "US"
   }]
    },
   {
