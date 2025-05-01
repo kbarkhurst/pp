@@ -15,7 +15,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1746101274
+updated_at: 1746101637
 show_service_area: false
 show_project_gallery: false
 call_to_action: false
@@ -25,7 +25,9 @@ seo_description: 'At Parrotta, there''s no job too small, or too large! Get in t
 banner_image: banners/asphalt-banner.jpg
 schema_jsonld: |-
   {
-    "@context": "https://schema.org",
+  "@context": "https://schema.org",
+    "@graph": [
+      {
     "@type": "ContactPage",
     "headline": "Schedule an Appointment - Online Form, Free Estimate",
     "url": "https://parrottapaving.com/contact/appointment",
@@ -163,4 +165,6 @@ schema_jsonld: |-
       }
     }
   }
+
+  ]}
 ---
