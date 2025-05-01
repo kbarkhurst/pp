@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1746119810
+updated_at: 1746120861
 show_service_area: true
 show_project_gallery: false
 links_for_services:
@@ -415,42 +415,23 @@ schema_jsonld: |-
       "opens": "08:00",
       "closes": "16:00"
   }],
-  "founder": [{
-      "@type": "Person",
-      "@id":"https://parrottapaving.com/about#person-randy-parrotta",
-      "name": "Randall J. Parrotta",
-  "jobTitle":"President",
-      "worksFor": 
-      {
-        "@type": "Organization",
-        "@id":"https://parrottapaving.com/#organization",
-        "name": "Parrotta Paving",
-  "alternateName": "Parrotta Paving Co Inc"
-  },
-  "workLocation":[{
-     "@type": "PostalAddress",
-  "@id": "https://parrottapaving.com/#localaddress",
-  "description": "Local Office",
-     "streetAddress": "141 Brookhaven Road", 
-     "addressLocality": "Morgantown",
-     "addressRegion": "WV",
-     "postalCode": "26508",
-     "addressCountry": "US"
-  }]
-   },
-  {
-      "@type": "Person",
-      "@id":"https://parrottapaving.com/about#person-sue-parrotta",
-      "name": "Sue Jo Parrotta",
-  "jobTitle":"Incorporator",
-      "worksFor": 
-      {
-        "@type": "Organization",
-        "@id":"https://parrottapaving.com/#organization",
-        "name": "Parrotta Paving",
-  "alternateName": "Parrotta Paving Co Inc"
-  }}
-  ],
+  "founder": {
+        "@type": "Person",
+        "name": "Joe Parrotta"
+      },
+      "foundingDate": "1961",
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Randy Parrotta",
+          "jobTitle": "President"
+        },
+        {
+          "@type": "Person",
+          "name": "Dominick Parrotta",
+          "jobTitle": "Management"
+        }
+      ],
     "makesOffer": [
   {
     "@type": "Offer",
