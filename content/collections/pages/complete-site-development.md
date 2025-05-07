@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1746628579
+updated_at: 1746629043
 page_builder:
   -
     page_title: 'Complete Site Development'
@@ -67,6 +67,19 @@ schema_jsonld: |-
     "@id": "https://parrottapaving.com/services/complete-site-development/#webpage",
     "url": "https://parrottapaving.com/services/complete-site-development",
     "headline": "Complete Site Development Services by Parrotta Paving",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Paving Company in Morgantown WV - Parrotta Paving",
+      "url": "https://parrottapaving.com/",
+      "@id": "https://parrottapaving.com/#website",
+      "publisher": {
+        "@type": ["Organization", "LocalBusiness"],
+        "name": "Parrotta Paving",
+        "url": "https://parrottapaving.com/",
+        "@id": "https://parrottapaving.com/#organization"
+     
+  }
+  },
     "description": "Parrotta Paving offers comprehensive site development solutions including excavation, grading, stormwater, utilities, and paving for both residential and commercial clients.",
   "potentialAction": [
     {
@@ -235,21 +248,9 @@ schema_jsonld: |-
           "name": "Site Utilities (storm, water, sewer)",
           "description": "Installation of essential infrastructure: storm drains, water lines, and sewer systems."
         }
-      },
-   "isPartOf": {
-      "@type": "WebSite",
-      "name": "Paving Company in Morgantown WV - Parrotta Paving",
-      "url": "https://parrottapaving.com/",
-      "@id": "https://parrottapaving.com/#website",
-      "publisher": {
-        "@type": ["Organization", "LocalBusiness"],
-        "name": "Parrotta Paving",
-        "url": "https://parrottapaving.com/",
-        "@id": "https://parrottapaving.com/#organization"
-      }
-    }
-    ]
+        }
+  ]
   }
-    }
+    } 
   }
 ---
