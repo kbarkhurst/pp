@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 1ae921b9-dc35-4fe1-9fa5-84ed9ea6e67d
-updated_at: 1746021529
+updated_at: 1746628478
 page_builder:
   -
     page_title: 'Asphalt and Paving'
@@ -401,7 +401,7 @@ schema_jsonld: |-
       }
     },
     "isPartOf": {
-      "@type": "Website",
+      "@type": "WebSite",
       "name": "Paving Company in Morgantown WV - Parrotta Paving",
       "url": "https://parrottapaving.com/",
       "@id": "https://parrottapaving.com/#website",
