@@ -14,5 +14,5 @@ data:
   google_analytics: G-D2PGS9TPWB
   anonymize_ip: true
   use_google_tag_manager: true
-  google_tag_manager: AW-17034092970
+  google_tag_manager: GTM-PXRD55TK
   use_fathom: false
