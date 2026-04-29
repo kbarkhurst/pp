@@ -13,3 +13,10 @@ preferences:
   assets:
     assets:
       mode: grid
+  forms:
+    contact:
+      columns:
+        - datestamp
+        - name
+        - email
+        - message_body
