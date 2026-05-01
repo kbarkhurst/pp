@@ -45,3 +45,12 @@ sections:
           listable: hidden
           validate:
             - required
+      -
+        handle: fax
+        field:
+          input_type: text
+          antlers: false
+          display: Fax
+          type: text
+          icon: text
+          listable: hidden
