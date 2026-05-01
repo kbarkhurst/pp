@@ -20,3 +20,5 @@ yarn-error.log
 /public/js/site.js.map
 /public/js/site.js.LICENSE.txt
 /public/mix-manifest.json
+public/css/*.map
+public/js/*.map
