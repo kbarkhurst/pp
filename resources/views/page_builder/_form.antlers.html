@@ -24,27 +24,27 @@
         <template x-if="!success">
             <div class="w-full grid md:grid-cols-12 gap-y-6 md:gap-x-6">
 
-                {{# Honeypot spam protection field. Hidden from humans via CSS.
-                #}}
+                {{# 1. The Trap: This stays hidden because of the style tag #}}
                 <div style="display:none" aria-hidden="true">
                     <label for="fax">Fax Number (Leave blank)</label>
                     <input id="fax" type="text" name="fax" tabindex="-1"
                         autocomplete="off" />
                 </div>
 
+                {{# 2. The Loop: We tell it to ignore the 'fax' handle here #}}
                 {{ fields }}
+                {{ if handle !== 'fax' }}
                 <div class="flex flex-col space-y-4 
-                        {{ width == '25' ?= 'md:col-span-3' }}
-                        {{ width == '33' ?= 'md:col-span-4' }}
-                        {{ width == '50' ?= 'md:col-span-6' }}
-                        {{ width == '66' ?= 'md:col-span-8' }}
-                        {{ width == '75' ?= 'md:col-span-9' }}
-                        {{ width == '100' ?= 'md:col-span-12' }}">
+                    {{ width == '25' ?= 'md:col-span-3' }}
+                    {{ width == '33' ?= 'md:col-span-4' }}
+                    {{ width == '50' ?= 'md:col-span-6' }}
+                    {{ width == '66' ?= 'md:col-span-8' }}
+                    {{ width == '75' ?= 'md:col-span-9' }}
+                    {{ width == '100' ?= 'md:col-span-12' }}">
                     <label class="font-bold" for="{{ handle }}">{{ trans
                         key="{display}" }} {{ if validate | contains:required
                         }}<sup class="text-notice-400">*</sup>{{ /if }}</label>
 
-                    {{# Load notification when there is a validation error. #}}
                     <template x-if="errors.{{ handle }}">
                         {{ partial src="components/notification" type="error"
                         attribute="x-text='errors.{handle}'" }}
@@ -52,9 +52,9 @@
 
                     {{ field }}
                 </div>
+                {{ /if }}
                 {{ /fields }}
 
-                {{# Submit button #}}
                 <div class="md:col-span-12 flex justify-end mb-16">
                     {{ partial:components/button tag="button"
                     label="{ trans:strings.form_send }"
