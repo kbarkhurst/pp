@@ -16,7 +16,7 @@ preferences:
   forms:
     contact:
       columns:
-        - datestamp
         - name
         - email
         - message_body
+        - datestamp
