@@ -7,6 +7,7 @@
  
 #animated-background {
     height:96vh !important;
+    background-color: #222;
 }
 #selected-projects {
     margin-top:-150px;
@@ -38,7 +39,12 @@
 @media (min-width: 640px) { 
     #animated-background {
         height:98vh !important;
+        animation: fadeIn 0.8s ease-in-out;
     }
+    @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
     .homeswoop {
         margin-top:-390px;
     }
@@ -140,101 +146,101 @@
 }
 
 .webp #animated-background {
-    animation: bgfadewebp 2s infinite;
-    animation-duration: 15s;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  animation: bgfadewebp 2s infinite;
+  animation-duration: 15s;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 @keyframes bgfadewebp {
-    0% {
-        background-image: url("/assets/1076-476x700.webp");
-    }
-    20% {
-        background-image: url("/assets/1074-476x700.webp");
-    }
-    40% {
-        background-image: url("/assets/1077-476x700.webp");
-    }
-    60% {
-        background-image: url("/assets/1078-476x700.webp");
-    }
-    80% {
-        background-image: url("/assets/1075-476x700.webp");
-    }
-    100% {
-        background-image: url("/assets/1076-476x700.webp");
-    }
-} 
+  0%, 15% {
+    background-image: url("/assets/1076-476x700.webp"); opacity: 1;
+  }
+  20%, 35% {
+    background-image: url("/assets/1074-476x700.webp");
+  }
+  40%, 55% {
+    background-image: url("/assets/1077-476x700.webp");
+  }
+  60%, 75% {
+    background-image: url("/assets/1078-476x700.webp");
+  }
+  80%, 95% {
+    background-image: url("/assets/1075-476x700.webp");
+  }
+  100% {
+    background-image: url("/assets/1076-476x700.webp");
+  }
+}
 .no-webp #animated-background {
-    animation: bgfade 2s infinite;
-    animation-duration: 15s;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  animation: bgfade 2s infinite;
+  animation-duration: 15s;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 @keyframes bgfade {
-    0% {
-        background-image: url("/assets/1076-476x700.jpg");
-    }
-    20% {
-        background-image: url("/assets/1074-476x700.jpg");
-    }
-    40% {
-        background-image: url("/assets/1077-476x700.jpg");
-    }
-    60% {
-        background-image: url("/assets/1078-476x700.jpg");
-    }
-    80% {
-        background-image: url("/assets/1075-476x700.jpg");
-    }
-    100% {
-        background-image: url("/assets/1076-476x700.jpg");
-    }
-} 
+  0%, 15% {
+    background-image: url("/assets/1076-476x700.jpg"); opacity: 1;
+  }
+  20%, 35% {
+    background-image: url("/assets/1074-476x700.jpg");
+  }
+  40%, 55% {
+    background-image: url("/assets/1077-476x700.jpg");
+  }
+  60%, 75% {
+    background-image: url("/assets/1078-476x700.jpg");
+  }
+  80%, 95% {
+    background-image: url("/assets/1075-476x700.jpg");
+  }
+  100% {
+    background-image: url("/assets/1076-476x700.jpg");
+  }
+}
 
 @media (min-width: 476px) {
-@keyframes bgfade {
-    0% {
-        background-image: url("/assets/1076-1200x800.jpg");
+  @keyframes bgfade {
+    0%, 15%  {
+      background-image: url("/assets/1076-1200x800.jpg"); opacity: 1;
     }
-    20% {
-        background-image: url("/assets/1074-1200x800.jpg");
+    20%, 35% {
+      background-image: url("/assets/1074-1200x800.jpg");
     }
-    40% {
-        background-image: url("/assets/1077-1200x800.jpg");
+    40%, 55% {
+      background-image: url("/assets/1077-1200x800.jpg");
     }
-    60% {
-        background-image: url("/assets/1078-1200x800.jpg");
+    60%, 75% {
+      background-image: url("/assets/1078-1200x800.jpg");
     }
-    80% {
-        background-image: url("/assets/1075-1200x800.jpg");
-    }
-    100% {
-        background-image: url("/assets/1076-1200x800.jpg");
-    }
-} 
-@keyframes bgfadewebp {
-    0% {
-        background-image: url("/assets/1076-1200x800.webp");
-    }
-    20% {
-        background-image: url("/assets/1074-1200x800.webp");
-    }
-    40% {
-        background-image: url("/assets/1077-1200x800.webp");
-    }
-    60% {
-        background-image: url("/assets/1078-1200x800.webp");
-    }
-    80% {
-        background-image: url("/assets/1075-1200x800.webp");
+    80%, 95% {
+      background-image: url("/assets/1075-1200x800.jpg");
     }
     100% {
-        background-image: url("/assets/1076-1200x800.webp");
+      background-image: url("/assets/1076-1200x800.jpg");
     }
-} 
+  }
+  @keyframes bgfadewebp {
+    0%, 15% {
+      background-image: url("/assets/1076-1200x800.webp"); opacity: 1;
+    }
+    20%, 35% {
+      background-image: url("/assets/1074-1200x800.webp");
+    }
+    40%, 55% {
+      background-image: url("/assets/1077-1200x800.webp");
+    }
+    60%, 75% {
+      background-image: url("/assets/1078-1200x800.webp");
+    }
+    80%, 95% {
+      background-image: url("/assets/1075-1200x800.webp");
+    }
+    100% {
+      background-image: url("/assets/1076-1200x800.webp");
+    }
+  }
 }
 /****** add a background overlay 
 #animated-background:hover:before {

@@ -3,6 +3,14 @@
     <div class="fluid-container flex justify-between items-center">
         {{ partial:components/logo width="200" }} {{ partial:navigation/main }}
     </div>
+    {{# preload to remove flicker #}}
+    <div
+        style="position: absolute; width: 0; height: 0; overflow: hidden; z-index: -1000;">
+        <img src="/assets/1074-1200x800.webp">
+        <img src="/assets/1077-1200x800.webp">
+        <img src="/assets/1078-1200x800.webp">
+        <img src="/assets/1075-1200x800.webp">
+    </div>
 </header>
 
 <section class="text-center">
