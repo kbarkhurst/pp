@@ -20,3 +20,8 @@ preferences:
         - email
         - message_body
         - datestamp
+    millings:
+      columns:
+        - datestamp
+        - name
+        - email
