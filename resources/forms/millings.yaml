@@ -2,7 +2,7 @@ title: Millings
 honeypot: fax
 email:
   -
-    to: domp@parrottapaving.com
+    to: '{{ email }}'
     from: domp@parrottapaving.com
     subject: 'Millings Request form received'
     html: email/form_owner
