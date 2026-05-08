@@ -18,7 +18,6 @@ preferences:
       columns:
         - name
         - email
-        - message_body
         - datestamp
     millings:
       columns:
