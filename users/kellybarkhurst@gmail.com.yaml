@@ -25,3 +25,8 @@ preferences:
         - datestamp
         - name
         - email
+    employment:
+      columns:
+        - datestamp
+        - name
+        - email
