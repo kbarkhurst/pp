@@ -21,9 +21,9 @@ preferences:
         - datestamp
     millings:
       columns:
-        - datestamp
         - name
         - email
+        - datestamp
     employment:
       columns:
         - name
