@@ -63,7 +63,10 @@
 
                 {{# 3. Manually place the Turnstile widget #}}
                 <div class="md:col-span-12">
-                    {{ turnstile:field sitekey="0x4AAAAAADLl3V4RcvcqRfcF" }}
+                    {{ turnstile:field }}
+                    {{# This will print your site key directly on the page if
+                    the config is linked #}}
+                    DEBUG: {{ config:turnstile:site_key }}
                 </div>
 
                 <div class="md:col-span-12 flex justify-end mb-16">
