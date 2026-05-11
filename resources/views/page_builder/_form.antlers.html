@@ -63,10 +63,11 @@
 
                 {{# 3. Manually place the Turnstile widget #}}
                 <div class="md:col-span-12">
-                    {{ turnstile:field }}
-                    {{# This will print your site key directly on the page if
-                    the config is linked #}}
-                    DEBUG: {{ config:turnstile:site_key }}
+
+                    {{# We manually output the div that Cloudflare's script is
+                    looking for #}}
+                    <div class="cf-turnstile"
+                        data-sitekey="{{ config:turnstile:site_key }}"></div>
                 </div>
 
                 <div class="md:col-span-12 flex justify-end mb-16">
