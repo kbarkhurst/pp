@@ -6,15 +6,14 @@
         {{ partial:typography/h2 class="mb-4" :content="block:title" }}
         {{ partial:typography/paragraph :content="block:text" }}
 
-        {{# SAFETY NET FIX: This checks block:form, then form:handle, and
-        defaults to "contact" if both are missing so it NEVER 500-crashes #}}
-        {{ form:create in="{ block:form || form:handle || 'contact' }"
+        {{# Create the selected form and reference Alpine data in `sending()`.
+        Prevent form from submitting with POST as we will submit with AJAX. #}}
+        {{ form:create in="{ form:handle }"
         id="form"
         class="flex flex-wrap"
         x-ref="form"
         x-data="sending()"
         @submit.prevent="sendForm()"
-        honeypot="fax"
         }}
 
         <template x-if="success">
@@ -25,41 +24,37 @@
         <template x-if="!success">
             <div class="w-full grid md:grid-cols-12 gap-y-6 md:gap-x-6">
 
-                {{# Hidden trap #}}
-                <div style="display:none" aria-hidden="true">
-                    <label for="fax" class="sr-only">Fax Number</label>
-                    <input id="fax" type="text" name="fax" tabindex="-1"
-                        autocomplete="off" />
+                {{# Honeypot spam protection. #}}
+                <div class="hidden">
+                    <label class="font-bold" for="fax">{{
+                        trans:strings.form_honeypot }} <sup
+                            class="text-notice-400">*</sup></label>
+                    <input class="form-input w-full" id="fax" type="text"
+                        name="fax" tabindex="-1" autocomplete="off" />
                 </div>
 
-                {{# Loop spitting out fields #}}
                 {{ fields }}
-                {{ if handle !== 'fax' }}
                 <div class="flex flex-col space-y-4 
-                    {{ width == '25' ?= 'md:col-span-3' }}
-                    {{ width == '33' ?= 'md:col-span-4' }}
-                    {{ width == '50' ?= 'md:col-span-6' }}
-                    {{ width == '66' ?= 'md:col-span-8' }}
-                    {{ width == '75' ?= 'md:col-span-9' }}
-                    {{ width == '100' ?= 'md:col-span-12' }}">
-
-                    <label class="font-bold" for="{{ handle }}">
-                        {{ trans key="{display}" }}
-                        {{ if validate | contains:required }}<sup
-                            class="text-notice-400">*</sup>{{ /if }}
-                    </label>
-
+                        {{ width == '25' ?= 'md:col-span-3' }}
+                        {{ width == '33' ?= 'md:col-span-4' }}
+                        {{ width == '50' ?= 'md:col-span-6' }}
+                        {{ width == '66' ?= 'md:col-span-8' }}
+                        {{ width == '75' ?= 'md:col-span-9' }}
+                        {{ width == '100' ?= 'md:col-span-12' }}">
+                    <label class="font-bold" for="{{ handle }}">{{ trans
+                        key="{display}" }} {{ if validate | contains:required
+                        }}<sup class="text-notice-400">*</sup>{{ /if }}</label>
+                    {{# Load notification when there is a validation error with
+                    the name field. #}}
                     <template x-if="errors.{{ handle }}">
                         {{ partial src="components/notification" type="error"
                         attribute="x-text='errors.{handle}'" }}
                     </template>
-
                     {{ field }}
                 </div>
-                {{ /if }}
                 {{ /fields }}
 
-                {{# Submit button #}}
+                {{# Pulse button and disable upon sending. #}}
                 <div class="md:col-span-12 flex justify-end mb-16">
                     {{ partial:components/button tag="button"
                     label="{ trans:strings.form_send }"
@@ -67,75 +62,87 @@
                     }}
                 </div>
 
+                <template x-if="success">
+                    {{ partial src="components/notification" type="success"
+                    class="md:col-span-12"
+                    content="{trans:strings.form_success}" }}
+                </template>
             </div>
         </template>
         {{ /form:create }}
 
-        {{# Load dynamic token JS #}}
+        {{# Load dynamic token JS to dynamically fetch and refresh a CSRF token.
+        #}}
         {{ dynamic_token }}
 
+        {{# The form script handling validation and submission via AJAX with
+        `fetch()`. #}}
         <script>
-        function sending() {
-            return {
-                error: false,
-                errors: [],
-                sending: false,
-                success: false,
-                sendForm() {
-                    if (this.sending) return;
+            function sending() {
+                return {
+                    error: false,
+                    errors: [],
+                    sending: false,
+                    success: false,
+                    sendForm() {
+                        // 1. DUPLICATE PROTECTION: Lock submission on the very first click
+                        if (this.sending) return;
 
-                    const botInput = document.getElementById('fax')?.value;
-                    if (botInput && botInput.trim() !== "") {
-                        console.warn("Spam caught on frontend.");
-                        this.success = true; 
-                        this.$refs.form.reset();
-                        return;
-                    }
-
-                    this.sending = true;
-                    
-                    fetch(this.$refs.form.action, {
-                        headers: {
-                            'X-Requested-With' : 'XMLHttpRequest',
-                            'Accept': 'application/json'
-                        },
-                        method: 'POST',
-                        body: new FormData(this.$refs.form)
-                    })
-                    .then(res => {
-                        if (!res.ok) {
-                            this.sending = false;
-                            this.success = false;
-                            this.error = true;
-                            alert('Form submission failed security verification.');
-                            return null;
-                        }
-                        return res.json();
-                    })
-                    .then(json => {
-                        if (!json) return;
-
-                        if (json['success']) {
-                            this.errors = [];
+                        // 2. THE FRONTEND TRAP: Check if a bot touched the hidden field
+                        const honeypotField = document.getElementById('fax');
+                        if (honeypotField && honeypotField.value.trim() !== "") {
+                            console.warn("Spam attempt neutralized.");
+                            // Silently trick the bot into thinking it succeeded so it doesn't try again
                             this.success = true;
-                            this.error = false;
                             this.sending = false;
                             this.$refs.form.reset();
+                            return;
                         }
-                        if (json['error']) {
+
+                        this.sending = true;
+                        
+                        fetch(this.$refs.form.action, {
+                            headers: {
+                                'X-Requested-With' : 'XMLHttpRequest',
+                                'Accept' : 'application/json' // Forces Statamic to speak in clean JSON arrays
+                            },
+                            method: 'POST',
+                            body: new FormData(this.$refs.form)
+                        })
+                        .then(res => {
+                            // 3. THE BACKEND TRAP: Catch server security/validation rejections safely
+                            if (!res.ok) {
+                                this.sending = false;
+                                this.success = false;
+                                this.error = true;
+                                return null;
+                            }
+                            return res.json();
+                        })
+                        .then(json => {
+                            if (!json) return;
+
+                            if (json['success']) {
+                                this.errors = [];
+                                this.success = true;
+                                this.error = false;
+                                this.sending = false;
+                                this.$refs.form.reset();
+                            }
+                            if (json['error']) {
+                                this.sending = false;
+                                this.error = true;
+                                this.success = false;
+                                this.errors = json['error'];
+                            }
+                        })
+                        .catch(err => {
                             this.sending = false;
-                            this.error = true;
-                            this.success = false;
-                            this.errors = json['error'];
-                        }
-                    })
-                    .catch(err => {
-                        this.sending = false;
-                        console.log('Error submitting form');
-                    })
+                            console.log('Error submitting form');
+                        })
+                    }
                 }
             }
-        }
         </script>
     </div>
 </section>
