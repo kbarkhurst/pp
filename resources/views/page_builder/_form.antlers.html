@@ -68,24 +68,25 @@
                     {{# We manually output the div that Cloudflare's script is
                     looking for #}}
                     <div class="cf-turnstile"
-                        data-sitekey="{{ config:turnstile:site_key }}"></div>
+                        data-sitekey="{{ config:turnstile:site_key }}"
+                        data-response-field-name="turnstile">
+                    </div>
+
+                    <div class="md:col-span-12 flex justify-end mb-16">
+                        {{ partial:components/button tag="button"
+                        label="{ trans:strings.form_send }"
+                        attribute='x-bind:disabled="sending" x-bind:class="&#123;&#39;opacity-25 cursor-default&#39;: sending&#125;"'
+                        }}
+                    </div>
+
                 </div>
+            </template>
+            {{ /form:create }}
 
-                <div class="md:col-span-12 flex justify-end mb-16">
-                    {{ partial:components/button tag="button"
-                    label="{ trans:strings.form_send }"
-                    attribute='x-bind:disabled="sending" x-bind:class="&#123;&#39;opacity-25 cursor-default&#39;: sending&#125;"'
-                    }}
-                </div>
+            {{# Load dynamic token JS #}}
+            {{ dynamic_token }}
 
-            </div>
-        </template>
-        {{ /form:create }}
-
-        {{# Load dynamic token JS #}}
-        {{ dynamic_token }}
-
-        <script>
+            <script>
             function sending() {
                 return {
                     error: false,
@@ -124,5 +125,5 @@
                 }
             }
         </script>
-    </div>
-</section>
+        </div>
+    </section>
