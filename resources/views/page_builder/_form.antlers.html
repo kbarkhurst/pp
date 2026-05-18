@@ -1,134 +1,70 @@
 {{# The contact form content block. #}}
-<section class="size-lg fluid-container grid md:grid-cols-12 gap-y-8 md:gap-8">
+{{# The form code stays exactly the same as before, just swap the script block
+at the bottom with this #}}
+<script>
+function sending() {
+    return {
+        sending: false,
+        success: false,
+        error: false,
+        // SAFE FALLBACK: This stops Alpine from crashing when it loops over errors.handle
+        errors: {}, 
+        sendForm() {
+            // If the script is already running a submission task, drop out to prevent duplicate clicks
+            if (this.sending) return;
 
-    <div class="md:col-start-3 md:col-span-8">
-
-        {{ partial:typography/h2 class="mb-4" :content="block:title" }}
-        {{ partial:typography/paragraph :content="block:text" }}
-
-        {{# Native Statamic form with honeypot enabled #}}
-        {{ form:create in="{ form:handle }"
-        id="form"
-        class="flex flex-wrap"
-        x-ref="form"
-        x-data="sending()"
-        @submit.prevent="sendForm()"
-        honeypot="fax"
-        }}
-
-        {{# Success State Notification #}}
-        <div x-show="success" x-cloak class="w-full">
-            {{ partial src="components/notification" type="success"
-            class="md:col-span-12" content="{trans:strings.form_success}" }}
-        </div>
-
-        {{# Form Inputs Wrapper #}}
-        <div x-show="!success"
-            class="w-full grid md:grid-cols-12 gap-y-6 md:gap-x-6">
-
-            {{# The Trap Field: Completely invisible to humans, irresistible to
-            headless spam bots #}}
-            <div style="display:none !important; visibility:hidden;"
-                aria-hidden="true">
-                <label for="fax">Fax Number</label>
-                <input id="fax" type="text" name="fax" tabindex="-1"
-                    autocomplete="off" />
-            </div>
-
-            {{# The Blueprint Fields Loop #}}
-            {{ fields }}
-            {{ if handle !== 'fax' && type !== 'turnstile' }}
-            <div class="flex flex-col space-y-4 
-                    {{ width == '25' ?= 'md:col-span-3' }}
-                    {{ width == '33' ?= 'md:col-span-4' }}
-                    {{ width == '50' ?= 'md:col-span-6' }}
-                    {{ width == '66' ?= 'md:col-span-8' }}
-                    {{ width == '75' ?= 'md:col-span-9' }}
-                    {{ width == '100' ?= 'md:col-span-12' }}">
-
-                <label class="font-bold" for="{{ handle }}">
-                    {{ trans key="{display}" }}
-                    {{ if validate | contains:required }}<sup
-                        class="text-notice-400">*</sup>{{ /if }}
-                </label>
-
-                <template x-if="errors.{{ handle }}">
-                    {{ partial src="components/notification" type="error"
-                    attribute="x-text='errors.{handle}'" }}
-                </template>
-
-                {{ field }}
-            </div>
-            {{ /if }}
-            {{ /fields }}
-
-            {{# Submit Button Wrapper #}}
-            <div class="md:col-span-12 flex justify-end mb-16">
-                {{ partial:components/button tag="button"
-                label="{ trans:strings.form_send }"
-                attribute='x-bind:disabled="sending" x-bind:class="&#123;&#39;opacity-25 cursor-default&#39;: sending&#125;"'
-                }}
-            </div>
-
-        </div>
-        {{ /form:create }}
-
-        {{# Load dynamic token JS #}}
-        {{ dynamic_token }}
-
-        {{# The Core Security JavaScript #}}
-        <script>
-        function sending() {
-            return {
-                sending: false,
-                success: false,
-                sendForm() {
-                    // FRONTEND PROTECTION: Catch basic scripts right here
-                    const honeypotSnatched = document.getElementById('fax')?.value;
-                    if (honeypotSnatched && honeypotSnatched.trim() !== "") {
-                        console.warn("Spam bot detected by honeypot input.");
-                        // Fake a success message to the bot so it stops trying, but freeze execution completely
-                        this.success = true;
-                        this.sending = false;
-                        return;
-                    }
-
-                    this.sending = true;
-                    
-                    fetch(this.$refs.form.action, {
-                        headers: {
-                            'X-Requested-With' : 'XMLHttpRequest',
-                            'Accept': 'application/json'
-                        },
-                        method: 'POST',
-                        body: new FormData(this.$refs.form)
-                    })
-                    .then(res => {
-                        // BACKEND PROTECTION: If Statamic catches the honeypot, it flags a validation failure (422)
-                        if (!res.ok) {
-                            this.sending = false;
-                            // Do NOT set success to true. Freeze the screen.
-                            alert('Form submission rejected.');
-                            return null;
-                        }
-                        return res.json();
-                    })
-                    .then(json => {
-                        if (!json) return;
-
-                        if (json.success) {
-                            this.success = true;
-                            this.sending = false;
-                            this.$refs.form.reset();
-                        }
-                    })
-                    .catch(err => {
-                        this.sending = false;
-                        console.error('Network failure:', err);
-                    });
-                }
+            // FRONTEND TRAP: Stop automated headless spam bots right here
+            const honeypotSnatched = document.getElementById('fax')?.value;
+            if (honeypotSnatched && honeypotSnatched.trim() !== "") {
+                console.warn("Spam bot detected by honeypot input.");
+                this.success = true;
+                this.sending = false;
+                this.$refs.form.reset();
+                return;
             }
+
+            this.sending = true;
+            this.errors = {}; // Reset error messages on new submit
+            
+            fetch(this.$refs.form.action, {
+                headers: {
+                    'X-Requested-With' : 'XMLHttpRequest',
+                    'Accept': 'application/json'
+                },
+                method: 'POST',
+                body: new FormData(this.$refs.form)
+            })
+            .then(res => {
+                if (!res.ok) {
+                    this.sending = false;
+                    this.error = true;
+                    this.success = false;
+                    alert('Form submission rejected. Please ensure all fields are filled out correctly.');
+                    return null;
+                }
+                return res.json();
+            })
+            .then(json => {
+                if (!json) return;
+
+                if (json.success) {
+                    this.errors = {};
+                    this.success = true;
+                    this.error = false;
+                    this.sending = false;
+                    this.$refs.form.reset();
+                } else if (json.error) {
+                    this.sending = false;
+                    this.error = true;
+                    this.success = false;
+                    this.errors = json.error;
+                }
+            })
+            .catch(err => {
+                this.sending = false;
+                console.error('Network failure:', err);
+            });
         }
-        </script>
-    </div>
-</section>
+    }
+}
+</script>
