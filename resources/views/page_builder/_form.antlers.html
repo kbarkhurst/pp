@@ -6,7 +6,7 @@
         {{ partial:typography/h2 class="mb-4" :content="block:title" }}
         {{ partial:typography/paragraph :content="block:text" }}
 
-        {{# Create the selected form with Honeypot enabled. #}}
+        {{# Native Statamic form with honeypot enabled #}}
         {{ form:create in="{ form:handle }"
         id="form"
         class="flex flex-wrap"
@@ -22,19 +22,20 @@
             class="md:col-span-12" content="{trans:strings.form_success}" }}
         </div>
 
-        {{# Form Inputs Wrapper - using x-show to keep elements visible in the
-        DOM on load #}}
+        {{# Form Inputs Wrapper #}}
         <div x-show="!success"
             class="w-full grid md:grid-cols-12 gap-y-6 md:gap-x-6">
 
-            {{# 1. The Trap: This stays hidden because of the inline style #}}
-            <div style="display:none" aria-hidden="true">
-                <label for="fax" class="sr-only">Fax Number</label>
+            {{# The Trap Field: Completely invisible to humans, irresistible to
+            headless spam bots #}}
+            <div style="display:none !important; visibility:hidden;"
+                aria-hidden="true">
+                <label for="fax">Fax Number</label>
                 <input id="fax" type="text" name="fax" tabindex="-1"
                     autocomplete="off" />
             </div>
 
-            {{# 2. The Blueprint Fields Loop #}}
+            {{# The Blueprint Fields Loop #}}
             {{ fields }}
             {{ if handle !== 'fax' && type !== 'turnstile' }}
             <div class="flex flex-col space-y-4 
@@ -61,14 +62,6 @@
             {{ /if }}
             {{ /fields }}
 
-            {{# 3. Cloudflare Turnstile Widget Wrapper #}}
-            <div class="md:col-span-12">
-                {{# Raw div targeting Cloudflare's script with your config key
-                #}}
-                <div class="cf-turnstile"
-                    data-sitekey="{{ config:turnstile:site_key }}"></div>
-            </div>
-
             {{# Submit Button Wrapper #}}
             <div class="md:col-span-12 flex justify-end mb-16">
                 {{ partial:components/button tag="button"
@@ -80,20 +73,27 @@
         </div>
         {{ /form:create }}
 
-        {{# Load dynamic token JS required by Statamic forms #}}
+        {{# Load dynamic token JS #}}
         {{ dynamic_token }}
 
-        {{# Form Processing and AJAX Logic #}}
+        {{# The Core Security JavaScript #}}
         <script>
         function sending() {
             return {
-                error: false,
-                errors: [],
                 sending: false,
                 success: false,
                 sendForm() {
+                    // FRONTEND PROTECTION: Catch basic scripts right here
+                    const honeypotSnatched = document.getElementById('fax')?.value;
+                    if (honeypotSnatched && honeypotSnatched.trim() !== "") {
+                        console.warn("Spam bot detected by honeypot input.");
+                        // Fake a success message to the bot so it stops trying, but freeze execution completely
+                        this.success = true;
+                        this.sending = false;
+                        return;
+                    }
+
                     this.sending = true;
-                    this.errors = [];
                     
                     fetch(this.$refs.form.action, {
                         headers: {
@@ -104,45 +104,27 @@
                         body: new FormData(this.$refs.form)
                     })
                     .then(res => {
-                        // Catch HTTP errors like 400 or 422 immediately
+                        // BACKEND PROTECTION: If Statamic catches the honeypot, it flags a validation failure (422)
                         if (!res.ok) {
                             this.sending = false;
-                            this.error = true;
-                            this.success = false;
-                            
-                            // Reset Turnstile widget so user can try again on failure
-                            if (window.turnstile) {
-                                window.turnstile.reset();
-                            }
+                            // Do NOT set success to true. Freeze the screen.
+                            alert('Form submission rejected.');
                             return null;
                         }
                         return res.json();
                     })
                     .then(json => {
-                        // If res.ok failed and returned null, step out early
                         if (!json) return;
 
                         if (json.success) {
-                            this.errors = [];
                             this.success = true;
-                            this.error = false;
                             this.sending = false;
                             this.$refs.form.reset();
-                            
-                            // Clear Turnstile footprint on form reset
-                            if (window.turnstile) {
-                                window.turnstile.reset();
-                            }
-                        } else if (json.error) {
-                            this.sending = false;
-                            this.error = true;
-                            this.success = false;
-                            this.errors = json.error;
                         }
                     })
                     .catch(err => {
                         this.sending = false;
-                        console.error('Network error during submission:', err);
+                        console.error('Network failure:', err);
                     });
                 }
             }
