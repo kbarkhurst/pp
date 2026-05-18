@@ -12,7 +12,7 @@
         class="md:col-span-12" content="{trans:strings.form_success}" }}
         {{ else }}
 
-        {{# BULLETPROOF PLAIN FORM (No Alpine logic, no AJAX crashes) #}}
+        {{# STANDARD FORM (No Alpine logic, no AJAX crashes) #}}
         {{ form:create in="{ form:handle }"
         id="form"
         class="flex flex-wrap"
@@ -21,8 +21,7 @@
 
         <div class="w-full grid md:grid-cols-12 gap-y-6 md:gap-x-6">
 
-            {{# 1. The Trap Field: Completely invisible to humans, catches
-            headless bots instantly #}}
+            {{# 1. The Trap Field: Completely invisible to humans #}}
             <div style="display:none !important; visibility:hidden;"
                 aria-hidden="true">
                 <label for="fax">Fax Number</label>
@@ -30,14 +29,14 @@
                     autocomplete="off" />
             </div>
 
-            {{# 2. Standard Statamic Error Display #}}
+            {{# 2. Corrected Native Statamic Error Display #}}
             {{ if {form:errors} }}
             <div
                 class="md:col-span-12 bg-red-100 text-red-700 p-4 rounded-md mb-4">
                 <p class="font-bold">Please correct the following errors:</p>
                 <ul class="list-disc pl-5 mt-2">
                     {{ form:errors }}
-                    <li>{{ value }}</li>
+                    <li>{{ error }}</li>
                     {{ /form:errors }}
                 </ul>
             </div>
