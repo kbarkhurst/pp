@@ -6,8 +6,9 @@
         {{ partial:typography/h2 class="mb-4" :content="block:title" }}
         {{ partial:typography/paragraph :content="block:text" }}
 
-        {{# Your original form tag setup with dynamic handles #}}
-        {{ form:create in="{ block:form }"
+        {{# SAFETY NET FIX: This checks block:form, then form:handle, and
+        defaults to "contact" if both are missing so it NEVER 500-crashes #}}
+        {{ form:create in="{ block:form || form:handle || 'contact' }"
         id="form"
         class="flex flex-wrap"
         x-ref="form"
@@ -24,14 +25,14 @@
         <template x-if="!success">
             <div class="w-full grid md:grid-cols-12 gap-y-6 md:gap-x-6">
 
-                {{# Your original hidden trap #}}
+                {{# Hidden trap #}}
                 <div style="display:none" aria-hidden="true">
                     <label for="fax" class="sr-only">Fax Number</label>
                     <input id="fax" type="text" name="fax" tabindex="-1"
                         autocomplete="off" />
                 </div>
 
-                {{# Your original loop spitting out fields #}}
+                {{# Loop spitting out fields #}}
                 {{ fields }}
                 {{ if handle !== 'fax' }}
                 <div class="flex flex-col space-y-4 
@@ -58,7 +59,7 @@
                 {{ /if }}
                 {{ /fields }}
 
-                {{# Your original submit button layout #}}
+                {{# Submit button #}}
                 <div class="md:col-span-12 flex justify-end mb-16">
                     {{ partial:components/button tag="button"
                     label="{ trans:strings.form_send }"
@@ -81,14 +82,12 @@
                 sending: false,
                 success: false,
                 sendForm() {
-                    // 1. DUP PROTECTION: Prevent double clicks
                     if (this.sending) return;
 
-                    // 2. FRONTEND HONEYPOT TRAP: If a bot filled out 'fax', kill the submit immediately
                     const botInput = document.getElementById('fax')?.value;
                     if (botInput && botInput.trim() !== "") {
                         console.warn("Spam caught on frontend.");
-                        this.success = true; // Fake success to the bot so it goes away
+                        this.success = true; 
                         this.$refs.form.reset();
                         return;
                     }
@@ -104,9 +103,6 @@
                         body: new FormData(this.$refs.form)
                     })
                     .then(res => {
-                        // 3. BACKEND HONEYPOT FIX: 
-                        // When Statamic catches the honeypot or dynamic tokens fail, it sends a 422 error status code. 
-                        // Your old script skipped this check and assumed EVERYTHING was a success. Now it catches the rejection!
                         if (!res.ok) {
                             this.sending = false;
                             this.success = false;
