@@ -6,15 +6,13 @@
         {{ partial:typography/h2 class="mb-4" :content="block:title" }}
         {{ partial:typography/paragraph :content="block:text" }}
 
-        {{# FIXED: Added honeypot="fax" so Statamic knows to drop the trap door
-        on the server side #}}
+        {{# Your absolute original form tag setup #}}
         {{ form:create in="{ form:handle }"
         id="form"
         class="flex flex-wrap"
         x-ref="form"
         x-data="sending()"
         @submit.prevent="sendForm()"
-        honeypot="fax"
         }}
 
         <template x-if="success">
@@ -25,15 +23,14 @@
         <template x-if="!success">
             <div class="w-full grid md:grid-cols-12 gap-y-6 md:gap-x-6">
 
-                {{# Honeypot spam protection hidden securely using inline styles
-                #}}
+                {{# Hiding using explicit inline styling so it is physically
+                impossible for the browser to show it to humans #}}
                 <div style="display: none !important; visibility: hidden;"
                     aria-hidden="true">
-                    <label class="font-bold" for="fax">{{
-                        trans:strings.form_honeypot }} <sup
-                            class="text-notice-400">*</sup></label>
-                    <input class="form-input w-full" id="fax" type="text"
-                        name="fax" tabindex="-1" autocomplete="off" />
+                    <label class="font-bold" for="honeypot">Leave this field
+                        blank</label>
+                    <input class="form-input w-full" id="honeypot" type="text"
+                        name="honeypot" tabindex="-1" autocomplete="off" />
                 </div>
 
                 {{ fields }}
@@ -73,12 +70,9 @@
         </template>
         {{ /form:create }}
 
-        {{# Load dynamic token JS to dynamically fetch and refresh a CSRF token.
-        #}}
+        {{# Load dynamic token JS #}}
         {{ dynamic_token }}
 
-        {{# The form script handling validation and submission via AJAX with
-        `fetch()`. #}}
         <script>
             function sending() {
                 return {
@@ -87,15 +81,13 @@
                     sending: false,
                     success: false,
                     sendForm() {
-                        // 1. DUPLICATE PROTECTION: Lock submission on the very first click
                         if (this.sending) return;
 
-                        // 2. THE FRONTEND TRAP: Check if a bot touched the hidden field
-                        const honeypotField = document.getElementById('fax');
-                        if (honeypotField && honeypotField.value.trim() !== "") {
-                            console.warn("Spam attempt neutralized.");
-                            // Silently trick the bot into thinking it succeeded so it doesn't try again
-                            this.success = true;
+                        // FRONTEND HONEYPOT INTERCEPTION
+                        const trapInput = document.getElementById('honeypot')?.value;
+                        if (trapInput && trapInput.trim() !== "") {
+                            console.warn("Spam caught.");
+                            this.success = true; // Triggers fake success window to bot script
                             this.sending = false;
                             this.$refs.form.reset();
                             return;
@@ -106,13 +98,15 @@
                         fetch(this.$refs.form.action, {
                             headers: {
                                 'X-Requested-With' : 'XMLHttpRequest',
-                                'Accept' : 'application/json' // Forces Statamic to speak in clean JSON arrays
+                                'Accept' : 'application/json'
                             },
                             method: 'POST',
                             body: new FormData(this.$refs.form)
                         })
                         .then(res => {
-                            // 3. THE BACKEND TRAP: Catch server security/validation rejections safely
+                            // BACKEND HONEYPOT TRACKING
+                            // If Statamic catches the honeypot on the server, it outputs a validation failure status code.
+                            // The old script ignored this and skipped right to success. Now we catch it properly!
                             if (!res.ok) {
                                 this.sending = false;
                                 this.success = false;
