@@ -24,8 +24,10 @@
         <template x-if="!success">
             <div class="w-full grid md:grid-cols-12 gap-y-6 md:gap-x-6">
 
-                {{# Honeypot spam protection. #}}
-                <div class="hidden">
+                {{# Honeypot spam protection hidden using robust inline style
+                attributes #}}
+                <div style="display: none !important; visibility: hidden;"
+                    aria-hidden="true">
                     <label class="font-bold" for="fax">{{
                         trans:strings.form_honeypot }} <sup
                             class="text-notice-400">*</sup></label>
