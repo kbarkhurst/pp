@@ -6,7 +6,8 @@
         {{ partial:typography/h2 class="mb-4" :content="block:title" }}
         {{ partial:typography/paragraph :content="block:text" }}
 
-        {{# Your absolute original form tag setup #}}
+        {{# Create the selected form and reference Alpine data in `sending()`.
+        Prevent form from submitting with POST as we will submit with AJAX. #}}
         {{ form:create in="{ form:handle }"
         id="form"
         class="flex flex-wrap"
@@ -23,17 +24,20 @@
         <template x-if="!success">
             <div class="w-full grid md:grid-cols-12 gap-y-6 md:gap-x-6">
 
-                {{# Hiding using explicit inline styling so it is physically
-                impossible for the browser to show it to humans #}}
+                {{# 1. THE HIDDEN TRAP: Explicitly hidden from human sight #}}
                 <div style="display: none !important; visibility: hidden;"
                     aria-hidden="true">
-                    <label class="font-bold" for="honeypot">Leave this field
-                        blank</label>
-                    <input class="form-input w-full" id="honeypot" type="text"
-                        name="honeypot" tabindex="-1" autocomplete="off" />
+                    <label class="font-bold" for="fax">{{
+                        trans:strings.form_honeypot }} <sup
+                            class="text-notice-400">*</sup></label>
+                    <input class="form-input w-full" id="fax" type="text"
+                        name="fax" tabindex="-1" autocomplete="off" />
                 </div>
 
                 {{ fields }}
+                {{# 2. THE FILTER: Skip the 'fax' handle so it doesn't print a
+                duplicate visible input field #}}
+                {{ if handle !== 'fax' }}
                 <div class="flex flex-col space-y-4 
                         {{ width == '25' ?= 'md:col-span-3' }}
                         {{ width == '33' ?= 'md:col-span-4' }}
@@ -44,13 +48,15 @@
                     <label class="font-bold" for="{{ handle }}">{{ trans
                         key="{display}" }} {{ if validate | contains:required
                         }}<sup class="text-notice-400">*</sup>{{ /if }}</label>
-
+                    {{# Load notification when there is a validation error with
+                    the name field. #}}
                     <template x-if="errors.{{ handle }}">
                         {{ partial src="components/notification" type="error"
                         attribute="x-text='errors.{handle}'" }}
                     </template>
                     {{ field }}
                 </div>
+                {{ /if }}
                 {{ /fields }}
 
                 {{# Pulse button and disable upon sending. #}}
@@ -70,9 +76,12 @@
         </template>
         {{ /form:create }}
 
-        {{# Load dynamic token JS #}}
+        {{# Load dynamic token JS to dynamically fetch and refresh a CSRF token.
+        #}}
         {{ dynamic_token }}
 
+        {{# The form script handling validation and submission via AJAX with
+        `fetch()`. #}}
         <script>
             function sending() {
                 return {
@@ -83,11 +92,11 @@
                     sendForm() {
                         if (this.sending) return;
 
-                        // FRONTEND HONEYPOT INTERCEPTION
-                        const trapInput = document.getElementById('honeypot')?.value;
-                        if (trapInput && trapInput.trim() !== "") {
-                            console.warn("Spam caught.");
-                            this.success = true; // Triggers fake success window to bot script
+                        // FRONTEND HONEYPOT TRAP: Halt script instantly if filled out
+                        const honeypotInput = document.getElementById('fax')?.value;
+                        if (honeypotInput && honeypotInput.trim() !== "") {
+                            console.warn("Spam attempt neutralized.");
+                            this.success = true; 
                             this.sending = false;
                             this.$refs.form.reset();
                             return;
@@ -104,9 +113,7 @@
                             body: new FormData(this.$refs.form)
                         })
                         .then(res => {
-                            // BACKEND HONEYPOT TRACKING
-                            // If Statamic catches the honeypot on the server, it outputs a validation failure status code.
-                            // The old script ignored this and skipped right to success. Now we catch it properly!
+                            // BACKEND HONEYPOT TRACKING: Prevent fake successes on validation errors (422)
                             if (!res.ok) {
                                 this.sending = false;
                                 this.success = false;
