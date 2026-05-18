@@ -6,14 +6,15 @@
         {{ partial:typography/h2 class="mb-4" :content="block:title" }}
         {{ partial:typography/paragraph :content="block:text" }}
 
-        {{# Create the selected form and reference Alpine data in `sending()`.
-        Prevent form from submitting with POST as we will submit with AJAX. #}}
+        {{# FIXED: Added honeypot="fax" so Statamic knows to drop the trap door
+        on the server side #}}
         {{ form:create in="{ form:handle }"
         id="form"
         class="flex flex-wrap"
         x-ref="form"
         x-data="sending()"
         @submit.prevent="sendForm()"
+        honeypot="fax"
         }}
 
         <template x-if="success">
@@ -24,8 +25,8 @@
         <template x-if="!success">
             <div class="w-full grid md:grid-cols-12 gap-y-6 md:gap-x-6">
 
-                {{# Honeypot spam protection hidden using robust inline style
-                attributes #}}
+                {{# Honeypot spam protection hidden securely using inline styles
+                #}}
                 <div style="display: none !important; visibility: hidden;"
                     aria-hidden="true">
                     <label class="font-bold" for="fax">{{
@@ -46,8 +47,7 @@
                     <label class="font-bold" for="{{ handle }}">{{ trans
                         key="{display}" }} {{ if validate | contains:required
                         }}<sup class="text-notice-400">*</sup>{{ /if }}</label>
-                    {{# Load notification when there is a validation error with
-                    the name field. #}}
+
                     <template x-if="errors.{{ handle }}">
                         {{ partial src="components/notification" type="error"
                         attribute="x-text='errors.{handle}'" }}
