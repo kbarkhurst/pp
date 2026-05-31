@@ -34,6 +34,14 @@
                         name="fax" tabindex="-1" autocomplete="off" />
                 </div>
 
+                {{# Error Banner: Renders if a human skips the checkbox
+                challenge #}}
+                <div x-show="error" x-cloak class="md:col-span-12">
+                    {{ partial src="components/notification" type="error"
+                    content="Please check the reCAPTCHA box to verify you are a human."
+                    }}
+                </div>
+
                 {{ fields }}
                 {{# 2. THE FILTER: Skip the 'fax' handle so it doesn't print a
                 duplicate visible input field #}}
@@ -59,6 +67,12 @@
                 {{ /if }}
                 {{ /fields }}
 
+                {{# 3. GOOGLE reCAPTCHA v2 CHECKBOX CONTAINER #}}
+                <div class="md:col-span-12 my-4 flex justify-start">
+                    <div class="g-recaptcha"
+                        data-sitekey="6LdLHwYtAAAAAN3uWzkbhXBV2aPDVXXsfrY143J8"></div>
+                </div>
+
                 {{# Pulse button and disable upon sending. #}}
                 <div class="md:col-span-12 flex justify-end mb-16">
                     {{ partial:components/button tag="button"
@@ -79,6 +93,10 @@
         {{# Load dynamic token JS to dynamically fetch and refresh a CSRF token.
         #}}
         {{ dynamic_token }}
+
+        {{# Google's Official reCAPTCHA Client-Side Library #}}
+        <script src="https://www.google.com/recaptcha/api.js" async
+            defer></script>
 
         {{# The form script handling validation and submission via AJAX with
         `fetch()`. #}}
@@ -102,7 +120,19 @@
                             return;
                         }
 
+                        // 4. THE RECAPTCHA TOKEN CAPTURE
+                        const formData = new FormData(this.$refs.form);
+                        const recaptchaResponse = formData.get('g-recaptcha-response');
+
+                        // If the box isn't ticked, cancel the send action and trigger the error banner notice
+                        if (!recaptchaResponse || recaptchaResponse.trim() === "") {
+                            this.error = true;
+                            this.sending = false;
+                            return;
+                        }
+
                         this.sending = true;
+                        this.error = false;
                         
                         fetch(this.$refs.form.action, {
                             headers: {
@@ -110,14 +140,13 @@
                                 'Accept' : 'application/json'
                             },
                             method: 'POST',
-                            body: new FormData(this.$refs.form)
+                            body: formData // This automatically passes the reCAPTCHA token payload to your server
                         })
                         .then(res => {
-                            // BACKEND HONEYPOT TRACKING: Prevent fake successes on validation errors (422)
                             if (!res.ok) {
                                 this.sending = false;
                                 this.success = false;
-                                this.error = true;
+                                if (window.grecaptcha) window.grecaptcha.reset();
                                 return null;
                             }
                             return res.json();
@@ -131,17 +160,20 @@
                                 this.error = false;
                                 this.sending = false;
                                 this.$refs.form.reset();
+                                if (window.grecaptcha) window.grecaptcha.reset();
                             }
                             if (json['error']) {
                                 this.sending = false;
-                                this.error = true;
+                                this.error = false;
                                 this.success = false;
                                 this.errors = json['error'];
+                                if (window.grecaptcha) window.grecaptcha.reset();
                             }
                         })
                         .catch(err => {
                             this.sending = false;
                             console.log('Error submitting form');
+                            if (window.grecaptcha) window.grecaptcha.reset();
                         })
                     }
                 }
